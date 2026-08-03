@@ -1,7 +1,16 @@
 ---
-title: 橘 柊 (Tachibana Hiiragi)
-role: protagonist-ch4
-chapter: winter
+title: "橘 柊"
+character_id: "tachibana-hiiragi"
+name_ja: "橘 柊"
+name_kana: "たちばな ひいらぎ"
+role: "protagonist_winter"
+featured_chapter: "04-winter"
+social_persona: "静かで目立たない一般の大学生"
+inner_flaw: "根深い罪悪感と自らを罰したい衝動"
+breakdown_trigger: "児童用下着の密かな購入と自発的決壊"
+adaptation_type: "退行と排泄による自己罰の安らぎへの没入"
+symbol_item: "児童用下着・冷たい自室の床"
+status: "designed"
 ---
 
 # ❄️ 橘 柊（たちばな ひいらぎ）
@@ -10,11 +19,17 @@ chapter: winter
 
 ---
 
-## 👤 基本プロフィール
+## 📊 キャラクター対比パラメーター
 
-* **社会的立場**: 大学生。
-* **内面の欠落**: 深い罪悪感と自発的な自己罰の求道者。
-* **象徴要素**: 児童用下着・退行。
+| 項目 | 設定内容 |
+| :--- | :--- |
+| **役割** | **第4章「冬」主人公** |
+| **メイン活躍章** | 第4章「冬」 |
+| **表の顔 (Persona)** | 静かで目立たない一般の大学生 |
+| **内面の欠落 (Flaw)** | 根深い罪悪感と自罰的傾向 |
+| **破綻のトリガー** | 児童用下着を自ら身につけ、排泄する |
+| **倒錯的適応** | 排泄と退行による自己罰的な安らぎ |
+| **象徴アイテム** | 児童用下着・静まり返った冷たい自室 |
 
 ---
 
