@@ -1,0 +1,108 @@
+filters:
+  and:
+    - type == "character"
+properties:
+  name_ja:
+    displayName: 名前
+  season:
+    displayName: 季節
+  age:
+    displayName: 年齢
+  height_cm:
+    displayName: 身長
+  head_ratio:
+    displayName: 頭身
+  occupation:
+    displayName: 職業
+  hair:
+    displayName: 髪
+  eyes:
+    displayName: 目
+  body_type:
+    displayName: 体型
+  outfit_main:
+    displayName: 普段の服
+  underwear:
+    displayName: 下着
+  legwear:
+    displayName: レッグウェア
+  shoes:
+    displayName: 靴
+  social_persona:
+    displayName: 表の顔
+  inner_flaw:
+    displayName: 内面の欠落
+  breakdown_trigger:
+    displayName: 破綻のトリガー
+  adaptation_type:
+    displayName: 倒錯的適応
+  aesthetic:
+    displayName: 象徴する美学
+  agency:
+    displayName: 破綻の主体
+  symbol_item:
+    displayName: 象徴アイテム
+  likes:
+    displayName: 好きなもの
+  dislikes:
+    displayName: 苦手なもの
+  skills:
+    displayName: 特技・趣味
+  quirk:
+    displayName: 癖
+views:
+  - type: table
+    name: プロフィール
+    order:
+      - name_ja
+      - season
+      - age
+      - height_cm
+      - head_ratio
+      - occupation
+      - blood_type
+      - birthday
+    sort:
+      - property: age
+        direction: ASC
+      - property: featured_chapter
+        direction: ASC
+  - type: table
+    name: 容貌・服装
+    order:
+      - name_ja
+      - hair
+      - eyes
+      - body_type
+      - outfit_main
+      - underwear
+      - legwear
+      - shoes
+    sort:
+      - property: featured_chapter
+        direction: ASC
+  - type: table
+    name: 心理・物語構造
+    order:
+      - name_ja
+      - social_persona
+      - inner_flaw
+      - breakdown_trigger
+      - adaptation_type
+      - aesthetic
+      - agency
+      - symbol_item
+    sort:
+      - property: featured_chapter
+        direction: ASC
+  - type: table
+    name: 嗜好
+    order:
+      - name_ja
+      - likes
+      - dislikes
+      - skills
+      - quirk
+    sort:
+      - property: featured_chapter
+        direction: ASC

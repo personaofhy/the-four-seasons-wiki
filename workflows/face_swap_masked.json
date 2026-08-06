@@ -1,0 +1,242 @@
+{
+  "1": {
+    "inputs": {
+      "ckpt_name": "PARAM_CKPT"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint (SD1.5 only)"
+    }
+  },
+  "2": {
+    "inputs": {
+      "image": "PARAM_BASE_IMAGE"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Base Image (everything outside the mask is preserved)"
+    }
+  },
+  "3": {
+    "inputs": {
+      "image": "PARAM_FACE_MASK",
+      "channel": "PARAM_MASK_CHANNEL"
+    },
+    "class_type": "LoadImageMask",
+    "_meta": {
+      "title": "Face Mask (white = repaint)"
+    }
+  },
+  "4": {
+    "inputs": {
+      "mask": ["3", 0],
+      "expand": "PARAM_INT_MASK_EXPAND",
+      "tapered_corners": true
+    },
+    "class_type": "GrowMask",
+    "_meta": {
+      "title": "Grow Mask"
+    }
+  },
+  "5a": {
+    "inputs": {
+      "mask": ["4", 0]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "Mask -> Image (so it can be blurred)"
+    }
+  },
+  "5b": {
+    "inputs": {
+      "image": ["5a", 0],
+      "blur_radius": "PARAM_INT_MASK_BLUR",
+      "sigma": "PARAM_FLOAT_MASK_SIGMA"
+    },
+    "class_type": "ImageBlur",
+    "_meta": {
+      "title": "Blur the mask contour (FeatherMask only fades image borders, not shapes)"
+    }
+  },
+  "5": {
+    "inputs": {
+      "image": ["5b", 0],
+      "channel": "red"
+    },
+    "class_type": "ImageToMask",
+    "_meta": {
+      "title": "Image -> Mask (soft-edged)"
+    }
+  },
+  "6": {
+    "inputs": {
+      "ipadapter_file": "ip-adapter_sd15.safetensors"
+    },
+    "class_type": "IPAdapterModelLoader",
+    "_meta": {
+      "title": "Load IPAdapter Model"
+    }
+  },
+  "7": {
+    "inputs": {
+      "clip_name": "clip_vision_h.safetensors"
+    },
+    "class_type": "CLIPVisionLoader",
+    "_meta": {
+      "title": "Load CLIP Vision"
+    }
+  },
+  "8": {
+    "inputs": {
+      "image": "PARAM_FACE_REF"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Identity Reference (the face to apply)"
+    }
+  },
+  "9": {
+    "inputs": {
+      "model": ["1", 0],
+      "ipadapter": ["6", 0],
+      "image": ["8", 0],
+      "clip_vision": ["7", 0],
+      "attn_mask": ["5", 0],
+      "weight": "PARAM_FLOAT_IP_WEIGHT",
+      "weight_type": "linear",
+      "combine_embeds": "concat",
+      "start_at": 0.0,
+      "end_at": 1.0,
+      "embeds_scaling": "V only"
+    },
+    "class_type": "IPAdapterAdvanced",
+    "_meta": {
+      "title": "IPAdapter Advanced (attn_mask confines identity to the face)"
+    }
+  },
+  "10": {
+    "inputs": {
+      "control_net_name": "control_lora_rank128_v11f1p_sd15_depth_fp16.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "Load ControlNet (depth)"
+    }
+  },
+  "11": {
+    "inputs": {
+      "image": "PARAM_DEPTH_IMAGE"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Depth Map (from the depth_map workflow)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "text": "PARAM_PROMPT",
+      "clip": ["1", 1]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive Prompt"
+    }
+  },
+  "13": {
+    "inputs": {
+      "text": "PARAM_NEGATIVE_PROMPT",
+      "clip": ["1", 1]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative Prompt"
+    }
+  },
+  "14": {
+    "inputs": {
+      "positive": ["12", 0],
+      "negative": ["13", 0],
+      "control_net": ["10", 0],
+      "image": ["11", 0],
+      "strength": "PARAM_FLOAT_CN_STRENGTH",
+      "start_percent": 0.0,
+      "end_percent": 0.8
+    },
+    "class_type": "ControlNetApplyAdvanced",
+    "_meta": {
+      "title": "Apply ControlNet (holds head geometry; set cn_strength 0 to disable)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "pixels": ["2", 0],
+      "vae": ["1", 2]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "16": {
+    "inputs": {
+      "samples": ["15", 0],
+      "mask": ["5", 0]
+    },
+    "class_type": "SetLatentNoiseMask",
+    "_meta": {
+      "title": "Set Latent Noise Mask (denoise only inside the mask)"
+    }
+  },
+  "17": {
+    "inputs": {
+      "seed": "PARAM_INT_SEED",
+      "steps": "PARAM_INT_STEPS",
+      "cfg": "PARAM_FLOAT_CFG",
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": "PARAM_FLOAT_STRENGTH",
+      "model": ["9", 0],
+      "positive": ["14", 0],
+      "negative": ["14", 1],
+      "latent_image": ["16", 0]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "18": {
+    "inputs": {
+      "samples": ["17", 0],
+      "vae": ["1", 2]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "19": {
+    "inputs": {
+      "destination": ["2", 0],
+      "source": ["18", 0],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": ["5", 0]
+    },
+    "class_type": "ImageCompositeMasked",
+    "_meta": {
+      "title": "Composite back (guarantees pixels outside the mask are untouched)"
+    }
+  },
+  "20": {
+    "inputs": {
+      "filename_prefix": "PARAM_FILENAME_PREFIX",
+      "images": ["19", 0]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  }
+}

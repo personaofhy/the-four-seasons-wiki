@@ -1,0 +1,9 @@
+{
+  "name": "Depth map (MiDaS)",
+  "description": "Turns a source image into a depth map for ControlNet depth conditioning. No checkpoint or sampler is involved - this is a pure preprocessing graph, so there is no seed, prompt or size parameter and the output keeps the source image's aspect. The source image must already exist in ComfyUI's input folder (push it with scripts/upload_ref.py). filename_prefix may contain a subfolder, e.g. 'depth-maps/kaede_tpose' writes to <ComfyUI output>/depth-maps/; pull the result into the vault with scripts/fetch_output.py. midas_a is the field-of-view term (default 6.28); raise bg_threshold to push more of the background to black and isolate the subject. MiDaS is used rather than Depth Anything V2 because the V2 weights are not on the ComfyUI machine and its disk is full - see the rules note. Required overrides: source_image, midas_a, bg_threshold, resolution, filename_prefix.",
+  "constraints": {
+    "midas_a": { "min": 0.0, "max": 15.7 },
+    "bg_threshold": { "min": 0.0, "max": 1.0 },
+    "resolution": { "min": 64, "max": 2048 }
+  }
+}

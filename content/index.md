@@ -23,7 +23,7 @@ title: The Four Seasons Wiki
   * [[rules/comfyui-image-generation-reflection|ComfyUI画像生成・キャラ同一性反省ノート]]
 
 * 👤 **[[characters/index|登場人物・キャラクター一覧]]**
-  * [[characters/character-matrix|📋 4人物設定比較＆マトリクスシート]]
+  * 📋 横断比較は `characters.base`（frontmatterから自動生成）
   * [[characters/tanabe-momoka|田邊 桃香]] (春・再び春 / 経糸)
   * [[characters/kaneshiro-himawari|金城 向日葵]] (夏)
   * [[characters/toyama-kaede|遠山 楓]] (秋)

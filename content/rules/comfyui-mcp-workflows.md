@@ -122,6 +122,69 @@ python3 scripts/upload_ref.py content/assets/base-ai/kaede_face_front_base.jpg
 
 ---
 
+## 🗺️ ワークフロー④：`depth_map`（深度マップ生成）
+
+指定した画像から ControlNet Depth 用の深度マップを作り、**任意のサブフォルダへ保存**します。チェックポイントもサンプラーも通らない純粋な前処理グラフなので、seed・prompt・サイズ指定はありません（出力は元画像のアスペクトを保持）。
+
+```bash
+# 1. 元画像を ComfyUI input へ送る
+python3 scripts/upload_ref.py content/assets/base-ai/kaede_body_tpose_base.jpg
+
+# 2. run_workflow で depth_map を実行（filename_prefix にサブフォルダを含められる）
+#    例: "depth-maps/kaede_body_tpose" → <ComfyUI output>/depth-maps/ に保存
+
+# 3. 結果を Vault へ取り込む
+python3 scripts/fetch_output.py kaede_body_tpose_00001_.png \
+  --subfolder depth-maps --dest content/assets/depth-maps \
+  --as kaede_body_tpose_depth.png
+```
+
+| パラメーター | 推奨値 | 備考 |
+| :--- | :--- | :--- |
+| `source_image` | – | ComfyUI input 内のファイル名 |
+| `midas_a` | 6.28 | 画角に相当する項 |
+| `bg_threshold` | 0.1 | 上げると背景がより黒く落ち、被写体が分離される |
+| `resolution` | 1024 | 出力の長辺基準 |
+| `filename_prefix` | `depth-maps/xxx` | **スラッシュでサブフォルダ指定可** |
+
+> [!warning] Depth Anything V2 は使えない
+> 精度では DepthAnything V2 が上ですが、**ComfyUIマシンのディスクが満杯**で初回のモデル自動ダウンロードが `[Errno 28] No space left on device` で失敗します。
+> ディスクを空ければ `DepthAnythingV2Preprocessor` に差し替えられます（`ckpt_name` は `depth_anything_v2_vitl.pth`）。
+>
+> **MiDaS と Zoe は既にモデルがキャッシュ済み**で動作します。両者を比較した結果、Zoe は腕の背後に黒い塊が出て身体も白飛び気味だったため、シルエットが締まり背景が滑らかな **MiDaS を採用**しました。
+
+---
+
+## 🎭 ワークフロー⑤：`face_swap_masked`（顔だけ差し替え）
+
+既存画像の**マスクした領域だけ**を、指定キャラの同一性で描き直します。「顔だけ変える」ために3段構えになっています。
+
+| 仕組み | 役割 |
+| :--- | :--- |
+| IPAdapterの `attn_mask` | 同一性の効果をマスク内に限定（マスクなしだと画風・照明・背景まで参照元に寄る） |
+| `SetLatentNoiseMask` | マスク内だけをノイズ除去 |
+| `ImageCompositeMasked` | 元画像に合成し、**マスク外のピクセルを完全保証** |
+
+### 検証で確定した設定値
+
+| パラメーター | 値 | 理由 |
+| :--- | :--- | :--- |
+| `mask_blur` / `mask_sigma` | **31 / 8** | 継ぎ目を消すために必須 |
+| `strength` | **0.5** | 0.75だと元の顔の角度を無視して正面を向く |
+| `cn_strength` | **0.6** | depthで頭部の位置を保持 |
+| `mask_expand` | 6 | |
+| `ip_weight` | 0.9 | |
+
+> [!warning] `FeatherMask` は使えない
+> Core の `FeatherMask` は **マスク画像の外周（画像の縁）** をフェードさせるノードで、画面中央に描いた楕円などの**形状の輪郭はぼかしません**。これを使った初回テストでは、額に三角形の継ぎ目、頬に縦の切れ目がはっきり残りました。
+> 正しくは `MaskToImage → ImageBlur → ImageToMask` で輪郭をぼかします。本ワークフローはこの構成です。
+
+> [!note] マスクは手作りが必要
+> このComfyUIには **顔の自動検出がありません**（Impact Pack・SAM ともに未導入）。マスクは元画像と同サイズのPNG（塗り替える部分が白、他が黒）を用意してアップロードします。**顔だけでなく生え際まで含めた広めの範囲**を取ると馴染みます。
+> 自動化するなら Impact Pack か SAM のインストールが必要です。
+
+---
+
 ## 👗 衣装リファレンスを使う
 
 服装はプロンプトだけでは安定しません（後述）。衣装単体の参照画像を作って IP-Adapter に通すのが確実です。楓の紺碧ワンピースは作成済み：

@@ -1,0 +1,16 @@
+{
+  "name": "Masked face swap (IP-Adapter attn_mask + depth ControlNet)",
+  "description": "Replaces ONLY the masked region of an existing image with a given character's identity. Three things make it face-only: IPAdapterAdvanced receives the mask as attn_mask so the identity does not bleed into the background, SetLatentNoiseMask denoises only inside the mask, and ImageCompositeMasked composites the result back over the original so pixels outside the mask are byte-identical. Plain IP-Adapter without a mask pulls style, lighting and background from the reference too - that is why the mask is not optional. There is no automatic face detection on this ComfyUI (no Impact Pack), so the mask must be supplied as an image: white where you want repainting, black elsewhere, same dimensions as the base image, uploaded to ComfyUI input. mask_channel picks which channel carries it ('red' for a plain black/white PNG, 'alpha' for transparency). The mask contour is softened with MaskToImage -> ImageBlur -> ImageToMask, NOT with FeatherMask: core FeatherMask only fades the mask's outer image borders and leaves a hard, visible seam around a shape drawn in the middle. mask_blur 15-31 with sigma 5-10 gives a blend wide enough to hide the join. strength is the denoise inside the mask: 0.4-0.55 keeps the original head angle, 0.7+ redraws the face freely and will swing the head to face front. Set cn_strength to 0 to disable the depth ControlNet (a depth_image must still be passed - reuse the base image). Required overrides: prompt, ckpt, base_image, face_mask, mask_channel, mask_expand, mask_blur, mask_sigma, face_ref, ip_weight, depth_image, cn_strength, strength, filename_prefix.",
+  "constraints": {
+    "ckpt": { "enum": ["Counterfeit-V3.0_fix_fp16.safetensors", "dreamshaper_8.safetensors"] },
+    "mask_channel": { "enum": ["alpha", "red", "green", "blue"] },
+    "mask_expand": { "min": -64, "max": 128 },
+    "mask_blur": { "min": 1, "max": 31 },
+    "mask_sigma": { "min": 0.1, "max": 10.0 },
+    "ip_weight": { "min": 0.0, "max": 2.0 },
+    "cn_strength": { "min": 0.0, "max": 2.0 },
+    "strength": { "min": 0.05, "max": 1.0 },
+    "steps": { "min": 1, "max": 80 },
+    "cfg": { "min": 1.0, "max": 20.0 }
+  }
+}

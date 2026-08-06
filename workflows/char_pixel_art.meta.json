@@ -1,0 +1,46 @@
+{
+  "name": "char_pixel_art",
+  "description": "Converts input character renders/photos into crisp 16-bit retro game pixel art sprites using Pixel-Art LoRA.",
+  "parameters": {
+    "PARAM_CKPT": {
+      "type": "string",
+      "default": "Counterfeit-V3.0_fix_fp16.safetensors"
+    },
+    "PARAM_INPUT_IMAGE": {
+      "type": "string",
+      "description": "ComfyUI input image filename"
+    },
+    "PARAM_FLOAT_LORA_STRENGTH": {
+      "type": "float",
+      "default": 1.0
+    },
+    "PARAM_PROMPT": {
+      "type": "string",
+      "default": "masterpiece, best quality, pixel art, 16-bit retro game sprite, pixelated, 32-color palette"
+    },
+    "PARAM_NEGATIVE_PROMPT": {
+      "type": "string",
+      "default": "blurry, smooth, photorealistic, 3d render, vector art, noise"
+    },
+    "PARAM_FLOAT_DENOISE": {
+      "type": "float",
+      "default": 0.45
+    },
+    "PARAM_INT_SEED": {
+      "type": "int",
+      "default": 55443322
+    },
+    "PARAM_INT_STEPS": {
+      "type": "int",
+      "default": 25
+    },
+    "PARAM_FLOAT_CFG": {
+      "type": "float",
+      "default": 7.0
+    },
+    "PARAM_FILENAME_PREFIX": {
+      "type": "string",
+      "default": "kaede_pixel_art_result"
+    }
+  }
+}
