@@ -50,6 +50,16 @@ properties:
     displayName: 特技・趣味
   quirk:
     displayName: 癖
+  animal_motif:
+    displayName: 動物モチーフ
+  face_model:
+    displayName: 顔のモデル
+  color_main:
+    displayName: メインカラー
+  color_sub:
+    displayName: サブカラー
+  color_accent:
+    displayName: アクセントカラー
 views:
   - type: table
     name: プロフィール
@@ -92,6 +102,18 @@ views:
       - aesthetic
       - agency
       - symbol_item
+    sort:
+      - property: featured_chapter
+        direction: ASC
+  - type: table
+    name: モチーフ・色
+    order:
+      - name_ja
+      - animal_motif
+      - face_model
+      - color_main
+      - color_sub
+      - color_accent
     sort:
       - property: featured_chapter
         direction: ASC
