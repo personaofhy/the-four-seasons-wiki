@@ -1,0 +1,183 @@
+{
+  "1": {
+    "inputs": {
+      "ckpt_name": "PARAM_CKPT"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint (SD1.5 only: anime=Counterfeit-V3.0 / real=dreamshaper_8)"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "pixel-000020.safetensors",
+      "strength_model": "PARAM_FLOAT_LORA_STRENGTH",
+      "strength_clip": "PARAM_FLOAT_LORA_STRENGTH",
+      "model": ["1", 0],
+      "clip": ["1", 1]
+    },
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Pixel-Art LoRA (set lora_strength 0.0 to disable)"
+    }
+  },
+  "3": {
+    "inputs": {
+      "ipadapter_file": "ip-adapter_sd15.safetensors"
+    },
+    "class_type": "IPAdapterModelLoader",
+    "_meta": {
+      "title": "Load IPAdapter Model"
+    }
+  },
+  "4": {
+    "inputs": {
+      "clip_name": "clip_vision_h.safetensors"
+    },
+    "class_type": "CLIPVisionLoader",
+    "_meta": {
+      "title": "Load CLIP Vision"
+    }
+  },
+  "5": {
+    "inputs": {
+      "image": "PARAM_CHARACTER_REF"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Character Reference (base-ai genga)"
+    }
+  },
+  "6": {
+    "inputs": {
+      "model": ["2", 0],
+      "ipadapter": ["3", 0],
+      "image": ["5", 0],
+      "clip_vision": ["4", 0],
+      "weight": "PARAM_FLOAT_IP_WEIGHT",
+      "weight_type": "linear",
+      "combine_embeds": "concat",
+      "start_at": 0.0,
+      "end_at": 1.0,
+      "embeds_scaling": "V only"
+    },
+    "class_type": "IPAdapterAdvanced",
+    "_meta": {
+      "title": "IPAdapter Advanced (face + style transplant)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "control_net_name": "control_v11p_sd15_canny_fp16.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "Load ControlNet (canny)"
+    }
+  },
+  "8": {
+    "inputs": {
+      "image": "PARAM_POSE_REF"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Pose Reference"
+    }
+  },
+  "9": {
+    "inputs": {
+      "image": ["8", 0],
+      "low_threshold": 100,
+      "high_threshold": 200,
+      "resolution": 512
+    },
+    "class_type": "CannyEdgePreprocessor",
+    "_meta": {
+      "title": "Canny Edge (pose extraction)"
+    }
+  },
+  "10": {
+    "inputs": {
+      "text": "PARAM_PROMPT",
+      "clip": ["2", 1]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive Prompt"
+    }
+  },
+  "11": {
+    "inputs": {
+      "text": "PARAM_NEGATIVE_PROMPT",
+      "clip": ["2", 1]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative Prompt"
+    }
+  },
+  "12": {
+    "inputs": {
+      "positive": ["10", 0],
+      "negative": ["11", 0],
+      "control_net": ["7", 0],
+      "image": ["9", 0],
+      "strength": "PARAM_FLOAT_CN_STRENGTH",
+      "start_percent": 0.0,
+      "end_percent": 0.85
+    },
+    "class_type": "ControlNetApplyAdvanced",
+    "_meta": {
+      "title": "Apply ControlNet (pose lock)"
+    }
+  },
+  "13": {
+    "inputs": {
+      "width": "PARAM_INT_WIDTH",
+      "height": "PARAM_INT_HEIGHT",
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "14": {
+    "inputs": {
+      "seed": "PARAM_INT_SEED",
+      "steps": "PARAM_INT_STEPS",
+      "cfg": "PARAM_FLOAT_CFG",
+      "sampler_name": "euler_ancestral",
+      "scheduler": "karras",
+      "denoise": 1.0,
+      "model": ["6", 0],
+      "positive": ["12", 0],
+      "negative": ["12", 1],
+      "latent_image": ["13", 0]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "15": {
+    "inputs": {
+      "samples": ["14", 0],
+      "vae": ["1", 2]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "16": {
+    "inputs": {
+      "filename_prefix": "PARAM_FILENAME_PREFIX",
+      "images": ["15", 0]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  }
+}

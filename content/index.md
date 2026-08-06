@@ -15,12 +15,15 @@ title: The Four Seasons Wiki
 
 ## 🧭 メインナビゲーション
 
-* 📜 **[執筆ガイドライン・ルール](file:///Users/ivix/Library/Mobile%20Documents/com~apple~CloudDocs/2026/***/the-four-seasons-wiki/content/rules/style-guide.md)**
+* 📜 **[執筆ガイドライン・ルール](file:///Users/ivix/Desktop/the-four-seasons-wiki/content/rules/style-guide.md)**
   * [[rules/style-guide|執筆スタイルガイド＆作品定義]]
   * [[rules/triad-structure|トライアド構造と各章の役割]]
   * [[rules/momoka-warp-engine|経糸（田邊桃香）システムと感情同期ルール]]
+  * [[rules/color-palettes|全16色・季節別限定カラーパレット規定]]
+  * [[rules/comfyui-image-generation-reflection|ComfyUI画像生成・キャラ同一性反省ノート]]
 
 * 👤 **[[characters/index|登場人物・キャラクター一覧]]**
+  * [[characters/character-matrix|📋 4人物設定比較＆マトリクスシート]]
   * [[characters/tanabe-momoka|田邊 桃香]] (春・再び春 / 経糸)
   * [[characters/kaneshiro-himawari|金城 向日葵]] (夏)
   * [[characters/toyama-kaede|遠山 楓]] (秋)
@@ -42,3 +45,4 @@ AIに執筆を指示する際は、対象章に合わせて以下のコンテキ
 * **全体トーンの指示**: `content/rules/style-guide.md`
 * **展開構造の指示**: `content/rules/triad-structure.md`
 * **桃香のインサート執筆時**: `content/rules/momoka-warp-engine.md`
+* **色調・視覚制約の指示**: `content/rules/color-palettes.md`

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "comfyui": {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:9000/mcp",
+      "env": {
+        "COMFYUI_URL": "http://192.168.40.23:8188",
+        "NO_PROXY": "*"
+      }
+    }
+  }
+}

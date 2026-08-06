@@ -1,0 +1,10 @@
+{
+  "name": "img2img refine (keep composition, add detail)",
+  "description": "Re-runs an already-good generation to paint in details that txt2img will not render on its own - mud, wetness, torn fabric, runs in stockings, stains. Keeps the composition of the init image. 'strength' is the denoise amount: 0.3-0.4 touches up texture only, 0.45-0.55 repaints surfaces while holding the pose, above 0.65 the composition drifts. The init image must already exist in ComfyUI's input folder (push it with scripts/upload_ref.py). Output size follows the init image; there is no width/height parameter. Required overrides: prompt, ckpt, init_image, strength, filename_prefix (plus negative_prompt in practice - if omitted it falls back to the weak global default 'text, watermark').",
+  "constraints": {
+    "ckpt": { "enum": ["Counterfeit-V3.0_fix_fp16.safetensors", "dreamshaper_8.safetensors"] },
+    "strength": { "min": 0.05, "max": 1.0 },
+    "steps": { "min": 1, "max": 80 },
+    "cfg": { "min": 1.0, "max": 20.0 }
+  }
+}
