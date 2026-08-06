@@ -132,11 +132,11 @@ tags: [character, season/summer]
 
 | 立ち姿 | 大赤面 | 羞恥の限界 |
 | :---: | :---: | :---: |
-| ![立ち姿](../assets/strict-16colors/himawari_standalone_strict_16colors.png) | ![大赤面](../assets/strict-16colors/himawari_expr1_strict_16colors.png) | ![限界と涙](../assets/strict-16colors/himawari_expr2_strict_16colors.png) |
+| ![立ち姿](../assets/characters/himawari/sprite/himawari_sprite_standalone_16c.png) | ![大赤面](../assets/characters/himawari/expr/himawari_expr_anxiety_16c.png) | ![限界と涙](../assets/characters/himawari/expr/himawari_expr_collapse_16c.png) |
 
 | 象徴アイテム | ポーズ参考 | 情感参考 |
 | :---: | :---: | :---: |
-| ![象徴アイテム](../assets/strict-16colors/himawari_item_strict_16colors.png) | ![秘部を隠す手](../assets/strict-16colors/himawari_pose_secret_hand_strict_16colors.png) | ![大赤面](../assets/strict-16colors/himawari_emotion_blush_strict_16colors.png) |
+| ![象徴アイテム](../assets/characters/himawari/item/himawari_item_16c.png) | ![秘部を隠す手](../assets/characters/himawari/pose/himawari_pose_secret_hand_16c.png) | ![大赤面](../assets/characters/himawari/expr/himawari_expr_blush_16c.png) |
 | 机の上の裸足と溢れる雫 | 防衛的に身を竦めるポーズ | 耳から首筋への強烈な羞恥 |
 
 `himawari_emotion_blush_base.jpg` は**全キャラ共通のポーズ参照**として、ControlNetで俯き・赤面の構図を固定する用途に使われている。

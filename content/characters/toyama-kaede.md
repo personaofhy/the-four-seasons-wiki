@@ -161,7 +161,7 @@ tags: [character, season/autumn]
 
 | 決定版 正面顔 | 統合デザインシート（3-in-1） |
 | :---: | :---: |
-| ![顔・決定版](../assets/base-ai/kaede_face_front_base.jpg) | ![統合シート](../assets/base-ai/kaede_unified_design_sheet.jpg) |
+| ![顔・決定版](../assets/characters/kaede/face/kaede_face_front_base.jpg) | ![統合シート](../assets/characters/kaede/kaede_sheet_unified.jpg) |
 
 検討バリエーション（アーカイブ）：`kaede_face_cropped_base` / `kaede_face_autumn_b・c` / `kaede_face_c1〜c3` / `kaede_face_konishi_a〜c` / `kaede_face_var_a〜c`
 
@@ -169,7 +169,7 @@ tags: [character, season/autumn]
 
 | Tポーズ 正面 | Tポーズ 背面 | 深度マップ |
 | :---: | :---: | :---: |
-| ![素体・正面](../assets/base-ai/kaede_body_tpose_base.jpg) | ![素体・背面](../assets/base-ai/kaede_body_tpose_back_base.jpg) | ![深度マップ](../assets/depth-maps/kaede_body_tpose_depth.png) |
+| ![素体・正面](../assets/characters/kaede/body/kaede_body_tpose_base.jpg) | ![素体・背面](../assets/characters/kaede/body/kaede_body_tpose_back_base.jpg) | ![深度マップ](../assets/characters/kaede/body/kaede_body_tpose_depth.png) |
 
 その他：`kaede_fullbody_nude_perfect.jpg`（決定版）／`kaede_fullbody_nude_base.jpg`／`kaede_fullbody_nude_comfyui.png`
 
@@ -177,13 +177,13 @@ tags: [character, season/autumn]
 
 | ワンピース単体（**推奨参照**） | 着用状態（原典クロップ） | 下着セット |
 | :---: | :---: | :---: |
-| ![衣装単体](../assets/references/kaede_dress_navy_ref.png) | ![着用状態](../assets/references/kaede_dress_navy_worn_ref.png) | ![下着](../assets/references/kaede_lingerie_lavender_ref.png) |
+| ![衣装単体](../assets/characters/kaede/outfit/kaede_outfit_dress_ref.png) | ![着用状態](../assets/characters/kaede/outfit/kaede_outfit_dress_worn_ref.png) | ![下着](../assets/characters/kaede/outfit/kaede_outfit_lingerie_ref.png) |
 
 いずれも**顔を含まない**ため、キャラ生成時に別人の顔が混入しない。全て ComfyUI の input にアップロード済み。
 
 ### ドット絵
 
-![立ち姿](../assets/strict-16colors/kaede_fullbody_strict_16colors.png)
+![立ち姿](../assets/characters/kaede/sprite/kaede_sprite_fullbody_16c.png)
 
 ---
 

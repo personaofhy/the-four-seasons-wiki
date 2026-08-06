@@ -81,7 +81,7 @@ bash scripts/sync_workflows.sh
 `LoadImage` は ComfyUI 側の input ディレクトリしか見ません。MCPにアップロード機能はないため、新規の原画・ポーズ参照は先に転送します。
 
 ```bash
-python3 scripts/upload_ref.py content/assets/base-ai/kaede_face_front_base.jpg
+python3 scripts/upload_ref.py content/assets/characters/kaede/face/kaede_face_front_base.jpg
 ```
 
 ---
@@ -128,7 +128,7 @@ python3 scripts/upload_ref.py content/assets/base-ai/kaede_face_front_base.jpg
 
 ```bash
 # 1. 元画像を ComfyUI input へ送る
-python3 scripts/upload_ref.py content/assets/base-ai/kaede_body_tpose_base.jpg
+python3 scripts/upload_ref.py content/assets/characters/kaede/body/kaede_body_tpose_base.jpg
 
 # 2. run_workflow で depth_map を実行（filename_prefix にサブフォルダを含められる）
 #    例: "depth-maps/kaede_body_tpose" → <ComfyUI output>/depth-maps/ に保存
@@ -191,8 +191,8 @@ python3 scripts/fetch_output.py kaede_body_tpose_00001_.png \
 
 | ファイル | 用途 |
 | :--- | :--- |
-| `content/assets/references/kaede_dress_navy_ref.png` | 衣装単体（顔なし）。**推奨** |
-| `content/assets/references/kaede_dress_navy_worn_ref.png` | 着用イメージボードからの原典クロップ |
+| `content/assets/characters/kaede/outfit/kaede_outfit_dress_ref.png` | 衣装単体（顔なし）。**推奨** |
+| `content/assets/characters/kaede/outfit/kaede_outfit_dress_worn_ref.png` | 着用イメージボードからの原典クロップ |
 
 作り方：着用写真から衣装部分を切り出す → それを `character_ref` にして `ip_weight: 0.55` 前後で商品写真プロンプトを流す → 出力から頭部を切り落とす。
 
@@ -206,7 +206,7 @@ python3 scripts/fetch_output.py kaede_body_tpose_00001_.png \
 * **ControlNetは参照画像の構図をそのまま強制する。** クローズアップ顔の参照（`himawari_emotion_blush_base.jpg`）を `cn_strength: 0.7` で使うと、出力も極端なクローズアップになり構図が破綻した。バストアップが欲しい場合はバストアップの参照を使うか、`cn_strength` を 0.3–0.4 まで下げる。
 * **チェックポイントが画風を決める。** `Counterfeit-V3.0` はアニメモデルのため、リアル系の確定素体（`kaede_body_tpose_base.jpg` のようなセミリアル3Dレンダ調）に寄せたい場合は必ず `dreamshaper_8.safetensors` を指定する。プロンプトに `photorealistic` と書いてもモデルの画風は覆せない。
 * **服装の細部はプロンプトでは制御しきれない。** 楓の紺ワンピースでは、スカートのスリット・ストッキングの色・ベルトの色が繰り返し破綻した。否定プロンプトを盛るほど衣装全体が崩壊する（袖だけ別色になる等）ので、**衣装参照画像を使うこと**。
-* 中間生成物は黄金ルール③に従い `content/assets/intermediates/` に保存する。
+* 中間生成物は黄金ルール③に従い `content/assets/_scratch/` に保存する。
 
 ---
 

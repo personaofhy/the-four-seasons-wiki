@@ -138,10 +138,10 @@ tags: [character, season/spring]
 
 | 抑圧 | 崩壊 | 象徴アイテム |
 | :---: | :---: | :---: |
-| ![抑圧](../assets/strict-16colors/momoka_expr1_strict_16colors.png) | ![崩壊](../assets/strict-16colors/momoka_expr2_strict_16colors.png) | ![象徴アイテム](../assets/strict-16colors/momoka_item_strict_16colors.png) |
+| ![抑圧](../assets/characters/momoka/expr/momoka_expr_anxiety_16c.png) | ![崩壊](../assets/characters/momoka/expr/momoka_expr_collapse_16c.png) | ![象徴アイテム](../assets/characters/momoka/item/momoka_item_16c.png) |
 | 会議室で唇を噛み締め耐える | 決壊直後、瞳から光が消え耳まで赤く放心 | 木製ハンガーの濡れた薄緑ショーツとオリーブスーツ |
 
-**その他**：`momoka_fullbody_strict_16colors.png`（立ち姿）／`momoka_emotion_blush_strict_16colors.png`（大赤面）／原画は `content/assets/base-ai/momoka_*`
+**その他**：`momoka_sprite_fullbody_16c.png`（立ち姿）／`momoka_expr_blush_16c.png`（大赤面）。原画は `characters/momoka/` 配下の各フォルダ
 
 ---
 

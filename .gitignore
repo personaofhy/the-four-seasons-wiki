@@ -11,3 +11,6 @@ replit.nix
 .quartz/
 quartz/cli/tui/dist/
 .turbo/
+
+# 中間生成物（採用したものだけ characters/ 配下へ昇格させる）
+content/assets/_scratch/
