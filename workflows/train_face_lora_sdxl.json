@@ -1,0 +1,58 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": { "ckpt_name": "PARAM_CKPT" }
+  },
+  "2": {
+    "class_type": "LoadImageDataSetFromFolder",
+    "inputs": { "folder": "PARAM_DATASET_FOLDER" }
+  },
+  "3": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": ["2", 0],
+      "upscale_method": "lanczos",
+      "width": "PARAM_INT_TRAIN_WIDTH",
+      "height": "PARAM_INT_TRAIN_HEIGHT",
+      "crop": "center"
+    }
+  },
+  "4": {
+    "class_type": "VAEEncode",
+    "inputs": { "pixels": ["3", 0], "vae": ["1", 2] }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "inputs": { "text": "PARAM_TRIGGER", "clip": ["1", 1] }
+  },
+  "6": {
+    "class_type": "TrainLoraNode",
+    "inputs": {
+      "model": ["1", 0],
+      "latents": ["4", 0],
+      "positive": ["5", 0],
+      "batch_size": "PARAM_INT_BATCH_SIZE",
+      "grad_accumulation_steps": "PARAM_INT_GRAD_ACCUM",
+      "steps": "PARAM_INT_STEPS",
+      "learning_rate": "PARAM_FLOAT_LEARNING_RATE",
+      "rank": "PARAM_INT_RANK",
+      "optimizer": "AdamW",
+      "loss_function": "MSE",
+      "seed": "PARAM_INT_SEED",
+      "training_dtype": "bf16",
+      "lora_dtype": "bf16",
+      "algorithm": "LoRA",
+      "gradient_checkpointing": true,
+      "existing_lora": "[None]",
+      "bucket_mode": false
+    }
+  },
+  "7": {
+    "class_type": "SaveLoRA",
+    "inputs": {
+      "lora": ["6", 1],
+      "prefix": "PARAM_LORA_PREFIX",
+      "steps": ["6", 3]
+    }
+  }
+}
