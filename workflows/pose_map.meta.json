@@ -1,0 +1,9 @@
+{
+  "name": "Pose map (DWPose skeleton)",
+  "description": "Turns a source image into an OpenPose skeleton map for ControlNet, mirroring 'depth_map' and 'canny_map'. Uses DWPose, which is more reliable than the older OpenposePreprocessor on back views and partially occluded limbs. WHY POSE AND NOT DEPTH: a depth map encodes the source's CLOTHING SILHOUETTE as well as the pose, so borrowing a composition from a reference in shorts forces the output into shorts too. The skeleton carries the pose and nothing else, which is what you want when the character has a fixed canonical outfit. The trade-off is that a skeleton conveys camera angle only weakly, through foreshortening - if a strong low or high angle does not survive, layer a depth pass as a second ControlNet rather than reaching for a higher strength. No checkpoint or sampler is involved, so there is no seed, prompt or size parameter, and the output keeps the source image's aspect. The source image must already exist in ComfyUI's input folder (push it with scripts/upload_ref.py). filename_prefix may contain a subfolder, e.g. 'pose-maps/kaede_toilet'; pull the result into the vault with scripts/fetch_output.py. Feed the result to 'char_ipadapter_controlnet_sdxl' with control_type 'openpose'. Set detect_face to disable when the reference's face is turned away - a spurious face skeleton drags the head around. Only source_image and filename_prefix have to be passed.",
+  "defaults": {
+    "detect_hand": "enable",
+    "detect_face": "disable",
+    "resolution": 1024
+  }
+}

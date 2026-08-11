@@ -2,11 +2,38 @@
   "name": "Character IP-Adapter dual reference (face + body)",
   "description": "Feeds TWO confirmed design references into one IP-Adapter via ImageBatch: the decided front face and the T-pose body base. Use this for full-body design sheets, where the face reference alone biases the composition toward a portrait and the T-pose reference alone cannot drive ControlNet (its head is cropped off). combine_embeds is 'concat', sampler dpmpp_2m/karras. SD1.5 only: ckpt 'dreamshaper_8.safetensors' for the semi-realistic 3D-render look, 'Counterfeit-V3.0_fix_fp16.safetensors' for anime. Required overrides: prompt, ckpt, face_ref, body_ref, ip_weight, filename_prefix (plus negative_prompt in practice - if omitted it falls back to the weak global default 'text, watermark').",
   "constraints": {
-    "ckpt": { "enum": ["Counterfeit-V3.0_fix_fp16.safetensors", "dreamshaper_8.safetensors"] },
-    "ip_weight": { "min": 0.0, "max": 2.0 },
-    "steps": { "min": 1, "max": 80 },
-    "cfg": { "min": 1.0, "max": 20.0 },
-    "width": { "min": 256, "max": 1536 },
-    "height": { "min": 256, "max": 1536 }
+    "ckpt": {
+      "enum": [
+        "Counterfeit-V3.0_fix_fp16.safetensors",
+        "dreamshaper_8.safetensors"
+      ]
+    },
+    "ip_weight": {
+      "min": 0.0,
+      "max": 2.0
+    },
+    "steps": {
+      "min": 1,
+      "max": 80
+    },
+    "cfg": {
+      "min": 1.0,
+      "max": 20.0
+    },
+    "width": {
+      "min": 256,
+      "max": 1536
+    },
+    "height": {
+      "min": 256,
+      "max": 1536
+    }
+  },
+  "defaults": {
+    "width": 512,
+    "height": 768,
+    "steps": 25,
+    "cfg": 7.0,
+    "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing limbs, extra limbs, cropped, text, watermark, signature, jpeg artifacts, blurry"
   }
 }

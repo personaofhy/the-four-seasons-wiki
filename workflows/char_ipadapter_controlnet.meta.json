@@ -2,13 +2,46 @@
   "name": "Character IP-Adapter + ControlNet (identity + pose lock)",
   "description": "Full golden-rule pipeline for THE FOUR SEASONS: IP-Adapter locks face/art style to a base-ai reference, Canny ControlNet locks pose/body proportions to a second reference, optional pixel-art LoRA. SD1.5 only: ckpt 'Counterfeit-V3.0_fix_fp16.safetensors' for anime/pixel work, 'dreamshaper_8.safetensors' for the semi-realistic 3D-render look of the confirmed design sheets. Sampler euler_ancestral/karras, ControlNet end_percent 0.85, canny thresholds 100/200. Required overrides: prompt, ckpt, character_ref, pose_ref, ip_weight, cn_strength, lora_strength, filename_prefix (plus negative_prompt in practice - if omitted it falls back to the weak global default 'text, watermark'). Set lora_strength 0.0 for non-pixel-art output.",
   "constraints": {
-    "ckpt": { "enum": ["Counterfeit-V3.0_fix_fp16.safetensors", "dreamshaper_8.safetensors"] },
-    "ip_weight": { "min": 0.0, "max": 2.0 },
-    "cn_strength": { "min": 0.0, "max": 2.0 },
-    "lora_strength": { "min": 0.0, "max": 1.5 },
-    "steps": { "min": 1, "max": 80 },
-    "cfg": { "min": 1.0, "max": 20.0 },
-    "width": { "min": 256, "max": 1536 },
-    "height": { "min": 256, "max": 1536 }
+    "ckpt": {
+      "enum": [
+        "Counterfeit-V3.0_fix_fp16.safetensors",
+        "dreamshaper_8.safetensors"
+      ]
+    },
+    "ip_weight": {
+      "min": 0.0,
+      "max": 2.0
+    },
+    "cn_strength": {
+      "min": 0.0,
+      "max": 2.0
+    },
+    "lora_strength": {
+      "min": 0.0,
+      "max": 1.5
+    },
+    "steps": {
+      "min": 1,
+      "max": 80
+    },
+    "cfg": {
+      "min": 1.0,
+      "max": 20.0
+    },
+    "width": {
+      "min": 256,
+      "max": 1536
+    },
+    "height": {
+      "min": 256,
+      "max": 1536
+    }
+  },
+  "defaults": {
+    "width": 512,
+    "height": 768,
+    "steps": 25,
+    "cfg": 7.0,
+    "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing limbs, extra limbs, cropped, text, watermark, signature, jpeg artifacts, blurry"
   }
 }

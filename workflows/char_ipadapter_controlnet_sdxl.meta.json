@@ -1,0 +1,19 @@
+{
+  "name": "Character IP-Adapter + ControlNet SDXL (identity + pose/angle lock)",
+  "description": "THE FOUR SEASONS style-transfer pipeline on SDXL. Takes a photoreal plate from RealVisXL and re-renders it in Speciosa Anime's semi-real illustration style while ControlNet holds the structure. WHY THIS SHAPE: the anime model gets clothing wrong (a v-neck wrap dress comes out a high-neck knit mini, verified repeatedly) while RealVisXL, trained on fashion photography, nails it first try - so the outfit and anatomy are established photoreally, then restyled. ckpt 'speciosaAnime_v15.safetensors' (Pony-based, semi-real illustration) or 'RealVisXL_V5.0_fp16.safetensors' (photoreal). PONY PROMPT CONVENTION: lead with 'score_9, score_8_up, score_7_up, source_anime' - this is not the NoobAI 'masterpiece, best quality' format. CALIBRATED, do not drift: control_type 'tile' with the plate itself as control_image (tile takes the source image, NOT a preprocessed map), cn_strength 0.5 / cn_end 0.7. At 0.85/1.0 the plate is reproduced verbatim and no restyling happens; at 0.35/0.55 the dress mutates into a collared shirt-dress and the pumps become sandals. 0.5/0.7 is the only band where style moves and structure holds. For other control types (openpose / depth / canny) the control_image must be an ALREADY PREPROCESSED map - build it with 'depth_map' or 'canny_map' - and control_type must match it. Use those when the shot needs a camera angle prompt tags cannot reach. ip_weight defaults to 0: IP-Adapter transplants the reference's palette and lighting and wrecks the colour when combined with ControlNet (near-black at ip_end 1.0, magenta at 0.5, both with a yellow-green cast); identity locking on the SDXL path is unresolved. Only control_image, prompt and filename_prefix have to be passed. A LoRA slot sits between the checkpoint and everything downstream. lora_strength defaults to 0.0, which ComfyUI short-circuits before touching the file, so the slot costs nothing until used. For speed set lora_name 'Hyper-SDXL-8steps-CFG-lora.safetensors', lora_strength 1.0 and steps 8 - the CFG-preserving variant, so the usual cfg still applies. Do NOT use 'sdxl_lightning_8step_lora.safetensors' here: it forces cfg near 1.0, which collapses adherence to long outfit descriptions. MEASURED on the RTX 4070 Laptop (8GB VRAM / 15.6GB RAM): 30 steps takes 114s with a cold checkpoint and 72s warm; Hyper-SDXL 8 steps takes 96s on the run that loads the LoRA and 23s once it is cached - 3.1x faster than 30 steps, but only if nothing evicts it. The cost on this machine is loading, not sampling (checkpoint ~42s, LoRA ~72s), so batch every shot that shares a checkpoint and LoRA before switching, and POST /free between phases to reclaim RAM (worth ~3.6GB RAM and 2GB VRAM). Hyper's output is softer - fabric texture goes mushy and metal trim drifts - so use 8 steps to explore and 30 steps for the keeper.",
+  "defaults": {
+    "ckpt": "speciosaAnime_v15.safetensors",
+    "ip_weight": 0,
+    "cn_strength": 0.5,
+    "cn_end": 0.7,
+    "control_type": "tile",
+    "width": 832,
+    "height": 1216,
+    "steps": 30,
+    "cfg": 6.5,
+    "negative_prompt": "score_6, score_5, score_4, source_pony, source_furry, worst quality, low quality, bad anatomy, bad hands, bad feet, missing limbs, extra limbs, fused legs, cropped, out of frame, text, watermark, signature, jpeg artifacts, blurry",
+    "ip_end": 0.5,
+    "lora_name": "Hyper-SDXL-8steps-CFG-lora.safetensors",
+    "lora_strength": 0.0
+  }
+}

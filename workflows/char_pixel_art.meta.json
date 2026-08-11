@@ -42,5 +42,12 @@
       "type": "string",
       "default": "kaede_pixel_art_result"
     }
+  },
+  "defaults": {
+    "width": 512,
+    "height": 768,
+    "steps": 25,
+    "cfg": 7.0,
+    "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing limbs, extra limbs, cropped, text, watermark, signature, jpeg artifacts, blurry"
   }
 }

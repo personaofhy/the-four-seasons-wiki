@@ -1,0 +1,9 @@
+{
+  "name": "Canny map (outline extraction)",
+  "description": "Turns a source image into a Canny edge map for ControlNet conditioning, mirroring the 'depth_map' workflow. No checkpoint or sampler is involved - this is a pure preprocessing graph, so there is no seed, prompt or size parameter, and the output keeps the source image's aspect. The source image must already exist in ComfyUI's input folder (push it with scripts/upload_ref.py). filename_prefix may contain a subfolder, e.g. 'canny-maps/kaede_tpose' writes to <ComfyUI output>/canny-maps/; pull the result into the vault with scripts/fetch_output.py. Feed the result to 'char_ipadapter_controlnet_sdxl' with control_type 'canny/lineart/anime_lineart/mlsd'. Raise low_threshold to drop faint edges, lower it to keep more detail. Only source_image and filename_prefix have to be passed.",
+  "defaults": {
+    "low_threshold": 100,
+    "high_threshold": 200,
+    "resolution": 1024
+  }
+}
