@@ -25,7 +25,7 @@ decision_states:
 
 | 全体イメージ設定シート | 配色パレット | 画像生成タグ（AI Prompts） |
 | :---: | :---: | :--- |
-| ![金城向日葵 全体衣装設定](../../../assets/characters/himawari/sprite/himawari_sprite_fullbody_16c.png)<br>*※スプライト流用中・専用設定シート未作成* | `主色` #FCD57E サンシャインイエロー（シャツ）<br>`副色` #6286A9 デニムブルー（ジーンズ）<br>`挿色` #6E7248 オリーブグリーン（スポーティ下着）**⚠夏パレット未定義** | `18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, vivid yellow long sleeve button-up shirt, casual cotton, top two buttons undone, sleeves rolled up, light wash blue straight denim jeans, full length, white cotton short socks, worn white canvas sneakers with laces, cool summer palette, low contrast, pale bluish skin` |
+| ![金城向日葵 全体衣装設定](../assets/characters/himawari/sprite/himawari_sprite_fullbody_16c.png)<br>*※スプライト流用中・専用設定シート未作成* | `主色` #FCD57E サンシャインイエロー（シャツ）<br>`副色` #6286A9 デニムブルー（ジーンズ）<br>`挿色` #6E7248 オリーブグリーン（スポーティ下着）**⚠夏パレット未定義** | `18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, vivid yellow long sleeve button-up shirt, casual cotton, top two buttons undone, sleeves rolled up, light wash blue straight denim jeans, full length, white cotton short socks, worn white canvas sneakers with laces, cool summer palette, low contrast, pale bluish skin` |
 
 ---
 
@@ -33,10 +33,10 @@ decision_states:
 
 | 部位 | 実物参照イメージ | アイテム名 | 詳細仕様（素材・配色・着こなしルール） |
 | :--- | :---: | :--- | :--- |
-| **👕 トップス** | ![トップス](../../../assets/templates/placeholder_top.jpg) | **鮮やかな黄色の長袖シャツ** | **素材:** カジュアルコットン<br>**配色:** サンシャインイエロー<br>**着方:** **襟元の第一〜第二ボタンを外し、袖を軽やかに捲り上げる**（無防備さと活発さ） |
-| **👖 ボトムス** | ![ボトムス](../../../assets/templates/placeholder_bottom.jpg) | **ライトウォッシュのブルーデニム** | **丈感:** フルレングス・ジーンズ<br>**シルエット:** 動きやすいストレートデニム（170cmメリハリボディ） |
-| **👙 インナー / 下着** | ![下着](../../../assets/templates/placeholder_inner.jpg) | **オリーブグリーンのスポーティセット** | **タイプ:** 陸上セパレート風のスポーティブラ＆ショーツセット<br>**配色:** オリーブグリーン<br>**意味:** 4人中唯一、**機能性だけで下着を選ぶ**。見られる自分を意識しつつ見えない場所には無頓着（柊の「擬態」とは動機が異なる） |
-| **🧦 脚 / 靴** | ![靴](../../../assets/templates/placeholder_shoes.jpg) | **履き込んだ白スニーカー & ショートソックス** | **脚:** 白の普通のコットンショートソックス<br>**靴:** 履き込んだ白のスポーツスニーカー（紐・ソールに微かな生活感）<br>**意味:** **「自分で結んで走る靴」**＝能動的な行動力の象徴 |
+| **👕 トップス** | ![トップス](../assets/templates/placeholder_top.jpg) | **鮮やかな黄色の長袖シャツ** | **素材:** カジュアルコットン<br>**配色:** サンシャインイエロー<br>**着方:** **襟元の第一〜第二ボタンを外し、袖を軽やかに捲り上げる**（無防備さと活発さ） |
+| **👖 ボトムス** | ![ボトムス](../assets/templates/placeholder_bottom.jpg) | **ライトウォッシュのブルーデニム** | **丈感:** フルレングス・ジーンズ<br>**シルエット:** 動きやすいストレートデニム（170cmメリハリボディ） |
+| **👙 インナー / 下着** | ![下着](../assets/templates/placeholder_inner.jpg) | **オリーブグリーンのスポーティセット** | **タイプ:** 陸上セパレート風のスポーティブラ＆ショーツセット<br>**配色:** オリーブグリーン<br>**意味:** 4人中唯一、**機能性だけで下着を選ぶ**。見られる自分を意識しつつ見えない場所には無頓着（柊の「擬態」とは動機が異なる） |
+| **🧦 脚 / 靴** | ![靴](../assets/templates/placeholder_shoes.jpg) | **履き込んだ白スニーカー & ショートソックス** | **脚:** 白の普通のコットンショートソックス<br>**靴:** 履き込んだ白のスポーツスニーカー（紐・ソールに微かな生活感）<br>**意味:** **「自分で結んで走る靴」**＝能動的な行動力の象徴 |
 
 ---
 

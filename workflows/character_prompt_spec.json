@@ -27,7 +27,8 @@
     "forbidden": [
       "real person names (the face_model frontmatter field is an internal casting note, never a prompt token)",
       "pixel art / 16-bit / retro game style tokens (concept dropped)",
-      "chapter-specific breakdown state (put that in a per-scene override, not the base prompt)"
+      "chapter-specific breakdown state (put that in a per-scene override, not the base prompt)",
+      "stage-1 illustration as the IP-Adapter reference for a stage-2 realistic render (style would follow the reference back to illustration)"
     ],
     "expression_assemble": "', '.join([subject, hair, eyes, expression_slots[stage], expression_framing, tone])"
   },
@@ -52,7 +53,9 @@
         "4-anxiety": "brows pulled together, beads of cold sweat on the forehead and temple, lower lip caught between the teeth, eyes fixed forward too hard",
         "5-panic": "deep flush spreading from the earlobes down the neck, eyes brimming and wide, mouth fallen open, brows lifted helplessly",
         "6-acceptance": "light gone from the eyes, unfocused hollow stare, faint resigned smile, face slack, flush fading to pallor"
-      }
+      },
+      "stage1_ref": "momoka_ref_face.png",
+      "stage2_ref": "momoka_real_portrait_opt1.png"
     },
     "kaneshiro-himawari": {
       "season": "summer",
@@ -73,7 +76,9 @@
         "4-anxiety": "brows steeply angled, cold sweat at the hairline, teeth clamped on the lower lip, big eyes darting, breath held",
         "5-panic": "violent circular blush on both cheeks spreading to the collarbone, eyes enormous and streaming, mouth wide open, brows collapsed",
         "6-acceptance": "large eyes emptied of light, staring past the viewer, mouth hanging slightly open, faint bewildered smile, tear tracks drying"
-      }
+      },
+      "stage1_ref": null,
+      "stage2_ref": null
     },
     "toyama-kaede": {
       "season": "autumn",
@@ -94,7 +99,9 @@
         "4-anxiety": "brows drawn hard together, cold sweat running from temple to jaw, lips pressed white, eyes glassy with effort, throat tight",
         "5-panic": "crimson flush flooding the face and neck, wide-set eyes blown open and wet, mouth twisted open, composure shattered",
         "6-acceptance": "eyes dulled and unseeing, head tilted down, mouth softened into a small broken smile, all tension gone from the face"
-      }
+      },
+      "stage1_ref": null,
+      "stage2_ref": null
     },
     "tachibana-hiiragi": {
       "season": "winter",
@@ -115,7 +122,10 @@
         "4-anxiety": "brows tented upward, cold sweat on the pale forehead, lower lip bitten hard, enormous eyes glassy and fixed",
         "5-panic": "stark red flush blazing across the white face and ears, pale grey eyes flooded with tears, mouth open in a small round gasp",
         "6-acceptance": "pale grey eyes gone flat and dull, thousand-yard stare, mouth curved into a small contented childlike smile, face utterly relaxed"
-      }
+      },
+      "stage1_ref": null,
+      "stage2_ref": null,
+      "stage2_constraint": "REQUIRED. Hiiragi is 19 but deliberately designed to read younger (childlike face, soft rounded build, regression to childhood as her theme). Under a photorealistic style that design can produce output reading as a minor. Stage 2 for this character must hold unambiguously adult facial structure and proportions, and any output that does not must be discarded rather than adjusted. Her youthfulness is carried by styling and behaviour, never by making the body or face look like a child's."
     }
   },
   "expression_slot_order": [
@@ -157,6 +167,25 @@
       "ja": "虚脱・完全適応",
       "def": "尊厳の死滅と被支配への安堵",
       "when": "屈服・完全適応の結末"
+    }
+  },
+  "pipeline": {
+    "$comment": "Two stages. Illustration is not a rejected style - it is the specification layer where human and model agree on what is decided. Realistic is the deliverable.",
+    "stage1_illustration": {
+      "purpose": "Fix and agree the features. Exaggerate the readable signs (sweat beads, circular blush, light leaving the eyes) so both a human and a model can confirm what is settled.",
+      "tone_suffix": "clean anime illustration, character design sheet style, flat colours, clear linework, plain background",
+      "checkpoint": "Counterfeit-V3.0_fix_fp16.safetensors",
+      "workflow": "char_ipadapter",
+      "published_as": "仕様画像（wikiに「仕様」として掲載）"
+    },
+    "stage2_realistic": {
+      "purpose": "Final deliverable.",
+      "tone_suffix": "photorealistic, natural skin texture and pores, soft directional lighting, shallow depth of field",
+      "checkpoint": "dreamshaper_8.safetensors",
+      "workflow": "char_ipadapter_controlnet",
+      "structure_from": "Stage 1 output, via canny_map or depth_map into ControlNet. This is what carries the agreed expression and pose across the style change.",
+      "identity_from": "A realistic reference of the same character. IP-Adapter inherits style from its reference, so the stage-2 reference must already be realistic - a stage-1 illustration would drag the output back to illustration.",
+      "published_as": "最終画像"
     }
   }
 }

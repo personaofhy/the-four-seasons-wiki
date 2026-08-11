@@ -31,7 +31,7 @@ tags: [expressions, character/tanabe-momoka, season/春]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。ペルソナを維持した日常の顔を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。ペルソナを維持した日常の顔を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, calm composed expression, straight thin eyebrows level, lips lightly closed, upright dignified gaze, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight
@@ -47,7 +47,7 @@ tags: [expressions, character/tanabe-momoka, season/春]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。魅せる笑顔、または一過性の安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。魅せる笑顔、または一過性の安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, gentle small smile, eyes softening into a slight crease, brows relaxed, warm and teacherly, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight
@@ -63,7 +63,7 @@ tags: [expressions, character/tanabe-momoka, season/春]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。異変や周囲の視線を察知を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。異変や周囲の視線を察知を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, eyes narrowing slightly, brows drawing straighter and lower, lips pressed thin, gaze flicking sideways, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight
@@ -79,7 +79,7 @@ tags: [expressions, character/tanabe-momoka, season/春]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。生理的緊張・破綻の隠蔽を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。生理的緊張・破綻の隠蔽を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, brows pulled together, beads of cold sweat on the forehead and temple, lower lip caught between the teeth, eyes fixed forward too hard, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight
@@ -95,7 +95,7 @@ tags: [expressions, character/tanabe-momoka, season/春]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。破綻の瞬間・激しい羞恥を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。破綻の瞬間・激しい羞恥を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, deep flush spreading from the earlobes down the neck, eyes brimming and wide, mouth fallen open, brows lifted helplessly, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight
@@ -111,7 +111,7 @@ tags: [expressions, character/tanabe-momoka, season/春]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。尊厳の死滅と被支配への安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。尊厳の死滅と被支配への安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, light gone from the eyes, unfocused hollow stare, faint resigned smile, face slack, flush fading to pallor, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight

@@ -31,7 +31,7 @@ tags: [expressions, character/kaneshiro-himawari, season/夏]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。ペルソナを維持した日常の顔を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。ペルソナを維持した日常の顔を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, bright open expression, large round eyes fully visible, thick brows level, mouth in an easy line, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
@@ -47,7 +47,7 @@ tags: [expressions, character/kaneshiro-himawari, season/夏]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。魅せる笑顔、または一過性の安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。魅せる笑顔、または一過性の安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, wide unguarded grin, eyes crinkling almost shut, cheeks lifted, radiant and careless, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
@@ -63,7 +63,7 @@ tags: [expressions, character/kaneshiro-himawari, season/夏]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。異変や周囲の視線を察知を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。異変や周囲の視線を察知を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, round eyes going still, thick brows knitting, smile draining away mid-expression, head tilting back slightly, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
@@ -79,7 +79,7 @@ tags: [expressions, character/kaneshiro-himawari, season/夏]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![抑圧・冷や汗](../../assets/characters/himawari/expr/himawari_expr_anxiety_base.jpg) | 眉が角度を増し、額に冷や汗が浮かぶ。必死に噛み締める唇。 |
+| ![抑圧・冷や汗](../assets/characters/himawari/expr/himawari_expr_anxiety_base.jpg) | 眉が角度を増し、額に冷や汗が浮かぶ。必死に噛み締める唇。 |
 
 ```text
 18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, brows steeply angled, cold sweat at the hairline, teeth clamped on the lower lip, big eyes darting, breath held, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
@@ -95,7 +95,7 @@ tags: [expressions, character/kaneshiro-himawari, season/夏]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![狼狽・大赤面](../../assets/characters/himawari/expr/himawari_expr_blush_base.jpg) | 頬中央に鮮烈な円形の赤面。涙目の瞳、崩れた眉。 |
+| ![狼狽・大赤面](../assets/characters/himawari/expr/himawari_expr_blush_base.jpg) | 頬中央に鮮烈な円形の赤面。涙目の瞳、崩れた眉。 |
 
 ```text
 18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, violent circular blush on both cheeks spreading to the collarbone, eyes enormous and streaming, mouth wide open, brows collapsed, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
@@ -111,7 +111,7 @@ tags: [expressions, character/kaneshiro-himawari, season/夏]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![虚脱・完全適応](../../assets/characters/himawari/expr/himawari_expr_collapse_base.jpg) | 光の消えた大きな瞳。微かな諦念の笑み。 |
+| ![虚脱・完全適応](../assets/characters/himawari/expr/himawari_expr_collapse_base.jpg) | 光の消えた大きな瞳。微かな諦念の笑み。 |
 
 ```text
 18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, large eyes emptied of light, staring past the viewer, mouth hanging slightly open, faint bewildered smile, tear tracks drying, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin

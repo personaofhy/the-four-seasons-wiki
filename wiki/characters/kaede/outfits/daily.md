@@ -27,7 +27,7 @@ decision_states:
 
 | 全体イメージ設定シート | 配色パレット | 画像生成タグ（AI Prompts） |
 | :---: | :---: | :--- |
-| ![遠山楓 全体衣装設定](../../../assets/characters/kaede/outfit/kaede_outfit_dress_worn_ref.png)<br>*(ボード: ![ボード](../../../assets/characters/kaede/outfit/kaede_outfit_board.jpg))* | `主色` #1E283A 紺碧＝ディープネイビー（ワンピース）<br>`副色` #523D2C ダークブラウン（パンプス・革小物）<br>`挿色` #9B8CAE ラベンダー（レース下着）**⚠秋パレット未定義** | `26yo japanese woman, corporate career-track employee, slim long-legged model figure, 165cm, long deep warm brown-black straight hair worn in a low chignon updo, round dark wide-set eyes, slightly drooping, light brown irises, deep navy blue V-neck wrap dress, matte wool, long sleeves, black leather belt with antique silver buckle, midi length flare skirt, falling below the knee, swaying softly, 20-30 denier dark navy pantyhose, dark brown pointed-toe leather pumps, 7-8cm heel, warm autumn palette, medium contrast, fair skin` |
+| ![遠山楓 全体衣装設定](../assets/characters/kaede/outfit/kaede_outfit_dress_worn_ref.png)<br>*(ボード: ![ボード](../assets/characters/kaede/outfit/kaede_outfit_board.jpg))* | `主色` #1E283A 紺碧＝ディープネイビー（ワンピース）<br>`副色` #523D2C ダークブラウン（パンプス・革小物）<br>`挿色` #9B8CAE ラベンダー（レース下着）**⚠秋パレット未定義** | `26yo japanese woman, corporate career-track employee, slim long-legged model figure, 165cm, long deep warm brown-black straight hair worn in a low chignon updo, round dark wide-set eyes, slightly drooping, light brown irises, deep navy blue V-neck wrap dress, matte wool, long sleeves, black leather belt with antique silver buckle, midi length flare skirt, falling below the knee, swaying softly, 20-30 denier dark navy pantyhose, dark brown pointed-toe leather pumps, 7-8cm heel, warm autumn palette, medium contrast, fair skin` |
 
 ---
 
@@ -35,10 +35,10 @@ decision_states:
 
 | 部位 | 実物参照イメージ | アイテム名 | 詳細仕様（素材・配色・着こなしルール） |
 | :--- | :---: | :--- | :--- |
-| **👗 ワンピース** | ![ワンピース](../../../assets/characters/kaede/outfit/kaede_outfit_dress_ref.png) | **紺碧のVネック・ラップワンピース** | **素材:** マットなウール（光沢なし・柔らかい質感）<br>**配色:** 紺碧（ディープネイビー）<br>**スタイル:** 長袖、ミディ丈フレアスカート<br>**ベルト:** 黒レザー・アンティークシルバーバックル |
-| **👖 ボトムス / 丈感** | ![ボトムス](../../../assets/templates/placeholder_bottom.jpg) | **ミディ丈フレアスカート & ウエストライン** | **丈感:** 膝下を覆うエレガントなミディ丈<br>**シルエット:** 動作に合わせて自然に揺れる上品なフレア |
-| **👙 インナー / 下着** | ![下着](../../../assets/characters/kaede/outfit/kaede_outfit_lingerie_ref.png) | **ラベンダーの繊細なレース上下セット** | **ブラ:** 薄紫（ラベンダー）のレース・ワイヤー入り。枝葉状の花柄レース、裾スカラップ、ゴールド雫チャーム<br>**ショーツ:** ブラと完璧にお揃い。**サイド細三本ストラップ**<br>**意味:** **「見えない場所まで完璧である」**という強い自負 |
-| **🧦 脚 / 靴** | ![靴](../../../assets/templates/placeholder_shoes.jpg) | **ダークブラウン本革パンプス & 高級ストッキング** | **脚:** **20〜30デニール高級パンティストッキング**（ダークネイビー〜ブラック・常に鞄に予備を携帯）<br>**靴:** ダークブラウン本革のポインテッドトゥ・パンプス（ヒール7〜8cm） |
+| **👗 ワンピース** | ![ワンピース](../assets/characters/kaede/outfit/kaede_outfit_dress_ref.png) | **紺碧のVネック・ラップワンピース** | **素材:** マットなウール（光沢なし・柔らかい質感）<br>**配色:** 紺碧（ディープネイビー）<br>**スタイル:** 長袖、ミディ丈フレアスカート<br>**ベルト:** 黒レザー・アンティークシルバーバックル |
+| **👖 ボトムス / 丈感** | ![ボトムス](../assets/templates/placeholder_bottom.jpg) | **ミディ丈フレアスカート & ウエストライン** | **丈感:** 膝下を覆うエレガントなミディ丈<br>**シルエット:** 動作に合わせて自然に揺れる上品なフレア |
+| **👙 インナー / 下着** | ![下着](../assets/characters/kaede/outfit/kaede_outfit_lingerie_ref.png) | **ラベンダーの繊細なレース上下セット** | **ブラ:** 薄紫（ラベンダー）のレース・ワイヤー入り。枝葉状の花柄レース、裾スカラップ、ゴールド雫チャーム<br>**ショーツ:** ブラと完璧にお揃い。**サイド細三本ストラップ**<br>**意味:** **「見えない場所まで完璧である」**という強い自負 |
+| **🧦 脚 / 靴** | ![靴](../assets/templates/placeholder_shoes.jpg) | **ダークブラウン本革パンプス & 高級ストッキング** | **脚:** **20〜30デニール高級パンティストッキング**（ダークネイビー〜ブラック・常に鞄に予備を携帯）<br>**靴:** ダークブラウン本革のポインテッドトゥ・パンプス（ヒール7〜8cm） |
 
 ---
 
