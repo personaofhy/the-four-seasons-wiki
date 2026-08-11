@@ -7,8 +7,9 @@ title: キャラクター一覧・横断対比
 『THE FOUR SEASONS』の主要キャラクター4名。**各人物の設定はそれぞれのノートが唯一の正**であり、このページは共通ルールと入口だけを持つ。
 
 > [!tip] 🖥️ 視覚版の比較シート
-> 下の表と同じ内容を、**16色パレットの実物・等身図・コントラストの四段階つき**でブラウザ表示するHTMLがある。
-> **[四人比較シートを開く](file:///Users/ivix/Desktop/the-four-seasons-wiki/content/characters/character-sheet.html)**（`characters/character-sheet.html`）
+> 下の表と同じ内容を、**16色パレットの実物・等身図・コントラストの四段階・部位別ズーム**でブラウザ表示するインタラクティブHTMLがある。
+> **[四人比較シートを開く](./character-sheet.html)**（`characters/character-sheet.html`）
+
 >
 > 行をクリックするとその軸だけを残して他を伏せるので、「眉だけ四人並べたい」という見方ができる。
 > 設定を更新したときは**このHTMLも手で直す必要がある**点に注意（自動生成ではない）。
