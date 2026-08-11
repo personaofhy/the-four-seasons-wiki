@@ -19,7 +19,7 @@ title: The Four Seasons Wiki
   * [[rules/style-guide|執筆スタイルガイド＆作品定義]]
   * [[rules/triad-structure|トライアド構造と各章の役割]]
   * [[rules/momoka-warp-engine|経糸（田邊桃香）システムと感情同期ルール]]
-  * [[rules/color-palettes|全16色・季節別限定カラーパレット規定]]
+  * [[rules/color-palettes|テーマカラー・パレット規定]]
   * [[rules/comfyui-image-generation-reflection|ComfyUI画像生成・キャラ同一性反省ノート]]
 
 * 👤 **[[characters/index|登場人物・キャラクター一覧]]**
@@ -46,4 +46,4 @@ AIに執筆を指示する際は、対象章に合わせて以下のコンテキ
 * **全体トーンの指示**: `content/rules/style-guide.md`
 * **展開構造の指示**: `content/rules/triad-structure.md`
 * **桃香のインサート執筆時**: `content/rules/momoka-warp-engine.md`
-* **色調・視覚制約の指示**: `content/rules/color-palettes.md`
+* **色調・視覚制約の指示**: `wiki/rules/color-palettes.md`

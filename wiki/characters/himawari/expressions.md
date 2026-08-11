@@ -126,3 +126,15 @@ python3 -c "import json;s=json.load(open('workflows/character_prompt_spec.json')
 ```
 
 **ネガティブプロンプト（共通）:** `worst quality, low quality, bad anatomy, bad hands, missing limbs, extra limbs, cropped, text, watermark, signature, jpeg artifacts, blurry`
+
+---
+
+## 🪞 この人物固有の注記 — 段階5・6の「向き先」
+
+他3名の段階5（狼狽・大赤面）は**誰にともなく**向けられるが、向日葵の段階5には**視線の先に [[characters/yuika/index|唯香]] がいる。**
+
+* **段階5** — 群衆への羞恥と、唯香一人に対する別種の動揺が**同時に**起きている。単純な赤面ではなく、**焦点が群衆と一点の間で揺れている**こと
+* **段階6** — 他3名の6が虚脱・安堵であるのに対し、向日葵の6は**疑念が決着しないまま**訪れる。晴れやかさが無い
+
+> [!note] 画にする場合
+> 段階5の参照画像は、**視線を正面に固定しない**ほうがよい。群衆に囲まれながら一人だけを見てしまっている、という状態が出る。

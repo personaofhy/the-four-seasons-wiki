@@ -76,7 +76,7 @@ decision_states:
 
 | 項目 | 所在 | 内容 |
 | :--- | :--- | :--- |
-| `onlooker_yuika` | `chapters/02-summer` | 野次馬の「**唯香**」が誰か未確定。新規キャラか、田邊桃香の誤記か、名前のみのモブか |
+| `appearance` / `school_stage` | `characters/yuika` | 唯香の容姿は `draft`（提案のみ）。「種学校」の表記も未確定 |
 | 夏・秋・冬のパレット | `rules/color-palettes` | 章パレット・キャラパレットとも未定義 |
 | 挿色（3名） | 各 `outfits/daily` | 下着色がキャラパレット外の暫定値 |
 | `agency_shoes`（楓） | `kaede/outfits/daily` | 靴の「意味」が未記載 |
