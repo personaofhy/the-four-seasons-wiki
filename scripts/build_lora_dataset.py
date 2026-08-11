@@ -20,28 +20,47 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CHARACTERS = {
     "momoka": {
         "ref": "wiki/assets/characters/momoka/ref/momoka_face_canon.png",
-        "identity": "23yo japanese woman, very short light brown hair, brown eyes",
+        "identity": "23yo japanese woman, short light brown hair",
     },
 }
 
 ANGLES = [
     "facing the camera straight on",
-    "three-quarter view turned to her left",
-    "three-quarter view turned to her right",
-    "chin slightly lowered, eyes up to the camera",
-    "chin slightly raised, eyes down to the camera",
+    "three-quarter view turned left",
+    "three-quarter view turned right",
+    "chin lowered, eyes up to camera",
+    "chin raised, eyes down to camera",
     "near profile from the side",
 ]
 SHOTS = [
-    "close-up of the face filling the frame",
+    "close-up of the face",
     "head and shoulders portrait",
     "upper body, waist up",
 ]
 LIGHTS = [
     "soft even studio light",
-    "natural window light from one side",
+    "window light from one side",
     "flat overcast daylight",
     "warm indoor lamp light",
+]
+# Clothing has to vary or the LoRA folds the garment into the identity and the
+# character can never be dressed in anything else. Lengths 7 and 5 are coprime
+# with the 24-cell angle x light grid, so these decorrelate instead of lining up.
+CLOTHES = [
+    "a plain white t-shirt",
+    "a light sage green blouse buttoned to the collar",
+    "a charcoal knit sweater",
+    "a navy blazer over a white shirt",
+    "a black turtleneck",
+    "a beige cardigan",
+    "a grey hoodie",
+]
+BACKGROUNDS = [
+    "plain grey studio backdrop",
+    "plain white backdrop",
+    "blurred indoor room",
+    "blurred classroom",
+    "blurred outdoor greenery",
 ]
 
 NEGATIVE = ("anime, illustration, cartoon, 3d render, cgi, plastic skin, smiling, "
@@ -60,8 +79,10 @@ def main():
     outdir = os.path.join("datasets", args.character)
     os.makedirs(os.path.join(ROOT, outdir), exist_ok=True)
 
-    # Cycle shots against the angle x light grid so framing varies independently.
-    combos = [(a, SHOTS[i % len(SHOTS)], l)
+    # Cycle every other axis against the angle x light grid on coprime periods so
+    # no two axes stay locked together across the set.
+    combos = [(a, SHOTS[i % len(SHOTS)], l, CLOTHES[i % len(CLOTHES)],
+               BACKGROUNDS[i % len(BACKGROUNDS)])
               for i, (a, l) in enumerate(itertools.product(ANGLES, LIGHTS))]
     combos = combos[args.start:]
     if args.limit:
@@ -70,17 +91,19 @@ def main():
         combos = combos[::step][:args.limit]
 
     print(f"{len(combos)} 枚を生成 -> {outdir}/")
-    for n, (angle, shot, light) in enumerate(combos):
-        prompt = (f"photo of a {spec['identity']}, neutral expression, "
-                  f"{angle}, {shot}, {light}, photorealistic, natural skin")
+    for n, (angle, shot, light, cloth, bg) in enumerate(combos):
+        # Framing and angle go first. Late tokens lose to early ones, and with
+        # them at the tail the reference's own front-on framing won every time.
+        prompt = (f"{shot}, {angle}, photo of a {spec['identity']}, "
+                  f"neutral expression, wearing {cloth}, {light}, {bg}, photorealistic")
         name = f"{args.character}_{args.start + n:02d}.png"
-        print(f"\n[{n+1}/{len(combos)}] {angle} / {shot} / {light}")
+        print(f"\n[{n+1}/{len(combos)}] {angle} / {shot} / {cloth} / {light} / {bg}")
         cmd = [
             sys.executable, os.path.join(ROOT, "scripts", "comfy_run.py"),
             "char_ipadapter_sdxl",
             "--set", "CKPT=RealVisXL_V5.0_fp16.safetensors",
             "--set", f"CHARACTER_REF={os.path.basename(spec['ref'])}",
-            "--set", "IP_WEIGHT=0.9", "--set", "IP_END=0.9",
+            "--set", "IP_WEIGHT=0.8", "--set", "IP_END=0.85",
             # "linear" also copies the reference's composition, so every image came out
             # dead-on front. "style transfer" keeps the appearance and frees the pose.
             "--set", "WEIGHT_TYPE=style transfer",
