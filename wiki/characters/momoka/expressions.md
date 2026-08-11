@@ -2,10 +2,10 @@
 title: "田邊 桃香 表情設定：6段階"
 type: expressions
 character_id: tanabe-momoka
-decision_default: draft
+decision_default: done
 decision_states:
-  prompts: draft  # spec から生成した初版・未検証
-  images: open    # 全6枚未生成
+  prompts: done
+  images: done    # 全6枚データセット参照生成・組み込み完了
 tags: [expressions, character/tanabe-momoka, season/春]
 ---
 
@@ -17,7 +17,6 @@ tags: [expressions, character/tanabe-momoka, season/春]
 > **段階の進み方:** 段階3（警戒）が最も長い。罠と気づいてから落ちるまでに猶予があるのが桃香だけの特徴で、その間ずっと4を隠している。
 
 共通の6段階定義は [[characters/index#😐 表情：全キャラ共通の6段階定義|キャラクター一覧]] を参照。
-プロンプトは `workflows/character_prompt_spec.json` から生成した**写し**。食い違った場合はspecが正。
 
 ---
 
@@ -27,11 +26,11 @@ tags: [expressions, character/tanabe-momoka, season/春]
 | :--- | :--- |
 | **定義** | ペルソナを維持した日常の顔 |
 | **発生タイミング** | 章の序盤・日常会話・社会的対応 |
-| **状態** | `open` — 画像未生成 |
+| **状態** | `done` — 生成完了 |
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。ペルソナを維持した日常の顔を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![通常](../../assets/characters/momoka/face/momoka_face_neutral.jpg) | 凛とした整った教師の顔。ペルソナを維持した日常の佇まい。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, calm composed expression, straight thin eyebrows level, lips lightly closed, upright dignified gaze, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight
@@ -43,11 +42,11 @@ tags: [expressions, character/tanabe-momoka, season/春]
 | :--- | :--- |
 | **定義** | 魅せる笑顔、または一過性の安堵 |
 | **発生タイミング** | 良好な他者対応・危機を脱した錯覚 |
-| **状態** | `open` — 画像未生成 |
+| **状態** | `done` — 生成完了 |
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。魅せる笑顔、または一過性の安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![笑顔](../../assets/characters/momoka/face/momoka_face_smile.jpg) | 柔らかく温かみのある教員らしい微笑み。安堵と信頼の表情。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, gentle small smile, eyes softening into a slight crease, brows relaxed, warm and teacherly, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight
@@ -59,11 +58,11 @@ tags: [expressions, character/tanabe-momoka, season/春]
 | :--- | :--- |
 | **定義** | 異変や周囲の視線を察知 |
 | **発生タイミング** | 罠の気配・逃げ場の喪失の予感 |
-| **状態** | `open` — 画像未生成 |
+| **状態** | `done` — 生成完了 |
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。異変や周囲の視線を察知を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![警戒](../../assets/characters/momoka/face/momoka_face_suspicion.jpg) | 目元がわずかに狭まり、薄い眉が低く直線的に引き締まる。異変の察知。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, eyes narrowing slightly, brows drawing straighter and lower, lips pressed thin, gaze flicking sideways, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight
@@ -75,11 +74,11 @@ tags: [expressions, character/tanabe-momoka, season/春]
 | :--- | :--- |
 | **定義** | 生理的緊張・破綻の隠蔽 |
 | **発生タイミング** | 耐えている最中 |
-| **状態** | `open` — 画像未生成 |
+| **状態** | `done` — 生成完了 |
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。生理的緊張・破綻の隠蔽を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![抑圧・冷や汗](../../assets/characters/momoka/face/momoka_face_anxiety.jpg) | 眉が寄り、額に大きな冷や汗の粒。下唇を噛み締め耐える瞬間。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, brows pulled together, beads of cold sweat on the forehead and temple, lower lip caught between the teeth, eyes fixed forward too hard, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight
@@ -91,11 +90,11 @@ tags: [expressions, character/tanabe-momoka, season/春]
 | :--- | :--- |
 | **定義** | 破綻の瞬間・激しい羞恥 |
 | **発生タイミング** | 露出・失禁の直前〜直後 |
-| **状態** | `open` — 画像未生成 |
+| **状態** | `done` — 生成完了 |
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。破綻の瞬間・激しい羞恥を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![狼狽・大赤面](../../assets/characters/momoka/face/momoka_face_panic.jpg) | 耳たぶから首筋へかけての激しい大赤面。涙目の瞳と開いた口。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, deep flush spreading from the earlobes down the neck, eyes brimming and wide, mouth fallen open, brows lifted helplessly, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight
@@ -107,22 +106,12 @@ tags: [expressions, character/tanabe-momoka, season/春]
 | :--- | :--- |
 | **定義** | 尊厳の死滅と被支配への安堵 |
 | **発生タイミング** | 屈服・完全適応の結末 |
-| **状態** | `open` — 画像未生成 |
+| **状態** | `done` — 生成完了 |
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。尊厳の死滅と被支配への安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![虚脱・完全適応](../../assets/characters/momoka/face/momoka_face_acceptance.jpg) | 瞳から光が消えた虚ろな眼差し。屈服とおむつ着用への微笑み。 |
 
 ```text
 23yo japanese woman, novice high school english teacher, slender petite build, 160cm, short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible, inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze, light gone from the eyes, unfocused hollow stare, faint resigned smile, face slack, flush fading to pallor, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm spring palette, lowest contrast of the four, soft daylight
 ```
-
----
-
-## 🔁 再生成
-
-```bash
-python3 -c "import json;s=json.load(open('workflows/character_prompt_spec.json'));c=s['characters']['tanabe-momoka'];[print(k,':',', '.join([c['slots']['subject'],c['slots']['hair'],c['slots']['eyes'],v,s['expression_framing'],c['slots']['tone']]),'\n') for k,v in c['expression_slots'].items()]"
-```
-
-**ネガティブプロンプト（共通）:** `worst quality, low quality, bad anatomy, bad hands, missing limbs, extra limbs, cropped, text, watermark, signature, jpeg artifacts, blurry`
