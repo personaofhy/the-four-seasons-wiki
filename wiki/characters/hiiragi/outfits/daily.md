@@ -23,7 +23,7 @@ decision_default: canon
 
 | 全体イメージ設定シート | 配色パレット | 画像生成タグ（AI Prompts） |
 | :---: | :---: | :--- |
-| ![橘柊 全体衣装設定](../assets/characters/hiiragi/sprite/hiiragi_sprite_fullbody_16c.png)<br>*※スプライト流用中・専用設定シート未作成* | `主色` #4D4E53 ダークグレー（マフラー・ニット）<br>`副色` #8E99A4 スノーグレー（冬タイツ）<br>`挿色` #E7D8C9 クリーム（子供用ショーツ・スニーカー） | `19yo japanese university student, aspiring idol, petite soft rounded build, 155cm, medium bob, pure black with a blue cast, delicate, large round moist eyes, palest grey irises of the four, doll-like, thick charcoal grey wool knit sweater, voluminous grey scarf, ivory knit beanie, grey knit skirt, knee length, soft curved silhouette, dark grey winter tights, off-white canvas sneakers with velcro straps, cool winter palette, highest contrast of the four, pale skin against black hair` |
+| ![橘柊 全体衣装設定](../assets/characters/hiiragi/outfit/hiiragi_outfit_full.jpg) | `主色` #4D4E53 ダークグレー（マフラー・ニット）<br>`副色` #8E99A4 スノーグレー（冬タイツ）<br>`挿色` #E7D8C9 クリーム（子供用ショーツ・スニーカー） | `19yo japanese university student, aspiring idol, petite soft rounded build, 155cm, medium bob, pure black with a blue cast, delicate, large round moist eyes, palest grey irises of the four, doll-like, thick charcoal grey wool knit sweater, voluminous grey scarf, ivory knit beanie, grey knit skirt, knee length, soft curved silhouette, dark grey winter tights, off-white canvas sneakers with velcro straps, cool winter palette, highest contrast of the four, pale skin against black hair` |
 
 ---
 
@@ -31,8 +31,8 @@ decision_default: canon
 
 | 部位 | 実物参照イメージ | アイテム名 | 詳細仕様（素材・配色・着こなしルール） |
 | :--- | :---: | :--- | :--- |
-| **👕 トップス** | ![トップス](../assets/templates/placeholder_top.jpg) | **厚手グレーマフラー & ニットトップス** | **素材:** 厚手ウールニット<br>**配色:** チャコール〜ダークグレー<br>**スタイル:** 首元を暖かく包み込むボリュームマフラー＋アイボリーのニット帽（顔を隠しがち） |
-| **👖 ボトムス** | ![ボトムス](../assets/templates/placeholder_bottom.jpg) | **ニットスカート** | **丈感:** 膝丈〜やや短め<br>**シルエット:** 柔らかい曲線的シルエット（メリハリのないぬいぐるみ感） |
+| **👕 トップス** | ![トップス](../assets/characters/hiiragi/outfit/hiiragi_outfit_top.jpg) | **厚手グレーマフラー & ニットトップス** | **素材:** 厚手ウールニット<br>**配色:** チャコール〜ダークグレー<br>**スタイル:** 首元を暖かく包み込むボリュームマフラー＋アイボリーのニット帽（顔を隠しがち） |
+| **👖 ボトムス** | ![ボトムス](../assets/characters/hiiragi/outfit/hiiragi_outfit_bottom.jpg) | **ニットスカート & スニーカー** | **丈感:** 膝丈〜やや短め<br>**タイツ:** ダークグレーの冬物タイツ<br>**シルエット:** 柔らかい曲線的シルエット（メリハリのないぬいぐるみ感） |
 | **👙 インナー / 下着** | ![下着](../assets/templates/placeholder_inner.jpg) | **サラシ（ノーブラ） ＋ 幼児向けコットンショーツ** | **上:** **ブラジャーは着けない。**胸を平坦に潰すための**サラシ**を着用（大人の身体を消す擬態）<br>**下:** 幼児向けのクリーム色コットンショーツ（終盤は馬鹿馬鹿しい柄の子供用パンツ）<br>**意味:** 4人中唯一「上下セットを持たない」。**自発的な子供への退行** |
 | **🧦 脚 / 靴** | ![靴](../assets/templates/placeholder_shoes.jpg) | **マジックテープスニーカー & 冬物タイツ** | **脚:** ダークグレーの冬物タイツ<br>**靴:** オフホワイトのキャンバススニーカー（**マジックテープ留めの子供向け仕様**）<br>**意味:** **「自分で紐を結ばなくていい靴」**＝自己決定の拒絶 |
 
