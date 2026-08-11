@@ -19,3 +19,6 @@ content/assets/_scratch/
 .trash/
 venv_img/
 
+
+# LoRA 学習データ（scripts/build_lora_dataset.py で再生成可能）
+datasets/

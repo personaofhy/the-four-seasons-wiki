@@ -54,7 +54,7 @@
         0
       ],
       "weight": "PARAM_FLOAT_IP_WEIGHT",
-      "weight_type": "linear",
+      "weight_type": "PARAM_WEIGHT_TYPE",
       "combine_embeds": "concat",
       "start_at": 0.0,
       "end_at": "PARAM_FLOAT_IP_END",
