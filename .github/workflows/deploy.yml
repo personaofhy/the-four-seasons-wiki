@@ -32,7 +32,10 @@ jobs:
         run: npm ci --legacy-peer-deps
 
       - name: Build Quartz
-        run: npx quartz build -d wiki
+        run: |
+          npx quartz build -d wiki
+          cp wiki/characters/character-sheet.html public/characters/character-sheet.html
+
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
