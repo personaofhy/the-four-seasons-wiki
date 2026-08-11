@@ -56,7 +56,7 @@
         "6-acceptance": "empty unfocused stare, no light in the eyes, faint resigned smile, slack face"
       },
       "stage1_ref": "momoka_ref_face.png",
-      "stage2_ref": "momoka_real_portrait_opt1.png",
+      "stage2_ref": "momoka_face_canon.png",
       "identity_compact": "23yo japanese woman, very short light brown hair, light brown eyes, thin straight brows"
     },
     "kaneshiro-himawari": {
@@ -211,6 +211,19 @@
       "(clause:1.25) emphasis on a whole expression clause: weights every token in it, produced grotesque eyebrows, and turned 'biting lower lip' into a finger held in the mouth",
       "'biting lower lip' as a token at all - reads as a hand gesture. Use 'lips pressed tight'"
     ],
-    "works": "plain unweighted prompt under 77 tokens, expression wording kept physical and simple, ip_weight 0.75 so the reference does not override the expression"
+    "works": "plain unweighted prompt under 77 tokens, expression wording kept physical and simple, ip_weight 0.75 so the reference does not override the expression",
+    "stage2": {
+      "workflow": "char_ipadapter_controlnet_sdxl",
+      "ckpt": "RealVisXL_V5.0_fp16.safetensors",
+      "controlnet": "controlnet-union-sdxl-1.0-promax.safetensors",
+      "width": 768,
+      "height": 1024,
+      "steps": 30,
+      "cfg": 5.0,
+      "ip_weight": 0.8,
+      "ip_end": 0.9,
+      "identity_ref": "momoka_face_canon.png"
+    },
+    "ip_adapter_tradeoff": "Measured on RealVisXL. ip_weight 0.8 / ip_end 0.9 holds the identity exactly but also transfers the reference's neutral expression, and the prompt cannot override it. Dropping to 0.6 / 0.45 lets the expression through but the face becomes a different person. There is no setting that gives both, which is the empirical reason the two-stage pipeline exists: keep ip_weight high for identity and bring the expression in through ControlNet structure taken from the stage-1 illustration, not through the prompt."
   }
 }
