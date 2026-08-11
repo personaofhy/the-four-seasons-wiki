@@ -16,19 +16,19 @@ tags: [outfit, character/tanabe-momoka, season/spring]
 
 ## 🖼️ 全体ビジュアル & カラーパレット
 
-| 全体イメージ | 配色パレット | 画像生成タグ（AI Prompts） |
+| 全体イメージ設定シート | 配色パレット | 画像生成タグ（AI Prompts） |
 | :---: | :---: | :--- |
-| ![全体イメージ](../assets/characters/momoka/sprite/momoka_sprite_fullbody_16c.png)<br>*(プレースホルダー: ![全体](../assets/templates/placeholder_full.jpg))* | `主色` #72713E (オリーブ)<br>`副色` #B89C84 (チャコール)<br>`挿色` #E7B6AC (レース) | `light sage green long sleeve blouse, buttoned to top, dark charcoal high-waist trousers, dark grey pumps, neat teacher style, beige short hair` |
+| ![田邊桃香 全体衣装設定](../assets/characters/momoka/outfit/momoka_outfit_full.jpg) | `主色` #72713E (オリーブ)<br>`副色` #B89C84 (チャコール)<br>`挿色` #E7B6AC (レース) | `light sage green long sleeve blouse, buttoned to top, dark charcoal high-waist trousers, dark grey pumps, neat teacher style, beige short hair` |
 
 ---
 
 ## 🧩 パーツ別詳細仕様
 
-| 部位 | 参照イメージ | アイテム名 | 詳細仕様（素材・配色・着こなしルール） |
+| 部位 | 実物参照イメージ | アイテム名 | 詳細仕様（素材・配色・着こなしルール） |
 | :--- | :---: | :--- | :--- |
-| **👕 トップス** | ![トップス](../assets/templates/placeholder_top.jpg) | **薄緑の長袖ブラウス** | **素材:** 皺一つない上質コットン<br>**配色:** 薄いオリーブセージグリーン<br>**着方:** **第一ボタンまで隙なく留める**（潔癖さと自律の誇り） |
-| **👖 ボトムス** | ![ボトムス](../assets/templates/placeholder_bottom.jpg) | **ダークチャコールのトラウザー** | **丈感:** フルレングス・ストレート<br>**ウエスト:** ハイウエスト<br>**印象:** 凛とした教師らしい清潔なシルエット |
-| **👙 インナー / 下着** | ![下着](../assets/templates/placeholder_inner.jpg) | **淡いグリーンのレースセット ＋ コットン腹巻き** | **下着:** 薄緑の繊細なレース上下セット<br>**隠し層:** **薄手のコットン腹巻きを常時着用**（寒がりゆえ）<br>**意味:** 完璧な外見の裏にある生真面目な生活感の防壁 |
+| **👕 トップス** | ![トップス](../assets/characters/momoka/outfit/momoka_outfit_top.jpg) | **薄緑の長袖ブラウス** | **素材:** 皺一つない上質コットン<br>**配色:** 薄いオリーブセージグリーン<br>**着方:** **第一ボタンまで隙なく留める**（潔癖さと自律の誇り） |
+| **👖 ボトムス** | ![ボトムス](../assets/characters/momoka/outfit/momoka_outfit_bottom.jpg) | **ダークチャコールのトラウザー** | **丈感:** フルレングス・ストレート<br>**ウエスト:** ハイウエスト<br>**印象:** 凛とした教師らしい清潔なシルエット |
+| **👙 インナー / 下着** | ![下着](../assets/characters/momoka/outfit/momoka_outfit_inner.jpg) | **淡いグリーンのレースセット ＋ コットン腹巻き** | **下着:** 薄緑の繊細なレース上下セット<br>**隠し層:** **薄手のコットン腹巻きを常時着用**（寒がりゆえ）<br>**意味:** 完璧な外見の裏にある生真面目な生活感の防壁 |
 | **🧦 脚 / 靴** | ![靴](../assets/templates/placeholder_shoes.jpg) | **ダークグレーのパンプス & フットカバー** | **脚:** ベージュの浅履きフットカバー（スラックス下に隠れる）<br>**靴:** ダークグレーのローヒールパンプス<br>**意味:** 規律と足を地につけた歩み |
 
 ---
@@ -38,6 +38,6 @@ tags: [outfit, character/tanabe-momoka, season/spring]
 > [!warning] 乱れ・破綻時の変化ルール
 > * **トリガー:** 政治家たちの密室における罠と絶対的な敗北
 > * **下着の変遷:**  
->   `1. 薄緑のレースショーツ` ➔ `2. 尿漏れパッド` ➔ `3. 動物柄の児童用おむつ`
+>   `1. 薄緑のレースショーツ` ➔ `2. 尿漏れパッド` ➔ `3. 児童用おむつ`
 > * **視覚変化:** 皺一つない完璧なブラウスを着こなしたまま、服の下で静かに広がる湿り気と額から首筋へ伝う冷や汗
 > * **構造的意味:** **【潔癖の陥落】** — 完璧な自律が打ち砕かれ、おむつ着用による完全被支配への安堵と完全適応へ至る
