@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+<title>THE FOUR SEASONS｜四人比較シート</title>
+
+<style>
+  :root{
+    --ground:#FAF8F4;
+    --panel:#FFFFFF;
+    --ink:#1A1714;
+    --ink-2:#57504A;
+    --ink-3:#8A8378;
+    --rule:#DFD8CD;
+    --rule-2:#EDE7DE;
+    --accent:#812E2A;
+    --focus:#812E2A;
+    --spring:#72713E;
+    --summer:#2B486F;
+    --autumn:#622426;
+    --winter:#4D4E53;
+    --serif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Songti SC",serif;
+    --sans:"Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic","Noto Sans JP",system-ui,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ground:#12110F; --panel:#191714; --ink:#EDE7DE; --ink-2:#ADA398;
+      --ink-3:#7C7469; --rule:#2E2A25; --rule-2:#232019;
+      --accent:#C4756A; --focus:#C4756A;
+      --spring:#9A9959; --summer:#5B84B8; --autumn:#A4453F; --winter:#8E99A4;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#12110F; --panel:#191714; --ink:#EDE7DE; --ink-2:#ADA398;
+    --ink-3:#7C7469; --rule:#2E2A25; --rule-2:#232019; --accent:#C4756A; --focus:#C4756A;
+    --spring:#9A9959; --summer:#5B84B8; --autumn:#A4453F; --winter:#8E99A4;
+  }
+  :root[data-theme="light"]{
+    --ground:#FAF8F4; --panel:#FFFFFF; --ink:#1A1714; --ink-2:#57504A;
+    --ink-3:#8A8378; --rule:#DFD8CD; --rule-2:#EDE7DE; --accent:#812E2A; --focus:#812E2A;
+    --spring:#72713E; --summer:#2B486F; --autumn:#622426; --winter:#4D4E53;
+  }
+
+  body{background:var(--ground);color:var(--ink);font-family:var(--sans);
+       line-height:1.7;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1180px;margin:0 auto;padding:56px 24px 96px;
+        display:flex;flex-direction:column;gap:56px;}
+
+  /* ---- masthead ---- */
+  .mast{display:flex;flex-direction:column;gap:18px;
+        border-bottom:1px solid var(--rule);padding-bottom:32px;}
+  .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;
+          text-transform:uppercase;color:var(--ink-3);}
+  .mast h1{font-family:var(--serif);font-size:clamp(30px,5vw,52px);
+           font-weight:500;line-height:1.15;letter-spacing:.02em;
+           text-wrap:balance;margin:0;}
+  .thesis{font-family:var(--serif);font-size:clamp(15px,2vw,18px);
+          color:var(--ink-2);max-width:60ch;line-height:1.85;}
+  .thesis em{color:var(--ink);font-style:normal;
+             border-bottom:1px solid var(--accent);padding-bottom:1px;}
+
+  h2{font-family:var(--serif);font-size:22px;font-weight:500;
+     letter-spacing:.04em;margin:0;}
+  .sec{display:flex;flex-direction:column;gap:22px;}
+  .sec-head{display:flex;flex-direction:column;gap:6px;}
+  .sec-note{font-size:13.5px;color:var(--ink-2);max-width:66ch;line-height:1.8;}
+
+  /* ---- character heads ---- */
+  .heads{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+         background:var(--rule);border:1px solid var(--rule);}
+  .head{background:var(--panel);padding:0 0 18px;display:flex;
+        flex-direction:column;gap:10px;}
+  .band{height:6px;}
+  .head-in{padding:0 16px;display:flex;flex-direction:column;gap:8px;}
+  .season{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;
+          text-transform:uppercase;color:var(--ink-3);}
+  .nm{font-family:var(--serif);font-size:25px;line-height:1.2;letter-spacing:.04em;}
+  .kana{font-size:11.5px;color:var(--ink-3);letter-spacing:.08em;margin-top:-4px;}
+  .motif{font-size:13px;color:var(--ink-2);}
+  .meta{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);
+        font-variant-numeric:tabular-nums;}
+  .swatches{display:flex;height:26px;margin-top:4px;}
+  .swatches span{flex:1;}
+
+  /* ---- proportion ---- */
+  .props{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+         background:var(--rule);border:1px solid var(--rule);}
+  .prop{background:var(--panel);padding:24px 16px 18px;display:flex;
+        flex-direction:column;align-items:center;gap:14px;}
+  .fig{display:flex;flex-direction:column;justify-content:flex-end;width:34px;}
+  .seg{border-top:1px solid var(--panel);}
+  .seg:first-child{border-top:none;}
+  .prop-cap{text-align:center;display:flex;flex-direction:column;gap:2px;}
+  .prop-cap b{font-family:var(--mono);font-size:14px;font-weight:400;
+              font-variant-numeric:tabular-nums;}
+  .prop-cap span{font-size:11.5px;color:var(--ink-3);}
+
+  /* ---- contrast ---- */
+  .grad{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+        background:var(--rule);border:1px solid var(--rule);}
+  .gcell{background:var(--panel);padding:0 0 16px;}
+  .gbar{display:flex;height:64px;}
+  .gbar span{flex:1;}
+  .gcap{padding:12px 16px 0;display:flex;flex-direction:column;gap:2px;}
+  .gcap b{font-size:13.5px;font-weight:500;}
+  .gcap span{font-size:11.5px;color:var(--ink-3);}
+
+  /* ---- matrix ---- */
+  .scroller{overflow-x:auto;border:1px solid var(--rule);}
+  table{border-collapse:collapse;width:100%;min-width:900px;background:var(--panel);}
+  caption{text-align:left;font-size:12.5px;color:var(--ink-3);padding:0 0 10px;}
+  th,td{text-align:left;vertical-align:top;padding:13px 15px;
+        border-bottom:1px solid var(--rule-2);font-size:13.2px;line-height:1.65;}
+  thead th{position:sticky;top:0;background:var(--panel);z-index:2;
+           border-bottom:1px solid var(--rule);font-family:var(--serif);
+           font-size:15px;font-weight:500;letter-spacing:.04em;padding:12px 15px;}
+  tbody th{font-weight:400;color:var(--ink-2);font-size:12.5px;
+           letter-spacing:.05em;width:120px;white-space:nowrap;
+           border-right:1px solid var(--rule-2);}
+  .grp th{font-family:var(--serif);font-size:13px;letter-spacing:.14em;
+          color:var(--ink-3);background:var(--rule-2);padding:8px 15px;
+          border-bottom:1px solid var(--rule);}
+  tbody tr[data-axis]{cursor:pointer;transition:background .12s;}
+  tbody tr[data-axis]:hover{background:color-mix(in srgb,var(--focus) 6%,transparent);}
+  tbody tr.on{background:color-mix(in srgb,var(--focus) 10%,transparent);}
+  tbody tr.on th{color:var(--ink);}
+  table.focusing tbody tr[data-axis]:not(.on){opacity:.26;}
+  table.focusing tbody tr.grp{opacity:.26;}
+  u.k{text-decoration:none;border-bottom:1.5px solid var(--accent);
+      padding-bottom:1px;color:var(--ink);}
+  .only{font-family:var(--mono);font-size:10px;letter-spacing:.1em;
+        border:1px solid var(--accent);color:var(--accent);
+        padding:1px 5px;margin-left:5px;white-space:nowrap;
+        display:inline-block;vertical-align:1px;}
+
+  .hint{font-size:12.5px;color:var(--ink-3);display:flex;gap:8px;
+        align-items:baseline;flex-wrap:wrap;}
+  .btn{font-family:var(--sans);font-size:12px;color:var(--ink-2);
+       background:none;border:1px solid var(--rule);padding:4px 11px;
+       cursor:pointer;letter-spacing:.04em;}
+  .btn:hover{border-color:var(--focus);color:var(--ink);}
+  .btn:focus-visible{outline:2px solid var(--focus);outline-offset:2px;}
+
+  /* ---- reversals ---- */
+  .revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+        gap:1px;background:var(--rule);border:1px solid var(--rule);}
+  .rev{background:var(--panel);padding:22px 20px;display:flex;
+       flex-direction:column;gap:9px;}
+  .rev h3{font-family:var(--serif);font-size:16.5px;font-weight:500;
+          margin:0;letter-spacing:.03em;line-height:1.45;}
+  .rev p{margin:0;font-size:13.2px;color:var(--ink-2);line-height:1.8;}
+  .rev p b{color:var(--ink);font-weight:500;}
+
+  footer{border-top:1px solid var(--rule);padding-top:20px;
+         font-size:12px;color:var(--ink-3);line-height:1.8;}
+
+  @media (max-width:760px){
+    .heads,.props,.grad{grid-template-columns:repeat(2,1fr);}
+    .wrap{padding:36px 16px 64px;gap:44px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div class="kicker">Character comparison sheet</div>
+    <h1>THE FOUR SEASONS<br>四人比較シート</h1>
+    <p class="thesis">
+      四人＝四季なので、<em>パーソナルカラーの4分類を章の季節とそのまま一対一で対応</em>させている。
+      その副産物として、コントラストが最弱から最強までの四段階のグラデーションになった。
+      顔のパーツを一切見なくても、画面の明度差だけで四人を並べ替えられる。
+    </p>
+  </header>
+
+  <section class="sec">
+    <div class="sec-head">
+      <h2>四人</h2>
+      <p class="sec-note">帯と色見本は各章の16色パレットから引いた実際の色。下段が主色・補色・アクセントの並び。</p>
+    </div>
+    <div class="heads">
+      <div class="head">
+        <div class="band" style="background:#72713E"></div>
+        <div class="head-in">
+          <div class="season">🌸 春 ｜ Spring</div>
+          <div class="nm"><a href="./tanabe-momoka.html" style="color:inherit;text-decoration:none;">田邊 桃香</a></div>
+          <div class="kana">たなべ ももか</div>
+          <div class="motif">🐦 鶯 — 小さく機敏、澄んだ声</div>
+          <div class="meta">23歳 ／ 160cm ／ 7.5頭身</div>
+          <div class="meta">新任教師（英語科）</div>
+        </div>
+        <div class="swatches">
+          <span style="background:#72713E"></span><span style="background:#B89C84"></span>
+          <span style="background:#EEE2D5"></span><span style="background:#E7B6AC"></span>
+          <span style="background:#EFE1D3"></span><span style="background:#B6A693"></span>
+          <span style="background:#9F7A6E"></span><span style="background:#757575"></span>
+        </div>
+      </div>
+      <div class="head">
+        <div class="band" style="background:#2B486F"></div>
+        <div class="head-in">
+          <div class="season">🌻 夏 ｜ Summer</div>
+          <div class="nm"><a href="./kaneshiro-himawari.html" style="color:inherit;text-decoration:none;">金城 向日葵</a></div>
+          <div class="kana">かねしろ ひまわり</div>
+          <div class="motif">🐬 イルカ — 群れの中心、警戒心がない</div>
+          <div class="meta">18歳 ／ 170cm ／ 7.0頭身</div>
+          <div class="meta">高校生</div>
+        </div>
+        <div class="swatches">
+          <span style="background:#2B486F"></span><span style="background:#6286A9"></span>
+          <span style="background:#ABBDCC"></span><span style="background:#FCD57E"></span>
+          <span style="background:#F7EBD4"></span><span style="background:#CBD3DB"></span>
+          <span style="background:#E4CBC7"></span><span style="background:#373F4B"></span>
+        </div>
+      </div>
+      <div class="head">
+        <div class="band" style="background:#622426"></div>
+        <div class="head-in">
+          <div class="season">🍁 秋 ｜ Autumn</div>
+          <div class="nm"><a href="./toyama-kaede.html" style="color:inherit;text-decoration:none;">遠山 楓</a></div>
+          <div class="kana">とおやま かえで</div>
+          <div class="motif">🦌 子鹿 — 可憐さと裏腹に、性格は少し怖い</div>
+          <div class="meta">26歳 ／ 165cm ／ 8.0頭身</div>
+          <div class="meta">会社員（大手企業 総合職）</div>
+        </div>
+        <div class="swatches">
+          <span style="background:#1E283A"></span><span style="background:#622426"></span>
+          <span style="background:#523D2C"></span><span style="background:#9F9085"></span>
+          <span style="background:#DBC1A9"></span><span style="background:#997254"></span>
+          <span style="background:#812E2A"></span><span style="background:#C29F73"></span>
+        </div>
+      </div>
+      <div class="head">
+        <div class="band" style="background:#4D4E53"></div>
+        <div class="head-in">
+          <div class="season">❄️ 冬 ｜ Winter</div>
+          <div class="nm"><a href="./tachibana-hiiragi.html" style="color:inherit;text-decoration:none;">橘 柊</a></div>
+          <div class="kana">たちばな ひいらぎ</div>
+          <div class="motif">🐇 白うさぎ — 自分から走り出さない</div>
+          <div class="meta">19歳 ／ 155cm ／ 6.5頭身</div>
+          <div class="meta">大学生（アイドル志望）</div>
+
+        </div>
+        <div class="swatches">
+          <span style="background:#4D4E53"></span><span style="background:#8E99A4"></span>
+          <span style="background:#C0A791"></span><span style="background:#E7D8C9"></span>
+          <span style="background:#B79C91"></span><span style="background:#937776"></span>
+          <span style="background:#7C3332"></span><span style="background:#293240"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <h2>身長と等身</h2>
+      <p class="sec-note">縦棒が身長、区切りが頭ひとつ分。区切りが大きいほど頭が体に対して大きい。楓と柊が両極で、身長の順序と等身の順序が完全に逆になっている。</p>
+    </div>
+    <div class="props" id="props"></div>
+    <div class="sec-head" style="margin-top:2rem;">
+      <h3>生成AIベースの視覚的素体</h3>
+      <p class="sec-note">各キャラクターの設定上の頭身比率（6.5〜8.0）と顔の造形を厳密に反映したAI生成画像です。季節ボタンでそれぞれの素体画像を切り替えられます。</p>
+    </div>
+    
+    <div style="text-align:center; margin-top:1rem;">
+      <div style="display:flex; justify-content:center; gap:10px; margin-bottom:1rem;">
+        <button onclick="document.getElementById('ai-img').src='../assets/characters/momoka/body/momoka_scaled.png'" style="padding:8px 16px; cursor:pointer; background:#F6E9DC; border:1px solid #ccc; border-radius:4px;">🌸 春 (桃香)</button>
+        <button onclick="document.getElementById('ai-img').src='../assets/characters/himawari/body/himawari_scaled.png'" style="padding:8px 16px; cursor:pointer; background:#e6f0fa; border:1px solid #ccc; border-radius:4px;">🌻 夏 (向日葵)</button>
+        <button onclick="document.getElementById('ai-img').src='../assets/characters/kaede/body/kaede_scaled.png'" style="padding:8px 16px; cursor:pointer; background:#fae6e6; border:1px solid #ccc; border-radius:4px;">🍁 秋 (楓)</button>
+        <button onclick="document.getElementById('ai-img').src='../assets/characters/hiiragi/body/hiiragi_scaled.png'" style="padding:8px 16px; cursor:pointer; background:#eef2f5; border:1px solid #ccc; border-radius:4px;">❄️ 冬 (柊)</button>
+      </div>
+      <div style="background:#fafafa; border:1px solid #ddd; padding:1rem; border-radius:4px; max-width: 600px; margin:0 auto; height: 700px; display: flex; align-items: flex-end; justify-content: center;">
+        <img id="ai-img" src="../assets/characters/momoka/body/momoka_scaled.png" alt="AI Generated Body" style="width:auto; height:auto; max-height:100%; object-fit:contain;" />
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <h2>部位別の視覚的比較</h2>
+      <p class="sec-note">ボタンを切り替えることで、4人の特定の部位（顔・バスト・ウエスト・脚）を横並びでズーム比較できます。</p>
+    </div>
+    
+    <div style="text-align:center; margin-top:1rem;">
+      <div style="display:flex; justify-content:center; gap:10px; margin-bottom:1rem; flex-wrap:wrap;">
+        <button onclick="setPart('face')" style="padding:8px 16px; cursor:pointer; background:#fff; border:1px solid #ccc; border-radius:4px; font-weight:bold;">👤 顔</button>
+        <button onclick="setPart('breasts')" style="padding:8px 16px; cursor:pointer; background:#fff; border:1px solid #ccc; border-radius:4px; font-weight:bold;">👙 乳房</button>
+        <button onclick="setPart('waist')" style="padding:8px 16px; cursor:pointer; background:#fff; border:1px solid #ccc; border-radius:4px; font-weight:bold;">👖 ウエスト</button>
+        <button onclick="setPart('crotch')" style="padding:8px 16px; cursor:pointer; background:#fff; border:1px solid #ccc; border-radius:4px; font-weight:bold;">🍑 股間</button>
+        <button onclick="setPart('legs')" style="padding:8px 16px; cursor:pointer; background:#fff; border:1px solid #ccc; border-radius:4px; font-weight:bold;">🦵 脚</button>
+      </div>
+      
+      <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+        <div style="display:flex; flex-direction:column; align-items:center;">
+          <b style="margin-bottom:5px;">桃香</b>
+          <div class="part-view" style="width:200px; height:200px; border:1px solid #ddd; border-radius:8px; background-color:#fafafa; background-image:url('../assets/characters/momoka/body/momoka_scaled.png'); background-repeat:no-repeat; background-size:500%; background-position:center 3%;"></div>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center;">
+          <b style="margin-bottom:5px;">向日葵</b>
+          <div class="part-view" style="width:200px; height:200px; border:1px solid #ddd; border-radius:8px; background-color:#fafafa; background-image:url('../assets/characters/himawari/body/himawari_scaled.png'); background-repeat:no-repeat; background-size:500%; background-position:center 3%;"></div>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center;">
+          <b style="margin-bottom:5px;">楓</b>
+          <div class="part-view" style="width:200px; height:200px; border:1px solid #ddd; border-radius:8px; background-color:#fafafa; background-image:url('../assets/characters/kaede/body/kaede_scaled.png'); background-repeat:no-repeat; background-size:500%; background-position:center 3%;"></div>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center;">
+          <b style="margin-bottom:5px;">柊</b>
+          <div class="part-view" style="width:200px; height:200px; border:1px solid #ddd; border-radius:8px; background-color:#fafafa; background-image:url('../assets/characters/hiiragi/body/hiiragi_scaled.png'); background-repeat:no-repeat; background-size:500%; background-position:center 3%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function setPart(part) {
+      const views = document.querySelectorAll('.part-view');
+      let size = '500%';
+      let posY = '3%';
+      
+      if (part === 'face') { size = '600%'; posY = '3%'; }
+      else if (part === 'breasts') { size = '500%'; posY = '24%'; }
+      else if (part === 'waist') { size = '400%'; posY = '42%'; }
+      else if (part === 'crotch') { size = '500%'; posY = '52%'; }
+      else if (part === 'legs') { size = '250%'; posY = '85%'; }
+      
+      views.forEach(v => {
+        v.style.backgroundSize = size;
+        v.style.backgroundPosition = `center ${posY}`;
+        v.style.transition = 'background-position 0.4s ease, background-size 0.4s ease';
+      });
+    }
+  </script>
+
+  <section class="sec">
+    <div class="sec-head">
+      <h2>コントラストの四段階</h2>
+      <p class="sec-note">左から順に、髪・瞳・肌の明度差が開いていく。桃香は三つが近い明度で並び、柊は最大の明度差をつくる。</p>
+    </div>
+    <div class="grad">
+      <div class="gcell">
+        <div class="gbar">
+          <span style="background:#8C7A55"></span><span style="background:#B08A5E"></span><span style="background:#F6E9DC"></span>
+        </div>
+        <div class="gcap"><b>桃香 — 最弱</b><span>明るい茶の髪 × 明るい茶の瞳 × 血色のある白い肌</span></div>
+      </div>
+      <div class="gcell">
+        <div class="gbar">
+          <span style="background:#2E2C33"></span><span style="background:#3B3830"></span><span style="background:#F2EFEE"></span>
+        </div>
+        <div class="gcap"><b>向日葵 — 弱</b><span>青みのソフトな黒 × 濃い瞳 × 青みを含んだ白い肌</span></div>
+      </div>
+      <div class="gcell">
+        <div class="gbar">
+          <span style="background:#2A1F18"></span><span style="background:#7A5233"></span><span style="background:#F1E7DC"></span>
+        </div>
+        <div class="gcap"><b>楓 — 中</b><span>温かみのある深いブラウン寄りの黒 × 明るめブラウンの瞳 × 色白マット</span></div>
+      </div>
+      <div class="gcell">
+        <div class="gbar">
+          <span style="background:#0D0F14"></span><span style="background:#9AA0A6"></span><span style="background:#FCFCFD"></span>
+        </div>
+        <div class="gcap"><b>柊 — 最強</b><span>青みのある真っ黒 × 色素の薄いグレーの瞳 × 眩しいほどの白い肌</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <h2>比較マトリクス</h2>
+      <p class="sec-note">髪を消しても四人が判別できることを条件に組んだ軸。<u class="k">下線</u>はその人物だけが持つ、または四人の中で極にある特徴。</p>
+      <div class="hint">
+        <span>行をクリックすると、その軸だけを残して他を伏せます。</span>
+        <button class="btn" id="clear" type="button">絞り込みを解除</button>
+      </div>
+    </div>
+    <div class="scroller">
+      <table id="mx">
+        <thead>
+          <tr>
+            <th scope="col">軸</th>
+            <th scope="col" style="color:var(--spring)">🌸 桃香</th>
+            <th scope="col" style="color:var(--summer)">🌻 向日葵</th>
+            <th scope="col" style="color:var(--autumn)">🍁 楓</th>
+            <th scope="col" style="color:var(--winter)">❄️ 柊</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="grp"><th colspan="5" scope="colgroup">色の型</th></tr>
+          <tr data-axis><th scope="row">パーソナルカラー</th>
+            <td>イエベ春</td><td>ブルベ夏</td><td>イエベ秋</td><td>ブルベ冬</td></tr>
+          <tr data-axis><th scope="row">コントラスト</th>
+            <td><u class="k">最弱</u></td><td>弱</td><td>中</td><td><u class="k">最強</u></td></tr>
+          <tr data-axis><th scope="row">髪色</th>
+            <td><u class="k">4人中最も明るい茶</u>（ブラウンベージュ）</td>
+            <td>青みのソフトなダークブラウン〜黒</td>
+            <td>温かみのある深いブラウン寄りの黒・濡れた艶</td>
+            <td><u class="k">青みのある真っ黒</u></td></tr>
+          <tr data-axis><th scope="row">瞳の色</th>
+            <td><u class="k">4人中最も明るい茶</u></td><td>濃い</td><td>明るめブラウン</td>
+            <td><u class="k">グレー</u><span class="only">最も色素が薄い</span></td></tr>
+          <tr data-axis><th scope="row">肌</th>
+            <td>白く透明感・頬に血色</td><td>青みを含んだ白・日に灼けない</td>
+            <td>色白・マット</td><td><u class="k">眩しいほどの白さ</u>・血の気が薄い</td></tr>
+
+          <tr class="grp"><th colspan="5" scope="colgroup">顔</th></tr>
+          <tr data-axis><th scope="row">顔の型</th>
+            <td>丸み寄り・<u class="k">縦横比はマイルド</u></td>
+            <td><u class="k">大人びた卵型〜やや面長</u></td>
+            <td><u class="k">面長</u></td>
+            <td><u class="k">卵型・曲線的</u></td></tr>
+          <tr data-axis><th scope="row">顔の大きさ</th>
+            <td>スタイルの良さを感じる程度の小顔</td><td>標準</td>
+            <td><u class="k">4人中最も小顔</u></td><td>小さい</td></tr>
+          <tr data-axis><th scope="row">年齢感</th>
+            <td>実年齢どおり</td>
+            <td><u class="k">最年少なのに最も大人びた顔</u></td>
+            <td>実年齢どおり</td>
+            <td><u class="k">実年齢より幼い</u></td></tr>
+          <tr data-axis><th scope="row">眉</th>
+            <td>真っ直ぐ・薄いが細くはない</td>
+            <td>太めで直線的・色はソフトなグレイッシュ</td>
+            <td><u class="k">垂れ眉</u></td>
+            <td>やや垂れ眉・<u class="k">困り眉</u></td></tr>
+          <tr data-axis><th scope="row">目の形</th>
+            <td>切れ長と柔らかさの中間・凛とした</td><td>大きく丸い</td>
+            <td><u class="k">離れ目</u><span class="only">4人中唯一</span>・垂れ目</td>
+            <td>大きく丸くうるんだ</td></tr>
+          <tr data-axis><th scope="row">二重</th>
+            <td><u class="k">奥二重</u><span class="only">4人中唯一</span></td>
+            <td>二重・幅が広い</td><td>二重</td><td>二重</td></tr>
+          <tr data-axis><th scope="row">黒目</th>
+            <td>標準</td><td>大きい</td><td>黒目がち</td><td>黒目がち</td></tr>
+          <tr data-axis><th scope="row">口</th>
+            <td>ふっくらコーラルピンク・<u class="k">口元にほくろ</u></td>
+            <td>小さめ・口角がやや上がる</td>
+            <td>薄い上唇＋ふっくら下唇</td><td>小ぶり</td></tr>
+          <tr data-axis><th scope="row">赤面の出方</th>
+            <td>頬→首筋へ<u class="k">ジワジワ</u></td>
+            <td><u class="k">頬中央の円形</u>→胸元まで一気に</td>
+            <td><u class="k">鼻梁と耳たぶだけ</u>・抑圧</td>
+            <td>青白さとの<u class="k">対比</u></td></tr>
+
+          <tr class="grp"><th colspan="5" scope="colgroup">体</th></tr>
+          <tr data-axis><th scope="row">身長／頭身</th>
+            <td>160cm ／ 7.5</td><td><u class="k">170cm</u> ／ 7.0</td>
+            <td>165cm ／ <u class="k">8.0</u></td><td><u class="k">155cm</u> ／ 6.5</td></tr>
+          <tr data-axis><th scope="row">体型</th>
+            <td>細身で小柄</td>
+            <td><u class="k">ふくよか・ダイナマイトボディ</u>・健康体そのもの</td>
+            <td><u class="k">細身で繊細</u>・線が細い</td>
+            <td><u class="k">ふくよかだがメリハリなし</u>・やや幼児体型</td></tr>
+          <tr data-axis><th scope="row">メリハリ</th>
+            <td>中（胸と腰のくびれに若干）</td><td><u class="k">最大</u></td>
+            <td>少（細さで構成）</td><td><u class="k">最少</u>・全身が曲線的</td></tr>
+          <tr data-axis><th scope="row">質感</th>
+            <td>—</td><td>健康的な張り</td><td>削げた繊細さ</td>
+            <td><u class="k">ムニムニしたぬいぐるみ感</u></td></tr>
+          <tr data-axis><th scope="row">髪型</th>
+            <td><u class="k">4人中最短のショート</u>・外ハネ</td>
+            <td>ロングウェーブ・下ろした前髪</td>
+            <td>ロングストレート・センターパート</td>
+            <td>ミディアムボブ・細い髪質</td></tr>
+          <tr data-axis><th scope="row">髪の扱い</th>
+            <td>（短いため該当なし）</td><td><u class="k">まとめない</u></td>
+            <td><u class="k">勤務時は夜会巻き</u></td><td>未定</td></tr>
+
+          <tr class="grp"><th colspan="5" scope="colgroup">構造</th></tr>
+          <tr data-axis><th scope="row">社会的ペルソナ</th>
+            <td>潔癖で正義感溢れる教師</td><td>明るく快活な人気者</td>
+            <td>隙のない憧れの先輩</td><td>守ってあげたくなる可憐さ</td></tr>
+          <tr data-axis><th scope="row">内面の欠落</th>
+            <td>尊厳と他者評価への固執</td><td>視線への無自覚な依存</td>
+            <td><u class="k">穏やかな顔で神経質、口を開けば毒</u></td><td>自己決定の拒絶</td></tr>
+          <tr data-axis><th scope="row">破綻の主体</th>
+            <td>強制</td><td><u class="k">偶然</u></td><td>強制</td>
+            <td><u class="k">自発</u><span class="only">自ら降りる</span></td></tr>
+          <tr data-axis><th scope="row">加害者</th>
+            <td>政治家たち（明確）</td><td><u class="k">最後まで明かされない</u></td>
+            <td>後輩男子（明確）</td><td>不在（自分自身）</td></tr>
+          <tr data-axis><th scope="row">着地</th>
+            <td>完全適応（おむつ）</td><td>放逸と露出</td>
+            <td>立場逆転と服従</td><td>退行と擬態</td></tr>
+          <tr data-axis><th scope="row">下着</th>
+            <td>魅せるレース</td><td>機能一辺倒</td><td>完璧な上下セット</td>
+            <td><u class="k">ブラを着けない</u></td></tr>
+          <tr data-axis><th scope="row">靴</th>
+            <td>パンプス（規律）</td><td>紐スニーカー（自分で走る）</td>
+            <td>パンプス（教養と資力）</td>
+            <td><u class="k">マジックテープ</u>（結ぶのを放棄）</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <h2>この体系で効いている三つの逆転</h2>
+    </div>
+    <div class="revs">
+      <div class="rev">
+        <h3>年齢と見た目が逆を向く</h3>
+        <p>向日葵は<b>最年少18歳なのに最も大人びた顔と最も豊満な体</b>、柊は19歳で<b>最も幼い顔と体</b>。1歳差の二人を両極に置いたことで、年齢が身体を保証しないという不穏さが出る。</p>
+      </div>
+      <div class="rev">
+        <h3>「ふくよか」が二種類ある</h3>
+        <p>向日葵と柊はどちらもふくよかだが、<b>向日葵はメリハリの最大値、柊はメリハリの最小値</b>。同じ語で正反対を指すので、シルエットだけで完全に別人になる。</p>
+      </div>
+      <div class="rev">
+        <h3>桃香だけが奥二重</h3>
+        <p>目の形は他三人が被ることを許容した代わりに、<b>瞼の構造で一人だけ独立</b>させた。残りを割っているのは<b>楓の離れ目</b>と<b>柊のグレーの瞳</b>で、この二つは他の誰も持っていない。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    正本は各キャラクターノート（<code>content/characters/</code>）。このシートは横断比較のための派生物であり、記述が食い違った場合は各ノートを正とする。<br>
+    未定：柊の髪の扱い。
+  </footer>
+</div>
+
+<script>
+  const FIG = [
+    {n:"桃香", cm:160, hr:7.5, c:"#72713E"},
+    {n:"向日葵", cm:170, hr:7.0, c:"#2B486F"},
+    {n:"楓",   cm:165, hr:8.0, c:"#622426"},
+    {n:"柊",   cm:155, hr:6.5, c:"#4D4E53"}
+  ];
+  const maxCm = 170, base = 250;
+  document.getElementById("props").innerHTML = FIG.map(f=>{
+    const h = Math.round(base * f.cm / maxCm);
+    const heads = Math.round(f.hr);
+    const segH = h / f.hr;
+    let segs = "";
+    for(let i=0;i<heads;i++){
+      const op = 0.30 + (i/heads)*0.62;
+      segs += `<div class="seg" style="height:${segH}px;background:${f.c};opacity:${op.toFixed(2)}"></div>`;
+    }
+    return `<div class="prop">
+      <div class="fig" style="height:${base}px">${segs}</div>
+      <div class="prop-cap"><b>${f.cm}cm</b><span>${f.n} ／ ${f.hr}頭身</span></div>
+    </div>`;
+  }).join("");
+
+  const mx = document.getElementById("mx");
+  mx.querySelectorAll("tbody tr[data-axis]").forEach(row=>{
+    row.addEventListener("click", ()=>{
+      const was = row.classList.contains("on");
+      mx.querySelectorAll("tr.on").forEach(r=>r.classList.remove("on"));
+      if(was){ mx.classList.remove("focusing"); }
+      else { row.classList.add("on"); mx.classList.add("focusing"); }
+    });
+  });
+  document.getElementById("clear").addEventListener("click", ()=>{
+    mx.querySelectorAll("tr.on").forEach(r=>r.classList.remove("on"));
+    mx.classList.remove("focusing");
+  });
+</script>
+
+</body>
+</html>
