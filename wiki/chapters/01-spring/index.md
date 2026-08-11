@@ -11,6 +11,7 @@ psychological_state: "不穏な予兆・孤立無援の抵抗"
 contrast_theme: "芽生えと潜むトラップ"
 momoka_sync_theme: "原点の動機（生徒を守る誇り）"
 status: "planning"
+decision_default: draft
 ---
 
 # 🌸 第1章：春
@@ -25,7 +26,7 @@ status: "planning"
 | :--- | :--- |
 | **主人公** | **田邊 桃香**（潔癖な女性教師） |
 | **トライアド機能** | **誘因 (Trigger)** — 物語全体の不穏なタメ |
-| **主要舞台** | 政治家たちの密室・会議室 |
+| **主要舞台** | 政治家たちの密室・会議室 → [[locations/meeting-room|📍 場所ノート]] |
 | **破綻のトリガー** | 密室の重圧と仕掛けられた罠 |
 | **心理フェーズ** | 逃げ場を失っていく予兆・抵抗 |
 | **経糸（桃香）同期** | 原点の動機（虐められた生徒への思い） |
@@ -42,5 +43,5 @@ status: "planning"
 
 ## 🔍 関連設定・登場人物
 
-* [[characters/tanabe-momoka|田邊 桃香]]
+* [[characters/momoka/index|田邊 桃香]]
 * [[rules/triad-structure|トライアド構造と各章の役割]]

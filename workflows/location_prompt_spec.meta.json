@@ -1,0 +1,7 @@
+{
+  "name": "Location Prompt Slot Spec (not a workflow)",
+  "kind": "spec",
+  "runnable": false,
+  "description": "Source of truth for background/location prompts. Contains no people by design: a scene prompt is location slots + character slots, assembled at generation time. Mirrored into wiki/locations/*.md - if they disagree, this file wins.",
+  "assemble": "', '.join(spec['locations'][id]['slots'][k] for k in spec['slot_order'])"
+}

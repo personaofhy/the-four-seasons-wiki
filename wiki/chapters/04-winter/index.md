@@ -11,6 +11,7 @@ psychological_state: "退行・自己罰・歪んだ快感への没入"
 contrast_theme: "孤寂と冷たいぬくもり"
 momoka_sync_theme: "おむつ処置に対する屈辱と自発的諦め"
 status: "planning"
+decision_default: draft
 ---
 
 # ❄️ 第4章：冬
@@ -25,7 +26,7 @@ status: "planning"
 | :--- | :--- |
 | **主人公** | **橘 柊**（自罰的な大学生） |
 | **トライアド機能** | **退行・自発決壊** — 主観的な沈殿と退行 |
-| **主要舞台** | 静まり返った自室 |
+| **主要舞台** | 静まり返った自室 → [[locations/private-room|📍 場所ノート]] |
 | **破綻のトリガー** | 児童用下着を自ら身につけ、排泄する |
 | **心理フェーズ** | 罪悪感の自罰と、退行への没入 |
 | **経糸（桃香）同期** | おむつ処置への屈辱と、歪んだ安堵 |
@@ -42,5 +43,5 @@ status: "planning"
 
 ## 🔍 関連設定・登場人物
 
-* [[characters/tachibana-hiiragi|橘 柊]]
+* [[characters/hiiragi/index|橘 柊]]
 * [[rules/triad-structure|トライアド構造と各章の役割]]

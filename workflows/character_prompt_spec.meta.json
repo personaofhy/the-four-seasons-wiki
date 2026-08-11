@@ -1,0 +1,14 @@
+{
+  "name": "Character Prompt Slot Spec (not a workflow)",
+  "description": "Source of truth for how every THE FOUR SEASONS character prompt is assembled. Not runnable via MCP run_workflow - it is a data file consumed when building the PARAM_PROMPT value for char_ipadapter / char_ipadapter_controlnet / char_ipadapter_dual. Join slot_order with ', ' to produce the positive prompt. The assembled string is mirrored into each wiki outfit sheet; if the two disagree, this file wins. Regenerate the sheets rather than editing them by hand.",
+  "kind": "spec",
+  "runnable": false,
+  "consumed_by": [
+    "char_ipadapter",
+    "char_ipadapter_controlnet",
+    "char_ipadapter_dual",
+    "char_ipadapter_sdxl",
+    "char_ipadapter_controlnet_sdxl"
+  ],
+  "assemble": "', '.join(spec['characters'][id]['slots'][k] for k in spec['slot_order'])"
+}

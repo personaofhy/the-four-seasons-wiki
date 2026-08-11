@@ -1,0 +1,114 @@
+{
+  "$comment": "THE FOUR SEASONS - location prompt spec. Same slot discipline as character_prompt_spec.json. Locations carry no people; a scene prompt is a location prompt plus a character prompt.",
+  "version": 1,
+  "slot_order": [
+    "space",
+    "surfaces",
+    "light",
+    "weather_air",
+    "props",
+    "camera",
+    "tone"
+  ],
+  "slot_definitions": {
+    "space": "What kind of room or place, its scale and enclosure. Enclosure is the horror lever - say whether it can be left.",
+    "surfaces": "Floor, walls, and the material the body will touch. This is what stains, soaks, or reflects.",
+    "light": "Source, direction, colour temperature, time of day.",
+    "weather_air": "Temperature, humidity, smell, sound. Drives the physical sensation in prose even when invisible in an image.",
+    "props": "Objects that carry meaning. Keep to three or fewer - a prop list longer than that stops reading as composition.",
+    "camera": "Height, distance, lens feel. Fixed per location so repeat generations match.",
+    "tone": "Seasonal palette and contrast, matching the chapter."
+  },
+  "conventions": {
+    "join": ", ",
+    "language": "english, lowercase, comma separated",
+    "no_people": "Location prompts must not contain a person. Compose with a character prompt at generation time."
+  },
+  "negative_prompt": "people, person, human, figure, worst quality, low quality, text, watermark, signature, jpeg artifacts, blurry",
+  "locations": {
+    "meeting-room": {
+      "ja": "政治家たちの密室・会議室",
+      "chapter": "01-spring",
+      "state": "canon",
+      "slots": {
+        "space": "windowless interior meeting room, heavy closed double doors, oppressively low ceiling, no visible exit",
+        "surfaces": "long polished dark wood table, deep carpet swallowing sound, leather chairs",
+        "light": "recessed downlights only, cold and even, no daylight, hard shadows under the table",
+        "weather_air": "stale overwarm air, no circulation, faint smell of tobacco and paper",
+        "props": "water glasses left untouched, a closed document folder, a wall clock",
+        "camera": "eye level, medium wide, slight wide-angle compression toward the doors",
+        "tone": "spring chapter palette, low contrast, desaturated"
+      }
+    },
+    "rooftop-pool": {
+      "ja": "屋上のプール",
+      "chapter": "02-summer",
+      "state": "canon",
+      "slots": {
+        "space": "open rooftop swimming pool of a school, chain-link fence enclosing the whole roof, city rooftops beyond, no shade",
+        "surfaces": "wet pale blue tiled poolside, still chlorinated water, hot concrete, galvanised chain-link and a padlock",
+        "light": "brutal high midday summer sun straight overhead, glare off the water, short hard shadows",
+        "weather_air": "blazing heat, chlorine and sunscreen, cicadas, absolute stillness of a closed summer school",
+        "props": "a padlock clipped through the fence, a discarded swimsuit strap, a folded towel",
+        "camera": "eye level, wide, strong sun flare",
+        "tone": "summer chapter palette, bleached highlights, deep blue shadow"
+      }
+    },
+    "summer-classroom": {
+      "ja": "補習授業中の教室・カーテン裏",
+      "chapter": "02-summer",
+      "state": "canon",
+      "slots": {
+        "space": "occupied high school classroom during summer supplementary lessons, desks filled, tall window wall along one side, heavy curtains half drawn",
+        "surfaces": "large window glass, worn curtain fabric, scuffed wooden floor, chalk dust",
+        "light": "hard summer daylight pouring through the window wall, the curtain glowing translucent from behind, silhouettes readable through the fabric",
+        "weather_air": "hot humid air, ceiling fan, the drone of a lesson, schoolyard noise from outside",
+        "props": "a half-drawn curtain, the window glass, rows of occupied desks",
+        "camera": "from outside the window looking in, eye level, medium - the schoolyard vantage point",
+        "tone": "summer chapter palette, low contrast, harsh backlight"
+      }
+    },
+    "campsite-mud": {
+      "ja": "社内キャンプ場・紅葉の泥",
+      "chapter": "03-autumn",
+      "state": "canon",
+      "slots": {
+        "space": "outdoor company retreat campsite clearing in deep autumn woods, toilet block visible but too far",
+        "surfaces": "churned brown mud, wet fallen leaves, exposed tree roots",
+        "light": "low overcast afternoon light, no direct sun, flat and grey",
+        "weather_air": "cold damp air, smell of wet earth and rot, distant water",
+        "props": "a single dark brown pump half sunk in mud, scattered maple leaves, a washstand in the background",
+        "camera": "low angle near ground level, close, shallow depth of field",
+        "tone": "autumn chapter palette, medium contrast, mud tones close to the character palette"
+      }
+    },
+    "private-room": {
+      "ja": "静まり返った自室・炬燵",
+      "chapter": "04-winter",
+      "state": "canon",
+      "slots": {
+        "space": "small cold single-room apartment, curtains drawn, door shut, nowhere to be seen and nobody coming",
+        "surfaces": "tatami or thin carpet, a kotatsu with a heavy quilt, cold bare floor beyond its edge",
+        "light": "weak grey winter daylight through drawn curtains, the kotatsu glowing faintly orange underneath",
+        "weather_air": "freezing still air outside the quilt, silence, faint hum of the heater",
+        "props": "discarded tights and skirt beside the kotatsu, an unwatched screen, a mug gone cold",
+        "camera": "low floor level, close, intimate",
+        "tone": "winter chapter palette, highest contrast, cold blue against the orange pocket of warmth"
+      }
+    },
+    "school-corridor": {
+      "ja": "学校・トイレ前の廊下",
+      "chapter": "05-re-spring",
+      "state": "canon",
+      "slots": {
+        "space": "school corridor outside the toilets, long straight sightline, students able to appear from either end",
+        "surfaces": "polished linoleum reflecting the windows, painted concrete walls, a row of lockers",
+        "light": "flat spring daylight from a window wall, even and unforgiving, nothing to hide in",
+        "weather_air": "mild air, distant noise of a class, footsteps",
+        "props": "a toilet door standing ajar, a notice board, a wooden hanger",
+        "camera": "eye level, long lens down the corridor, deep focus",
+        "tone": "spring chapter palette returning, low contrast, brighter than chapter 1"
+      }
+    }
+  }
+}

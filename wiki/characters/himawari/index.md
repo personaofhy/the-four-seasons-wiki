@@ -22,7 +22,7 @@ legwear: 白の普通のショートソックス
 shoes: 履き込んだ白のスポーツスニーカー
 social_persona: 明るく快活な学校の人気者
 inner_flaw: 視線への無自覚な依存と自己呈示欲求
-breakdown_trigger: 南京錠の悪戯で閉じ込められた無人教室での面前失禁（犯人は最後まで明かされない）
+breakdown_trigger: 屋上プールで水着の紐とフェンスを南京錠で繋がれ、全裸で移動した先の補習授業中の教室で公然失禁（犯人は最後まで明かされない）
 adaptation_type: 放逸と露出（恥辱の完全な開帳と安堵）
 aesthetic: 放逸と無惨
 agency: 偶然
@@ -36,8 +36,9 @@ face_model: 参照画像の統合（大人びた卵型に、丸い目と太め�
 color_main: ["#2B486F", "#6286A9", "#ABBDCC", "#FFFFFF"]
 color_sub: ["#FCD57E", "#F7EBD4", "#CBD3DB", "#E4CBC7"]
 color_accent: ["#79787A", "#373F4B", "#313944"]
-status: designed
+status: stub
 tags: [character, season/summer]
+decision_default: canon
 ---
 
 # 🌻 金城 向日葵（かねしろ ひまわり）
@@ -107,7 +108,9 @@ tags: [character, season/summer]
 
 ## 👗 服装
 
-👉 **[[outfit|👗 金城 向日葵 衣装詳細・スポーティ下着破綻シートを見る]]**
+👉 **[[characters/himawari/outfits/daily|👗 金城 向日葵 衣装詳細・スポーティ下着破綻シートを見る]]**
+
+👉 **[[characters/himawari/expressions|😐 金城 向日葵 表情設定・6段階シートを見る]]**
 
 ### 通常時
 
@@ -141,7 +144,10 @@ tags: [character, season/summer]
 
 ## 😶 表情パターン
 
+👉 **[[expressions|😊 金城 向日葵 表情6段階詳細シートを見る]]**
+
 共通定義は [[characters/index|キャラクター一覧]] を参照。
+
 
 | パターン | 向日葵の描き分け |
 | :--- | :--- |

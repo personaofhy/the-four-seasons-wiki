@@ -1,0 +1,162 @@
+{
+  "$comment": "THE FOUR SEASONS - canonical prompt slot order. Every character prompt MUST be assembled by joining the slots below in the declared order with ', '. Do not reorder, do not omit a slot, do not inline extra clauses. The wiki outfit sheets carry the assembled string; this file is the source of truth for how it was built.",
+  "version": 1,
+  "slot_order": [
+    "subject",
+    "hair",
+    "eyes",
+    "top",
+    "bottom",
+    "legwear_shoes",
+    "tone"
+  ],
+  "slot_definitions": {
+    "subject": "Age, nationality, social role, height and build. Never omit - a prompt without a subject generates a different person on every run.",
+    "hair": "Length, colour, texture, styling. Chapter-invariant.",
+    "eyes": "Shape, eyelid, iris colour, brow. Chapter-invariant.",
+    "top": "Upper garment: material, colour, and how it is worn.",
+    "bottom": "Lower garment: length, silhouette. For one-piece outfits, describe the skirt portion here.",
+    "legwear_shoes": "Hosiery plus footwear. The lace-vs-velcro distinction is load-bearing for characterisation - keep the fastening explicit.",
+    "tone": "Seasonal palette, contrast level, skin and lighting. Derived from the character's personal-colour assignment.",
+    "expression": "The 6-stage expression fragment. Replaces nothing - it is inserted between eyes and framing. See expression_stages.",
+    "framing": "Shot framing for expression sheets. Fixed across all characters so the six panels are comparable."
+  },
+  "conventions": {
+    "join": ", ",
+    "language": "english, lowercase, comma separated",
+    "forbidden": [
+      "real person names (the face_model frontmatter field is an internal casting note, never a prompt token)",
+      "pixel art / 16-bit / retro game style tokens (concept dropped)",
+      "chapter-specific breakdown state (put that in a per-scene override, not the base prompt)"
+    ],
+    "expression_assemble": "', '.join([subject, hair, eyes, expression_slots[stage], expression_framing, tone])"
+  },
+  "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing limbs, extra limbs, cropped, text, watermark, signature, jpeg artifacts, blurry",
+  "characters": {
+    "tanabe-momoka": {
+      "season": "spring",
+      "outfit": "daily",
+      "slots": {
+        "subject": "23yo japanese woman, novice high school english teacher, slender petite build, 160cm",
+        "hair": "short light brown-beige hair, shortest of the four, wispy see-through bangs, flipped-out ends, forehead visible",
+        "eyes": "inner double eyelids, bright light brown irises, straight thin eyebrows, composed dignified gaze",
+        "top": "light sage green long sleeve blouse, crisp unwrinkled cotton, buttoned all the way to the collar",
+        "bottom": "dark charcoal high-waist straight trousers, full length",
+        "legwear_shoes": "beige no-show footcovers, dark grey low-heel pumps",
+        "tone": "warm spring palette, lowest contrast of the four, soft daylight"
+      },
+      "expression_slots": {
+        "1-neutral": "calm composed expression, straight thin eyebrows level, lips lightly closed, upright dignified gaze",
+        "2-smile": "gentle small smile, eyes softening into a slight crease, brows relaxed, warm and teacherly",
+        "3-suspicion": "eyes narrowing slightly, brows drawing straighter and lower, lips pressed thin, gaze flicking sideways",
+        "4-anxiety": "brows pulled together, beads of cold sweat on the forehead and temple, lower lip caught between the teeth, eyes fixed forward too hard",
+        "5-panic": "deep flush spreading from the earlobes down the neck, eyes brimming and wide, mouth fallen open, brows lifted helplessly",
+        "6-acceptance": "light gone from the eyes, unfocused hollow stare, faint resigned smile, face slack, flush fading to pallor"
+      }
+    },
+    "kaneshiro-himawari": {
+      "season": "summer",
+      "outfit": "daily",
+      "slots": {
+        "subject": "18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm",
+        "hair": "long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled",
+        "eyes": "large round eyes, wide double eyelids, big dark irises, expressive",
+        "top": "vivid yellow long sleeve button-up shirt, casual cotton, top two buttons undone, sleeves rolled up",
+        "bottom": "light wash blue straight denim jeans, full length",
+        "legwear_shoes": "white cotton short socks, worn white canvas sneakers with laces",
+        "tone": "cool summer palette, low contrast, pale bluish skin"
+      },
+      "expression_slots": {
+        "1-neutral": "bright open expression, large round eyes fully visible, thick brows level, mouth in an easy line",
+        "2-smile": "wide unguarded grin, eyes crinkling almost shut, cheeks lifted, radiant and careless",
+        "3-suspicion": "round eyes going still, thick brows knitting, smile draining away mid-expression, head tilting back slightly",
+        "4-anxiety": "brows steeply angled, cold sweat at the hairline, teeth clamped on the lower lip, big eyes darting, breath held",
+        "5-panic": "violent circular blush on both cheeks spreading to the collarbone, eyes enormous and streaming, mouth wide open, brows collapsed",
+        "6-acceptance": "large eyes emptied of light, staring past the viewer, mouth hanging slightly open, faint bewildered smile, tear tracks drying"
+      }
+    },
+    "toyama-kaede": {
+      "season": "autumn",
+      "outfit": "daily",
+      "slots": {
+        "subject": "26yo japanese woman, corporate career-track employee, slim long-legged model figure, 165cm",
+        "hair": "long deep warm brown-black straight hair worn in a low chignon updo",
+        "eyes": "round dark wide-set eyes, slightly drooping, light brown irises",
+        "top": "deep navy blue V-neck wrap dress, matte wool, long sleeves, black leather belt with antique silver buckle",
+        "bottom": "midi length flare skirt, falling below the knee, swaying softly",
+        "legwear_shoes": "20-30 denier dark navy pantyhose, dark brown pointed-toe leather pumps, 7-8cm heel",
+        "tone": "warm autumn palette, medium contrast, fair skin"
+      },
+      "expression_slots": {
+        "1-neutral": "serene poised expression, wide-set drooping eyes calm, brows softly arched, faint composed smile of authority",
+        "2-smile": "elegant measured smile, eyes curving warmly, chin slightly lowered, gracious and untouchable",
+        "3-suspicion": "drooping eyes sharpening, brows lowering a fraction, jaw setting, gaze held very still",
+        "4-anxiety": "brows drawn hard together, cold sweat running from temple to jaw, lips pressed white, eyes glassy with effort, throat tight",
+        "5-panic": "crimson flush flooding the face and neck, wide-set eyes blown open and wet, mouth twisted open, composure shattered",
+        "6-acceptance": "eyes dulled and unseeing, head tilted down, mouth softened into a small broken smile, all tension gone from the face"
+      }
+    },
+    "tachibana-hiiragi": {
+      "season": "winter",
+      "outfit": "daily",
+      "slots": {
+        "subject": "19yo japanese university student, aspiring idol, petite soft rounded build, 155cm",
+        "hair": "medium bob, pure black with a blue cast, delicate",
+        "eyes": "large round moist eyes, palest grey irises of the four, doll-like",
+        "top": "thick charcoal grey wool knit sweater, voluminous grey scarf, ivory knit beanie",
+        "bottom": "grey knit skirt, knee length, soft curved silhouette",
+        "legwear_shoes": "dark grey winter tights, off-white canvas sneakers with velcro straps",
+        "tone": "cool winter palette, highest contrast of the four, pale skin against black hair"
+      },
+      "expression_slots": {
+        "1-neutral": "doll-like blank calm, huge round pale grey eyes, small mouth closed, face very still",
+        "2-smile": "tiny careful smile, pale grey eyes curving, cheeks barely lifting, fragile and rehearsed",
+        "3-suspicion": "huge eyes widening further, pupils shrinking, small mouth compressing, chin pulling back into the scarf",
+        "4-anxiety": "brows tented upward, cold sweat on the pale forehead, lower lip bitten hard, enormous eyes glassy and fixed",
+        "5-panic": "stark red flush blazing across the white face and ears, pale grey eyes flooded with tears, mouth open in a small round gasp",
+        "6-acceptance": "pale grey eyes gone flat and dull, thousand-yard stare, mouth curved into a small contented childlike smile, face utterly relaxed"
+      }
+    }
+  },
+  "expression_slot_order": [
+    "subject",
+    "hair",
+    "eyes",
+    "expression",
+    "framing",
+    "tone"
+  ],
+  "expression_framing": "bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting",
+  "expression_stages": {
+    "1-neutral": {
+      "ja": "通常",
+      "def": "ペルソナを維持した日常の顔",
+      "when": "章の序盤・日常会話・社会的対応"
+    },
+    "2-smile": {
+      "ja": "笑顔・安堵",
+      "def": "魅せる笑顔、または一過性の安堵",
+      "when": "良好な他者対応・危機を脱した錯覚"
+    },
+    "3-suspicion": {
+      "ja": "警戒・違和感",
+      "def": "異変や周囲の視線を察知",
+      "when": "罠の気配・逃げ場の喪失の予感"
+    },
+    "4-anxiety": {
+      "ja": "抑圧・冷や汗",
+      "def": "生理的緊張・破綻の隠蔽",
+      "when": "耐えている最中"
+    },
+    "5-panic": {
+      "ja": "狼狽・大赤面",
+      "def": "破綻の瞬間・激しい羞恥",
+      "when": "露出・失禁の直前〜直後"
+    },
+    "6-acceptance": {
+      "ja": "虚脱・完全適応",
+      "def": "尊厳の死滅と被支配への安堵",
+      "when": "屈服・完全適応の結末"
+    }
+  }
+}

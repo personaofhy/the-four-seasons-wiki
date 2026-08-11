@@ -36,8 +36,9 @@ face_model: 真っ直ぐな眉と凛とした目元（低コントラスト・�
 color_main: ["#72713E", "#B89C84", "#EEE2D5", "#FFFFFF"]
 color_sub: ["#E7B6AC", "#EFE1D3", "#B6A693", "#9F7A6E"]
 color_accent: ["#757575", "#575757"]
-status: designed
+status: partial
 tags: [character, season/spring]
+decision_default: canon
 ---
 
 # 🌸 田邊 桃香（たなべ ももか）
@@ -88,7 +89,9 @@ tags: [character, season/spring]
 
 ## 👗 服装
 
-👉 **[[outfit|👗 田邊 桃香 衣装詳細・下着破綻変遷シートを見る]]**
+👉 **[[characters/momoka/outfits/daily|👗 田邊 桃香 衣装詳細・下着破綻変遷シートを見る]]**
+
+👉 **[[characters/momoka/expressions|😐 田邊 桃香 表情設定・6段階シートを見る]]**
 
 ### 通常時
 
@@ -160,7 +163,7 @@ tags: [character, season/spring]
 秘密を追及する男子生徒の前で、隠していた手がどけられ、動物柄の「児童用おむつ」を身につけているという最後の秘密が暴かれる。尊厳が死滅し、被支配の安堵の中で完全な適応を果たす。
 
 > [!important] 柊との差別化
-> おむつは**桃香の記号**。こちらは*他者に強制された罰*であり、[[characters/tachibana-hiiragi|橘 柊]] の*自分で選んだ擬態*とは主体も動機も正反対に置かれる。
+> おむつは**桃香の記号**。こちらは*他者に強制された罰*であり、[[characters/hiiragi/index|橘 柊]] の*自分で選んだ擬態*とは主体も動機も正反対に置かれる。
 
 ---
 

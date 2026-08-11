@@ -37,8 +37,9 @@ color_main: ["#1E283A", "#622426", "#523D2C", "#9F9085"]
 color_sub: ["#DBC1A9", "#997254", "#AE9A7F", "#908174"]
 color_accent: ["#812E2A", "#C29F73"]
 art_style: Photorealistic / Semi-real 3D render
-status: designed
+status: partial
 tags: [character, season/autumn]
+decision_default: canon
 ---
 
 # 🍁 遠山 楓（とおやま かえで）
@@ -80,7 +81,7 @@ tags: [character, season/autumn]
 > この落差は失われてはならない要素で、**可憐な見た目と裏腹に性格は少し怖い**という子鹿の設計思想そのものが、垂れ眉と柔和な造形の上にしか成立しない。最初から険しい顔をしていては、後輩に屈服する第3章の転落が「元から怖い人が負けた」話に縮小してしまう。
 
 > [!note] 向日葵と髪が同カテゴリになった
-> 向日葵をロングウェーブへ変更した結果、**両者とも「黒髪ロング」**になった。割り方の詳細は [[characters/kaneshiro-himawari|金城 向日葵]] の顔の節を参照。
+> 向日葵をロングウェーブへ変更した結果、**両者とも「黒髪ロング」**になった。割り方の詳細は [[characters/himawari/index|金城 向日葵]] の顔の節を参照。
 > 楓の側が担うのは **センターパートで額を出す／勤務時は夜会巻きにまとめる／濡れたような艶のストレート** の3点。**髪を管理することが楓の完璧主義の表出**であり、まとめない向日葵と対になる。
 
 ## 🦴 肉体
@@ -98,7 +99,9 @@ tags: [character, season/autumn]
 
 ## 👗 服装
 
-👉 **[[outfit|👗 遠山 楓 衣装詳細・下着破綻変遷シートを見る]]**
+👉 **[[characters/kaede/outfits/daily|👗 遠山 楓 衣装詳細・下着破綻変遷シートを見る]]**
+
+👉 **[[characters/kaede/expressions|😐 遠山 楓 表情設定・6段階シートを見る]]**
 
 ### 通常時 — 完成された服（知性・支配）
 
@@ -205,7 +208,7 @@ tags: [character, season/autumn]
 
 いずれも**顔を含まない**ため、キャラ生成時に別人の顔が混入しない。全て ComfyUI の input にアップロード済み。
 
-### ドット絵
+### 立ち姿スプライト
 
 ![立ち姿](../assets/characters/kaede/sprite/kaede_sprite_fullbody_16c.png)
 

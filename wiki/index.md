@@ -24,11 +24,12 @@ title: The Four Seasons Wiki
 
 * 👤 **[[characters/index|登場人物・キャラクター一覧]]**
   * 📋 横断比較は `characters.base`（frontmatterから自動生成）
-  * [[characters/tanabe-momoka|田邊 桃香]] (春・再び春 / 経糸)
-  * [[characters/kaneshiro-himawari|金城 向日葵]] (夏)
-  * [[characters/toyama-kaede|遠山 楓]] (秋)
-  * [[characters/tachibana-hiiragi|橘 柊]] (冬)
+  * [[characters/momoka/index|田邊 桃香]] (春・再び春 / 経糸)
+  * [[characters/himawari/index|金城 向日葵]] (夏)
+  * [[characters/kaede/index|遠山 楓]] (秋)
+  * [[characters/hiiragi/index|橘 柊]] (冬)
 
+* 📍 **[[locations/index|場所・舞台一覧]]**
 * 📖 **[[chapters/index|各章ストーリーポータル]]**
   * [[chapters/01-spring/index|第1章：春]]
   * [[chapters/02-summer/index|第2章：夏]]

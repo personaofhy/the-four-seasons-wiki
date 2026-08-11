@@ -11,6 +11,7 @@ psychological_state: "尊厳の完全な死滅・被支配への安堵"
 contrast_theme: "再生と絶対的な落滅"
 momoka_sync_theme: "経糸の完結（美談の崩壊と完全適応）"
 status: "planning"
+decision_default: draft
 ---
 
 # ✨ 第5章：再び春
@@ -25,7 +26,7 @@ status: "planning"
 | :--- | :--- |
 | **主人公** | **田邊 桃香**（強権的な教師） |
 | **トライアド機能** | **最終充足** — 全貌開示と完全なる適応 |
-| **主要舞台** | 学校の廊下・男子生徒の目の前 |
+| **主要舞台** | 学校の廊下・男子生徒の目の前 → [[locations/school-corridor|📍 場所ノート]] |
 | **破綻のトリガー** | 服の下の動物柄おむつの露出 |
 | **心理フェーズ** | 尊厳の滅亡と、被支配への安堵 |
 | **経糸（桃香）同期** | 「会議室で実は敗北していた」真実の開示 |
@@ -42,5 +43,5 @@ status: "planning"
 
 ## 🔍 関連設定・登場人物
 
-* [[characters/tanabe-momoka|田邊 桃香]]
+* [[characters/momoka/index|田邊 桃香]]
 * [[rules/momoka-warp-engine|経糸（桃香）感情同期ルール]]

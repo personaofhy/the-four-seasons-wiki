@@ -36,8 +36,9 @@ face_model: 當真あみ
 color_main: ["#4D4E53", "#8E99A4", "#FFFFFF"]
 color_sub: ["#C0A791", "#E7D8C9", "#B79C91", "#937776"]
 color_accent: ["#7C3332", "#293240"]
-status: designed
+status: stub
 tags: [character, season/winter]
+decision_default: canon
 ---
 
 # ❄️ 橘 柊（たちばな ひいらぎ）
@@ -100,7 +101,9 @@ tags: [character, season/winter]
 
 ## 👗 服装
 
-👉 **[[outfit|👗 橘 柊 衣装詳細・サレシ＆子供パンツ退行シートを見る]]**
+👉 **[[characters/hiiragi/outfits/daily|👗 橘 柊 衣装詳細・サラシ＆子供パンツ退行シートを見る]]**
+
+👉 **[[characters/hiiragi/expressions|😐 橘 柊 表情設定・6段階シートを見る]]**
 
 ### 通常時
 
@@ -114,7 +117,7 @@ tags: [character, season/winter]
 | **小物** | アイボリーのニット帽 |
 
 > [!tip] 靴に置かれた対比
-> **紐を結ばなくていい靴**を選んでいる。[[characters/kaneshiro-himawari|金城 向日葵]] の履き込んだ紐スニーカー（自分で走る）と正反対で、柊の「自己決定の拒絶」が足元から始まっていることを示す。
+> **紐を結ばなくていい靴**を選んでいる。[[characters/himawari/index|金城 向日葵]] の履き込んだ紐スニーカー（自分で走る）と正反対で、柊の「自己決定の拒絶」が足元から始まっていることを示す。
 
 ### 下着・レッグウェア
 
@@ -175,7 +178,7 @@ tags: [character, season/winter]
 児童の衣服を自ら選んで身につけ、子供を演じることで大人の責任から降りる。馬鹿馬鹿しい柄の子供用パンツが、かつての失禁の記憶と結びついた装置として機能していく。
 
 > [!important] 桃香との差別化
-> **おむつは履かない。** おむつは [[characters/tanabe-momoka|田邊 桃香]] の記号であり、あちらは*他者に強制された罰*。柊は*自分で選んだ擬態*であり、主体と動機が正反対に置かれる。
+> **おむつは履かない。** おむつは [[characters/momoka/index|田邊 桃香]] の記号であり、あちらは*他者に強制された罰*。柊は*自分で選んだ擬態*であり、主体と動機が正反対に置かれる。
 
 ---
 

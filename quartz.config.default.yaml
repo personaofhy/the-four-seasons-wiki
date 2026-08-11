@@ -10,6 +10,7 @@ configuration:
   baseUrl: personaofhy.github.io/the-four-seasons-wiki
   ignorePatterns:
     - private
+    - archive
     - templates
     - .obsidian
   theme:
