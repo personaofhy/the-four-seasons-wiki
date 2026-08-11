@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://personaofhy.github.io/the-four-seasons-wiki/sitemap.xml

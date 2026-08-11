@@ -20,8 +20,9 @@
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "install-plugins": "npx tsx ./quartz/plugins/loader/install-plugins.ts",
     "prebuild": "npm run install-plugins",
-    "postbuild": "cp wiki/characters/character-sheet.html public/characters/character-sheet.html 2>/dev/null || true"
+    "postbuild": "cp wiki/characters/character-sheet.html public/characters/character-sheet.html 2>/dev/null || true; cp wiki/static/robots.txt public/robots.txt 2>/dev/null || true"
   },
+
 
   "engines": {
     "npm": ">=10.9.2",

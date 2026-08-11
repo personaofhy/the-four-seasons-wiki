@@ -34,7 +34,9 @@ jobs:
       - name: Build Quartz
         run: |
           npx quartz build -d wiki
-          cp wiki/characters/character-sheet.html public/characters/character-sheet.html
+          cp wiki/characters/character-sheet.html public/characters/character-sheet.html 2>/dev/null || true
+          cp wiki/static/robots.txt public/robots.txt 2>/dev/null || true
+
 
 
       - name: Upload artifact
