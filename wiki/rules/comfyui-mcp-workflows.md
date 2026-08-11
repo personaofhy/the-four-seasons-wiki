@@ -272,3 +272,30 @@ python3 scripts/fetch_output.py kaede_body_tpose_00001_.png \
 * 同期スクリプト: `scripts/sync_workflows.sh`
 * アップロードスクリプト: `scripts/upload_ref.py`
 * [[rules/comfyui-image-generation-reflection|画像生成 黄金ルール（反省ノート）]]
+
+---
+
+## 🧬 同一性を保つ手法の比較（実機調査 2026-08-11）
+
+IP-Adapterは**同一性と表情を同時には満たせない**（`workflows/character_prompt_spec.json` の `ip_adapter_tradeoff` に実測値）。代替手段を ComfyUI 実機で調査した結果。
+
+| 手法 | 原理 | トレードオフ | 実機の状態 |
+| :--- | :--- | :--- | :--- |
+| **LoRA学習** | 同一性を**モデル重みに焼く**。プロンプトは表情のみを担当 | **構造的に発生しない** | ✅ `TrainLoraNode` ＋データセット系ノード導入済み |
+| **IP-Adapter FaceID** | CLIPの全体埋め込みではなく **ArcFaceの顔埋め込み**。顔認識用の埋め込みは表情・角度に不変なので、表情を運ばない | ほぼ無い | ⚠️ ノードのみ。**モデル未導入**（下記） |
+| **顔インペイント** | 表情優先で生成し、顔領域だけ canon へ寄せる | 継ぎ目・二度手間 | ✅ `face_swap_masked` ＋ INPAINT系導入済み |
+| **ControlNet 2段** | 表情を**構造**として持ち込む | 中間画像が必要 | ✅ `controlnet-union-sdxl-1.0-promax` 導入済み |
+| **PhotoMaker** | 顔写真から同一性 | — | ❌ モデル未導入 |
+| **固定seed＋詳細プロンプト** | — | 同一性が保証されない | — |
+
+> [!tip] 本命は LoRA 学習
+> 他の手法はすべて「同一性と表情の綱引き」をどう配分するかの話だが、**LoRAだけがその綱引き自体を消す**。
+> 同一性がモデル側にあるため、プロンプトは表情・衣装・構図の記述に全予算を使える。
+> 4人×6表情×複数衣装という規模では、初期コストを回収できる。
+
+> [!warning] FaceID を使うには2つ足りない
+> ノード（`IPAdapterFaceID` / `IPAdapterUnifiedLoaderFaceID`）は入っているが、実行すると `ClipVision model not found` で落ちる。
+> 1. **FaceIDモデル本体**が無い（`IPAdapterModelLoader` に `ip-adapter_sd15` と `ip-adapter_sdxl_vit-h` の2つしかない）
+> 2. **CLIP visionのファイル名**が期待値と不一致。実機は `clip-vision_vit-h.safetensors` / `clip_vision_h.safetensors` だが、ユニファイドローダーは `CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors` 系の名前を探す
+>
+> ワークフロー `char_faceid_sdxl.json` は用意済み。上記2点が揃えばそのまま動く。
