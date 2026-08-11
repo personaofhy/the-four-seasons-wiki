@@ -2,7 +2,6 @@ filters:
   and:
     - file.folder == "wiki/characters"
     - type == "character"
-
 properties:
   name_ja:
     displayName: 名前
