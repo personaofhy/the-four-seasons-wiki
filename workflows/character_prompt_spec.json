@@ -19,7 +19,8 @@
     "legwear_shoes": "Hosiery plus footwear. The lace-vs-velcro distinction is load-bearing for characterisation - keep the fastening explicit.",
     "tone": "Seasonal palette, contrast level, skin and lighting. Derived from the character's personal-colour assignment.",
     "expression": "The 6-stage expression fragment. Replaces nothing - it is inserted between eyes and framing. See expression_stages.",
-    "framing": "Shot framing for expression sheets. Fixed across all characters so the six panels are comparable."
+    "framing": "Shot framing for expression sheets. Fixed across all characters so the six panels are comparable.",
+    "identity": "Compact identity for expression sheets: age, hair, eyes, brows only. The full subject/hair/eyes slots are too long to co-exist with an expression inside one CLIP chunk."
   },
   "conventions": {
     "join": ", ",
@@ -30,9 +31,9 @@
       "chapter-specific breakdown state (put that in a per-scene override, not the base prompt)",
       "stage-1 illustration as the IP-Adapter reference for a stage-2 realistic render (style would follow the reference back to illustration)"
     ],
-    "expression_assemble": "', '.join([subject, hair, eyes, expression_slots[stage], expression_framing, tone])"
+    "expression_assemble": "', '.join(['(' + expression_slots[stage] + ':1.25)', identity_compact, expression_framing, pipeline[stage]['tone_suffix']])"
   },
-  "negative_prompt": "worst quality, low quality, bad anatomy, bad hands, missing limbs, extra limbs, cropped, text, watermark, signature, jpeg artifacts, blurry",
+  "negative_prompt": "worst quality, low quality, bad anatomy, chibi, oversized head, sketch, pixel art, retro game, text, letters, watermark, signature, blurry",
   "characters": {
     "tanabe-momoka": {
       "season": "spring",
@@ -47,15 +48,16 @@
         "tone": "warm spring palette, lowest contrast of the four, soft daylight"
       },
       "expression_slots": {
-        "1-neutral": "calm composed expression, straight thin eyebrows level, lips lightly closed, upright dignified gaze",
-        "2-smile": "gentle small smile, eyes softening into a slight crease, brows relaxed, warm and teacherly",
-        "3-suspicion": "eyes narrowing slightly, brows drawing straighter and lower, lips pressed thin, gaze flicking sideways",
-        "4-anxiety": "brows pulled together, beads of cold sweat on the forehead and temple, lower lip caught between the teeth, eyes fixed forward too hard",
-        "5-panic": "deep flush spreading from the earlobes down the neck, eyes brimming and wide, mouth fallen open, brows lifted helplessly",
-        "6-acceptance": "light gone from the eyes, unfocused hollow stare, faint resigned smile, face slack, flush fading to pallor"
+        "1-neutral": "calm composed, level brows, lips lightly closed",
+        "2-smile": "gentle small smile, eyes softening, brows relaxed",
+        "3-suspicion": "eyes narrowing, brows lowering, lips pressed thin, glancing sideways",
+        "4-anxiety": "cold sweat beads on forehead, biting lower lip, brows pulled together, staring hard",
+        "5-panic": "deep blush from ears down the neck, wide teary eyes, mouth fallen open",
+        "6-acceptance": "empty unfocused stare, no light in the eyes, faint resigned smile, slack face"
       },
       "stage1_ref": "momoka_ref_face.png",
-      "stage2_ref": "momoka_real_portrait_opt1.png"
+      "stage2_ref": "momoka_real_portrait_opt1.png",
+      "identity_compact": "23yo japanese woman, very short light brown hair, light brown eyes, thin straight brows"
     },
     "kaneshiro-himawari": {
       "season": "summer",
@@ -70,15 +72,16 @@
         "tone": "cool summer palette, low contrast, pale bluish skin"
       },
       "expression_slots": {
-        "1-neutral": "bright open expression, large round eyes fully visible, thick brows level, mouth in an easy line",
-        "2-smile": "wide unguarded grin, eyes crinkling almost shut, cheeks lifted, radiant and careless",
-        "3-suspicion": "round eyes going still, thick brows knitting, smile draining away mid-expression, head tilting back slightly",
-        "4-anxiety": "brows steeply angled, cold sweat at the hairline, teeth clamped on the lower lip, big eyes darting, breath held",
-        "5-panic": "violent circular blush on both cheeks spreading to the collarbone, eyes enormous and streaming, mouth wide open, brows collapsed",
-        "6-acceptance": "large eyes emptied of light, staring past the viewer, mouth hanging slightly open, faint bewildered smile, tear tracks drying"
+        "1-neutral": "bright open face, round eyes wide, mouth in an easy line",
+        "2-smile": "wide unguarded grin, eyes crinkled shut, cheeks lifted",
+        "3-suspicion": "round eyes going still, brows knitting, smile draining away",
+        "4-anxiety": "cold sweat at the hairline, teeth clamped on lower lip, big eyes darting, brows steep",
+        "5-panic": "violent round blush on both cheeks to the collarbone, huge streaming eyes, mouth wide open",
+        "6-acceptance": "large eyes emptied of light, staring past the viewer, mouth slightly open, tear tracks"
       },
       "stage1_ref": null,
-      "stage2_ref": null
+      "stage2_ref": null,
+      "identity_compact": "18yo japanese girl, long dark wavy hair, large round dark eyes, thick brows"
     },
     "toyama-kaede": {
       "season": "autumn",
@@ -93,15 +96,16 @@
         "tone": "warm autumn palette, medium contrast, fair skin"
       },
       "expression_slots": {
-        "1-neutral": "serene poised expression, wide-set drooping eyes calm, brows softly arched, faint composed smile of authority",
-        "2-smile": "elegant measured smile, eyes curving warmly, chin slightly lowered, gracious and untouchable",
-        "3-suspicion": "drooping eyes sharpening, brows lowering a fraction, jaw setting, gaze held very still",
-        "4-anxiety": "brows drawn hard together, cold sweat running from temple to jaw, lips pressed white, eyes glassy with effort, throat tight",
-        "5-panic": "crimson flush flooding the face and neck, wide-set eyes blown open and wet, mouth twisted open, composure shattered",
-        "6-acceptance": "eyes dulled and unseeing, head tilted down, mouth softened into a small broken smile, all tension gone from the face"
+        "1-neutral": "serene poised, brows softly arched, faint composed smile",
+        "2-smile": "elegant measured smile, eyes curving warmly, chin lowered",
+        "3-suspicion": "drooping eyes sharpening, brows lowering, jaw setting, gaze very still",
+        "4-anxiety": "cold sweat running temple to jaw, lips pressed white, brows drawn hard, glassy eyes",
+        "5-panic": "crimson flush over face and neck, eyes blown wide and wet, mouth twisted open",
+        "6-acceptance": "eyes dulled and unseeing, head tilted down, small broken smile, all tension gone"
       },
       "stage1_ref": null,
-      "stage2_ref": null
+      "stage2_ref": null,
+      "identity_compact": "26yo japanese woman, dark brown hair in a low chignon, wide-set drooping light brown eyes"
     },
     "tachibana-hiiragi": {
       "season": "winter",
@@ -116,27 +120,26 @@
         "tone": "cool winter palette, highest contrast of the four, pale skin against black hair"
       },
       "expression_slots": {
-        "1-neutral": "doll-like blank calm, huge round pale grey eyes, small mouth closed, face very still",
-        "2-smile": "tiny careful smile, pale grey eyes curving, cheeks barely lifting, fragile and rehearsed",
-        "3-suspicion": "huge eyes widening further, pupils shrinking, small mouth compressing, chin pulling back into the scarf",
-        "4-anxiety": "brows tented upward, cold sweat on the pale forehead, lower lip bitten hard, enormous eyes glassy and fixed",
-        "5-panic": "stark red flush blazing across the white face and ears, pale grey eyes flooded with tears, mouth open in a small round gasp",
-        "6-acceptance": "pale grey eyes gone flat and dull, thousand-yard stare, mouth curved into a small contented childlike smile, face utterly relaxed"
+        "1-neutral": "doll-like blank calm, huge pale eyes, small mouth closed, face very still",
+        "2-smile": "tiny careful smile, pale eyes curving, cheeks barely lifting",
+        "3-suspicion": "huge eyes widening, pupils shrinking, small mouth compressing, chin pulling back",
+        "4-anxiety": "cold sweat on pale forehead, lower lip bitten hard, enormous glassy eyes, brows tented",
+        "5-panic": "stark red flush across the white face and ears, pale eyes flooded with tears, mouth open",
+        "6-acceptance": "pale eyes gone flat and dull, thousand-yard stare, small contented smile, face relaxed"
       },
       "stage1_ref": null,
       "stage2_ref": null,
-      "stage2_constraint": "REQUIRED. Hiiragi is 19 but deliberately designed to read younger (childlike face, soft rounded build, regression to childhood as her theme). Under a photorealistic style that design can produce output reading as a minor. Stage 2 for this character must hold unambiguously adult facial structure and proportions, and any output that does not must be discarded rather than adjusted. Her youthfulness is carried by styling and behaviour, never by making the body or face look like a child's."
+      "stage2_constraint": "REQUIRED. Hiiragi is 19 but deliberately designed to read younger (childlike face, soft rounded build, regression to childhood as her theme). Under a photorealistic style that design can produce output reading as a minor. Stage 2 for this character must hold unambiguously adult facial structure and proportions, and any output that does not must be discarded rather than adjusted. Her youthfulness is carried by styling and behaviour, never by making the body or face look like a child's.",
+      "identity_compact": "19yo japanese woman, black bob, very large pale grey eyes, thin brows"
     }
   },
   "expression_slot_order": [
-    "subject",
-    "hair",
-    "eyes",
     "expression",
+    "identity",
     "framing",
-    "tone"
+    "style"
   ],
-  "expression_framing": "bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting",
+  "expression_framing": "bust-up portrait, plain background",
   "expression_stages": {
     "1-neutral": {
       "ja": "通常",
@@ -173,7 +176,7 @@
     "$comment": "Two stages. Illustration is not a rejected style - it is the specification layer where human and model agree on what is decided. Realistic is the deliverable.",
     "stage1_illustration": {
       "purpose": "Fix and agree the features. Exaggerate the readable signs (sweat beads, circular blush, light leaving the eyes) so both a human and a model can confirm what is settled.",
-      "tone_suffix": "clean anime illustration, character design sheet style, flat colours, clear linework, plain background",
+      "tone_suffix": "clean anime illustration, flat colours, clear linework",
       "checkpoint": "Counterfeit-V3.0_fix_fp16.safetensors",
       "workflow": "char_ipadapter",
       "published_as": "仕様画像（wikiに「仕様」として掲載）"
@@ -187,5 +190,27 @@
       "identity_from": "A realistic reference of the same character. IP-Adapter inherits style from its reference, so the stage-2 reference must already be realistic - a stage-1 illustration would drag the output back to illustration.",
       "published_as": "最終画像"
     }
+  },
+  "token_budget": {
+    "limit": 77,
+    "note": "SD1.5 CLIP encodes in 77-token chunks and later chunks carry much less weight. A prompt that overflows silently loses its tail, so the varying slot must come first and the whole string must fit one chunk. Verified empirically: a 186-token prompt dropped the expression, framing and style entirely."
+  },
+  "verified_recipe": {
+    "$comment": "Settled by three runs against ComfyUI on 2026-08-11. Do not reintroduce what is listed under failed.",
+    "stage1": {
+      "workflow": "char_ipadapter",
+      "ckpt": "Counterfeit-V3.0_fix_fp16.safetensors",
+      "ip_weight": 0.75,
+      "cfg": 7.0,
+      "steps": 28,
+      "width": 512,
+      "height": 640
+    },
+    "failed": [
+      "ip_weight 0.85 with a 186-token prompt: expression, framing and style all fell past the CLIP chunk and were ignored - output was a neutral sad face with no sweat",
+      "(clause:1.25) emphasis on a whole expression clause: weights every token in it, produced grotesque eyebrows, and turned 'biting lower lip' into a finger held in the mouth",
+      "'biting lower lip' as a token at all - reads as a hand gesture. Use 'lips pressed tight'"
+    ],
+    "works": "plain unweighted prompt under 77 tokens, expression wording kept physical and simple, ip_weight 0.75 so the reference does not override the expression"
   }
 }
