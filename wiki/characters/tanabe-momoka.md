@@ -88,7 +88,10 @@ tags: [character, season/spring]
 
 ## 👗 服装
 
+👉 **[[tanabe-momoka-outfit|👗 田邊 桃香 衣装詳細・下着破綻変遷シートを見る]]**
+
 ### 通常時
+
 
 | 部位 | 設定 |
 | :--- | :--- |
