@@ -107,7 +107,10 @@ tags: [character, season/summer]
 
 ## 👗 服装
 
+👉 **[[kaneshiro-himawari-outfit|👗 金城 向日葵 衣装詳細・スポーティ下着破綻シートを見る]]**
+
 ### 通常時
+
 
 | 部位 | 設定 |
 | :--- | :--- |
