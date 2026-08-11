@@ -16,7 +16,7 @@ title: キャラクター一覧・横断対比
 | | 🌸 春 | 🌻 夏 | 🍁 秋 | ❄️ 冬 |
 | :---: | :---: | :---: | :---: | :---: |
 | | ![田邊桃香](../assets/characters/momoka/sprite/momoka_sprite_fullbody_16c.png) | ![金城向日葵](../assets/characters/himawari/sprite/himawari_sprite_fullbody_16c.png) | ![遠山楓](../assets/characters/kaede/sprite/kaede_sprite_fullbody_16c.png) | ![橘柊](../assets/characters/hiiragi/sprite/hiiragi_sprite_fullbody_16c.png) |
-| | **[[characters/tanabe-momoka\|田邊 桃香]]** | **[[characters/kaneshiro-himawari\|金城 向日葵]]** | **[[characters/toyama-kaede\|遠山 楓]]** | **[[characters/tachibana-hiiragi\|橘 柊]]** |
+| | **[[characters/momoka/index\|田邊 桃香]]** | **[[characters/himawari/index\|金城 向日葵]]** | **[[characters/kaede/index\|遠山 楓]]** | **[[characters/hiiragi/index\|橘 柊]]** |
 | | 23歳・新任教師（英語科） | 18歳・高校生 | 26歳・会社員 | 19歳・大学生 |
 | | 潔癖の陥落 | 放逸と無惨 | 美貌と権威の失墜 | 退行と擬態 |
 

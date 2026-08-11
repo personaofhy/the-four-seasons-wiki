@@ -100,7 +100,7 @@ tags: [character, season/winter]
 
 ## 👗 服装
 
-👉 **[[tachibana-hiiragi-outfit|👗 橘 柊 衣装詳細・サレシ＆子供パンツ退行シートを見る]]**
+👉 **[[outfit|👗 橘 柊 衣装詳細・サレシ＆子供パンツ退行シートを見る]]**
 
 ### 通常時
 
