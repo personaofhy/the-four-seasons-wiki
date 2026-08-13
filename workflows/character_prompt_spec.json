@@ -69,7 +69,7 @@
         "top": "vivid yellow long sleeve button-up shirt, casual cotton, top two buttons undone, sleeves rolled up",
         "bottom": "light wash blue straight denim jeans, full length",
         "legwear_shoes": "white cotton short socks, worn white canvas sneakers with laces",
-        "tone": "cool summer palette, low contrast, pale bluish skin"
+        "tone": "cool summer palette, pale fair skin, healthy clear complexion"
       },
       "expression_slots": {
         "1-neutral": "bright open face, round eyes wide, mouth in an easy line",
@@ -79,9 +79,9 @@
         "5-panic": "violent round blush on both cheeks to the collarbone, huge streaming eyes, mouth wide open",
         "6-acceptance": "large eyes emptied of light, staring past the viewer, mouth slightly open, tear tracks"
       },
-      "stage1_ref": null,
+      "stage1_ref": "himawari_face_neutral.jpg",
       "stage2_ref": null,
-      "identity_compact": "18yo japanese girl, long dark wavy hair, large round dark eyes, thick brows"
+      "identity_compact": "18yo japanese girl, long dark wavy hair, large round dark eyes, thick brows, vivid yellow shirt"
     },
     "toyama-kaede": {
       "season": "autumn",
@@ -225,5 +225,15 @@
       "identity_ref": "momoka_face_canon.png"
     },
     "ip_adapter_tradeoff": "Measured on RealVisXL. ip_weight 0.8 / ip_end 0.9 holds the identity exactly but also transfers the reference's neutral expression, and the prompt cannot override it. Dropping to 0.6 / 0.45 lets the expression through but the face becomes a different person. There is no setting that gives both, which is the empirical reason the two-stage pipeline exists: keep ip_weight high for identity and bring the expression in through ControlNet structure taken from the stage-1 illustration, not through the prompt."
+  },
+  "flux": {
+    "$comment": "Flux uses T5 alongside CLIP and does not truncate at 77 tokens, so the canon that had to be dropped for SD1.5/SDXL fits here. Written as prose because T5 reads sentences better than comma-stacked tags. This is the fidelity test set: every clause below is traceable to the character note, and anything the render gets wrong is a measurable miss.",
+    "negative_prompt": "text, watermark, signature, extra fingers, deformed hands, freckles, heavy makeup, high contrast lighting",
+    "characters": {
+      "tanabe-momoka": {
+        "full_body": "A full-length photograph of a 23-year-old Japanese woman, a first-year high school English teacher, 160cm tall with a slender, small-boned frame and only a slight definition at the bust and waist; she has the shortest hair of her group, a light brown-beige short cut with a soft airy texture, the ends flicking lightly outward and see-through bangs that leave her forehead clearly visible; her eyebrows are straight and near-horizontal, thin but not narrow, with no arch; her eyes are inner double-eyelids, shaped between almond and soft, the lightest brown of her group, composed and quietly resolute; her nose is straight, her lips full and coral pink with a small mole beside her mouth; her face is gently rounded with a delicate chin and her skin is fair and clear with natural colour in the cheeks and no freckles; she wears a pale sage green long-sleeved blouse of crisp unwrinkled cotton fastened all the way to the top button, dark charcoal high-waisted straight trousers, and dark grey low-heeled pumps; she stands upright and composed, facing the camera, full body from head to feet against a plain pale backdrop in soft even daylight; the whole image is low in contrast, her light hair and light eyes sitting close together in tone, like gentle spring light.",
+        "portrait": "A head-and-shoulders photograph of a 23-year-old Japanese woman with the shortest hair of her group, a light brown-beige short cut with soft airy texture, ends flicking lightly outward and see-through bangs leaving her forehead clearly visible; straight near-horizontal eyebrows, thin but not narrow; inner double-eyelid eyes shaped between almond and soft, the lightest brown of her group, composed and quietly resolute; a straight nose, full coral pink lips and a small mole beside her mouth; a gently rounded face with a delicate chin, fair clear skin with natural colour in the cheeks and no freckles; she wears a pale sage green blouse fastened to the top button; plain pale backdrop, soft even daylight, low contrast throughout."
+      }
+    }
   }
 }
