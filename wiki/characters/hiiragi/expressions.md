@@ -31,7 +31,7 @@ tags: [expressions, character/tachibana-hiiragi, season/冬]
 
 |                        参照画像                        | 意図                                                                                                        |
 | :------------------------------------------------: | :-------------------------------------------------------------------------------------------------------- |
-| ![未生成](wiki/assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。ペルソナを維持した日常の顔を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![[placeholder_full.jpg]] | **`open`／未生成。**バストアップ・正面・無地背景。ペルソナを維持した日常の顔を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 19yo japanese university student, aspiring idol, petite soft rounded build, 155cm, medium bob, pure black with a blue cast, delicate, large round moist eyes, palest grey irises of the four, doll-like, doll-like blank calm, huge round pale grey eyes, small mouth closed, face very still, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool winter palette, highest contrast of the four, pale skin against black hair
@@ -45,9 +45,9 @@ tags: [expressions, character/tachibana-hiiragi, season/冬]
 | **発生タイミング** | 良好な他者対応・危機を脱した錯覚 |
 | **状態** | `open` — 画像未生成 |
 
-| 参照画像 | 意図 |
-| :---: | :--- |
-| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。魅せる笑顔、または一過性の安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+|                       参照画像                       | 意図                                                                                                          |
+| :----------------------------------------------: | :---------------------------------------------------------------------------------------------------------- |
+| ![[placeholder_full.jpg]] | **`open`／未生成。**バストアップ・正面・無地背景。魅せる笑顔、または一過性の安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 19yo japanese university student, aspiring idol, petite soft rounded build, 155cm, medium bob, pure black with a blue cast, delicate, large round moist eyes, palest grey irises of the four, doll-like, tiny careful smile, pale grey eyes curving, cheeks barely lifting, fragile and rehearsed, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool winter palette, highest contrast of the four, pale skin against black hair
@@ -63,7 +63,7 @@ tags: [expressions, character/tachibana-hiiragi, season/冬]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。異変や周囲の視線を察知を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![[placeholder_full.jpg]] | **`open`／未生成。**バストアップ・正面・無地背景。異変や周囲の視線を察知を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 19yo japanese university student, aspiring idol, petite soft rounded build, 155cm, medium bob, pure black with a blue cast, delicate, large round moist eyes, palest grey irises of the four, doll-like, huge eyes widening further, pupils shrinking, small mouth compressing, chin pulling back into the scarf, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool winter palette, highest contrast of the four, pale skin against black hair
@@ -79,7 +79,7 @@ tags: [expressions, character/tachibana-hiiragi, season/冬]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。生理的緊張・破綻の隠蔽を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![[placeholder_full.jpg]] | **`open`／未生成。**バストアップ・正面・無地背景。生理的緊張・破綻の隠蔽を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 19yo japanese university student, aspiring idol, petite soft rounded build, 155cm, medium bob, pure black with a blue cast, delicate, large round moist eyes, palest grey irises of the four, doll-like, brows tented upward, cold sweat on the pale forehead, lower lip bitten hard, enormous eyes glassy and fixed, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool winter palette, highest contrast of the four, pale skin against black hair
@@ -95,7 +95,7 @@ tags: [expressions, character/tachibana-hiiragi, season/冬]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。破綻の瞬間・激しい羞恥を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![[placeholder_full.jpg]] | **`open`／未生成。**バストアップ・正面・無地背景。破綻の瞬間・激しい羞恥を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 19yo japanese university student, aspiring idol, petite soft rounded build, 155cm, medium bob, pure black with a blue cast, delicate, large round moist eyes, palest grey irises of the four, doll-like, stark red flush blazing across the white face and ears, pale grey eyes flooded with tears, mouth open in a small round gasp, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool winter palette, highest contrast of the four, pale skin against black hair
@@ -111,7 +111,7 @@ tags: [expressions, character/tachibana-hiiragi, season/冬]
 
 | 参照画像 | 意図 |
 | :---: | :--- |
-| ![未生成](../assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。尊厳の死滅と被支配への安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![[placeholder_full.jpg]] | **`open`／未生成。**バストアップ・正面・無地背景。尊厳の死滅と被支配への安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 19yo japanese university student, aspiring idol, petite soft rounded build, 155cm, medium bob, pure black with a blue cast, delicate, large round moist eyes, palest grey irises of the four, doll-like, pale grey eyes gone flat and dull, thousand-yard stare, mouth curved into a small contented childlike smile, face utterly relaxed, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool winter palette, highest contrast of the four, pale skin against black hair

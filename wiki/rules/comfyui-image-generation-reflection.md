@@ -22,7 +22,7 @@ AI画像生成において、特定の登場人物を「ブレずに」「指定
 
 まずは、最初に生成された画像を見てみましょう。
 
-![初期の失敗作：現代的な萌え風アニメイラスト](../assets/characters/momoka/misc/momoka_misc_first_attempt.png)
+![[momoka_misc_first_attempt.png]]
 
 一見すると可愛いアニメ風のイラストですが……客観的に見て、本作の田邊桃香に見えるでしょうか？
 
@@ -30,7 +30,7 @@ AI画像生成において、特定の登場人物を「ブレずに」「指定
 
 参照すべき原画であるこちらの画像と見比べてみてください。
 
-![原点：16ビットピクセルアートの田邊桃香](髪型は短め、さらに短くてもいいくらい、春らしいやや明るい茶色.jpg)
+![[髪型は短め、さらに短くてもいいくらい、春らしいやや明るい茶色.jpg]]
 
 並べてみると、二つの大きなズレ（失敗原因）が浮かび上がってきます。
 
@@ -64,7 +64,7 @@ AI画像生成において、特定の登場人物を「ブレずに」「指定
 ### ステップ②：ControlNetで「赤面ポーズ」を固定
 構図とポーズには、こちらの参照画像を使用しました。
 
-![ポーズ参照画像：うつむき赤面](../assets/characters/himawari/expr/himawari_expr_blush_base.jpg)
+![[himawari_expr_blush_base.jpg]]
 
 この画像から ControlNet（Canny / Softedge）で輪郭線を抽出し、「手で口元を覆い、深々と赤面してうつむく」姿勢を正確に合成しました。
 
@@ -74,14 +74,14 @@ AI画像生成において、特定の登場人物を「ブレずに」「指定
 
 このハイブリッドアプローチによって生成されたRaw画像がこちらです。
 
-![改善後のRaw生成画像](../assets/characters/momoka/misc/momoka_misc_canny_process.png)
+![[momoka_misc_canny_process.png]]
 
 いかがでしょうか？
 `momoka_expr1_base.jpg` の田邊桃香と全く同じ顔立ち・同じドット絵のタッチのまま、見事に不穏で生々しい赤面表情が再現されていますね！
 
 さらに、このRaw画像を『THE FOUR SEASONS』の**春章限定16色パレット**（`#E5A1C8`, `#F0D5C3`, `#8C2A3F` など）へ適合させた最終完成版がこちらです。
 
-![最終完成版：春章限定16色パレット適用ドット絵](../assets/characters/momoka/expr/momoka_expr_blush_16c.png)
+![[momoka_expr_blush_16c.png]]
 
 ノイズ感を抑えたクリアなポスターカラー処理により、作品の世界観に完璧に合致する16色ピクセルアート画像が完成しました。
 

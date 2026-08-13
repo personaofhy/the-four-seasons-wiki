@@ -31,7 +31,7 @@ tags: [expressions, character/toyama-kaede, season/秋]
 
 |                              参照画像                               | 意図                               |
 | :-------------------------------------------------------------: | :------------------------------- |
-| ![通常](wiki/assets/characters/kaede/face/kaede_face_neutral.jpg) | 凛とした知的で優雅な日常の佇まい。隙のない完璧な先輩のペルソナ。 |
+| ![[kaede_face_neutral.jpg]] | 凛とした知的で優雅な日常の佇まい。隙のない完璧な先輩のペルソナ。 |
 
 ```text
 26yo japanese woman, corporate career-track employee, slim long-legged model figure, 165cm, long deep warm brown-black straight hair worn in a low chignon updo, round dark wide-set eyes, slightly drooping, light brown irises, serene poised expression, wide-set drooping eyes calm, brows softly arched, faint composed smile of authority, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm autumn palette, medium contrast, fair skin
@@ -47,7 +47,7 @@ tags: [expressions, character/toyama-kaede, season/秋]
 
 |                             参照画像                              | 意図                               |
 | :-----------------------------------------------------------: | :------------------------------- |
-| ![笑顔](wiki/assets/characters/kaede/face/kaede_face_smile.jpg) | 上品で計算された大人の微笑み。目尻を優しく下げた余裕のある表情。 |
+| ![[kaede_face_smile.jpg]] | 上品で計算された大人の微笑み。目尻を優しく下げた余裕のある表情。 |
 
 ```text
 26yo japanese woman, corporate career-track employee, slim long-legged model figure, 165cm, long deep warm brown-black straight hair worn in a low chignon updo, round dark wide-set eyes, slightly drooping, light brown irises, elegant measured smile, eyes curving warmly, chin slightly lowered, gracious and untouchable, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm autumn palette, medium contrast, fair skin
@@ -63,7 +63,7 @@ tags: [expressions, character/toyama-kaede, season/秋]
 
 |                               参照画像                                | 意図                              |
 | :---------------------------------------------------------------: | :------------------------------ |
-| ![警戒](wiki/assets/characters/kaede/face/kaede_face_suspicion.jpg) | 垂れ目がすっと鋭く引き締まり、眉を下げて冷徹に状況を見極める。 |
+| ![[kaede_face_suspicion.jpg]] | 垂れ目がすっと鋭く引き締まり、眉を下げて冷徹に状況を見極める。 |
 
 ```text
 26yo japanese woman, corporate career-track employee, slim long-legged model figure, 165cm, long deep warm brown-black straight hair worn in a low chignon updo, round dark wide-set eyes, slightly drooping, light brown irises, drooping eyes sharpening, brows lowering a fraction, jaw setting, gaze held very still, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm autumn palette, medium contrast, fair skin
@@ -79,7 +79,7 @@ tags: [expressions, character/toyama-kaede, season/秋]
 
 |                        参照画像                        | 意図                                                                                                      |
 | :------------------------------------------------: | :------------------------------------------------------------------------------------------------------ |
-| ![未生成](wiki/assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。生理的緊張・破綻の隠蔽を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![[placeholder_full.jpg]] | **`open`／未生成。**バストアップ・正面・無地背景。生理的緊張・破綻の隠蔽を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 26yo japanese woman, corporate career-track employee, slim long-legged model figure, 165cm, long deep warm brown-black straight hair worn in a low chignon updo, round dark wide-set eyes, slightly drooping, light brown irises, brows drawn hard together, cold sweat running from temple to jaw, lips pressed white, eyes glassy with effort, throat tight, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm autumn palette, medium contrast, fair skin
@@ -95,7 +95,7 @@ tags: [expressions, character/toyama-kaede, season/秋]
 
 |                        参照画像                        | 意図                                                                                                      |
 | :------------------------------------------------: | :------------------------------------------------------------------------------------------------------ |
-| ![未生成](wiki/assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。破綻の瞬間・激しい羞恥を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![[placeholder_full.jpg]] | **`open`／未生成。**バストアップ・正面・無地背景。破綻の瞬間・激しい羞恥を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 26yo japanese woman, corporate career-track employee, slim long-legged model figure, 165cm, long deep warm brown-black straight hair worn in a low chignon updo, round dark wide-set eyes, slightly drooping, light brown irises, crimson flush flooding the face and neck, wide-set eyes blown open and wet, mouth twisted open, composure shattered, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm autumn palette, medium contrast, fair skin
@@ -111,7 +111,7 @@ tags: [expressions, character/toyama-kaede, season/秋]
 
 |                        参照画像                        | 意図                                                                                                        |
 | :------------------------------------------------: | :-------------------------------------------------------------------------------------------------------- |
-| ![未生成](wiki/assets/templates/placeholder_full.jpg) | **`open`／未生成。**バストアップ・正面・無地背景。尊厳の死滅と被支配への安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
+| ![[placeholder_full.jpg]] | **`open`／未生成。**バストアップ・正面・無地背景。尊厳の死滅と被支配への安堵を、上記「この人物の表情設計」の方針で描き分けたもの。6枚は**同一の構図・光・距離**で揃えること（並べて比較するため）。 |
 
 ```text
 26yo japanese woman, corporate career-track employee, slim long-legged model figure, 165cm, long deep warm brown-black straight hair worn in a low chignon updo, round dark wide-set eyes, slightly drooping, light brown irises, eyes dulled and unseeing, head tilted down, mouth softened into a small broken smile, all tension gone from the face, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, warm autumn palette, medium contrast, fair skin

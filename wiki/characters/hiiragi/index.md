@@ -186,7 +186,7 @@ decision_default: canon
 
 | 立ち姿 |
 | :---: |
-| ![立ち姿](../assets/characters/hiiragi/sprite/hiiragi_sprite_fullbody_16c.png) |
+| ![[hiiragi_sprite_fullbody_16c.png]] |
 | 首元を覆うグレーのマフラーとニット |
 
 原画：`content/assets/characters/hiiragi/body/hiiragi_body_fullbody_base.jpg`

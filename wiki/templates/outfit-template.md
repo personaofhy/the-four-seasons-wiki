@@ -24,7 +24,7 @@ tags: [outfit, character/kaede]
 
 | 全体イメージ（※画像を入れてください） | 配色パレット | 画像生成タグ（AI Prompts） |
 | :---: | :---: | :--- |
-| ![全体プレースホルダー](../assets/templates/placeholder_full.jpg) | `主色` #1E283A<br>`副色` #622426<br>`挿色` #812E2A | `v-neck wrap dress, navy blue wool, midi length flare, black leather belt` |
+| ![[placeholder_full.jpg]] | `主色` #1E283A<br>`副色` #622426<br>`挿色` #812E2A | `v-neck wrap dress, navy blue wool, midi length flare, black leather belt` |
 
 ---
 
@@ -32,10 +32,10 @@ tags: [outfit, character/kaede]
 
 | 部位 | 参照イメージ（※画像を入れてください） | アイテム名 | 詳細仕様（素材・配色・着こなしルール） |
 | :--- | :---: | :--- | :--- |
-| **👕 トップス** | ![トップス](../assets/templates/placeholder_top.jpg) | **【アイテム名】** | **素材:** 【例：マットウール】<br>**配色:** 【例：紺碧】<br>**着方:** 【例：Vネック・第一ボタンまで留める】 |
-| **👖 ボトムス** | ![ボトムス](../assets/templates/placeholder_bottom.jpg) | **【アイテム名】** | **丈感:** 【例：ミディ丈フレア】<br>**ベルト:** 【例：黒レザー本革】 |
-| **👙 インナー / 下着** | ![下着](../assets/templates/placeholder_inner.jpg) | **【アイテム名】** | **タイプ:** 【例：繊細なレース上下セット】<br>**意味:** 【例：自律と防壁の象徴】 |
-| **🧦 脚 / 靴** | ![靴](../assets/templates/placeholder_shoes.jpg) | **【アイテム名】** | **脚:** 【例：20〜30デニールストッキング】<br>**靴:** 【例：ポインテッドトゥ・パンプス】<br>**結び方:** 【例：パンプス（自分で脱着）】 |
+| **👕 トップス** | ![[placeholder_top.jpg]] | **【アイテム名】** | **素材:** 【例：マットウール】<br>**配色:** 【例：紺碧】<br>**着方:** 【例：Vネック・第一ボタンまで留める】 |
+| **👖 ボトムス** | ![[placeholder_bottom.jpg]] | **【アイテム名】** | **丈感:** 【例：ミディ丈フレア】<br>**ベルト:** 【例：黒レザー本革】 |
+| **👙 インナー / 下着** | ![[placeholder_inner.jpg]] | **【アイテム名】** | **タイプ:** 【例：繊細なレース上下セット】<br>**意味:** 【例：自律と防壁の象徴】 |
+| **🧦 脚 / 靴** | ![[placeholder_shoes.jpg]] | **【アイテム名】** | **脚:** 【例：20〜30デニールストッキング】<br>**靴:** 【例：ポインテッドトゥ・パンプス】<br>**結び方:** 【例：パンプス（自分で脱着）】 |
 
 ---
 
