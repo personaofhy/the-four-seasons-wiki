@@ -7,12 +7,21 @@ decision_default: canon
 decision_states:
   prompt: draft  # spec から生成した初版・未検証
   image: open    # 未生成
+  role: draft    # 2026-08-15 全面改訂により役割が変更。要検証
 tags: [location, chapter/04-winter]
 ---
 
 # 📍 静まり返った自室・炬燵
 
-**登場章:** [[chapters/04-winter/index|04-winter]]　／　**決定状態:** `canon`
+**登場章:** [[chapters/04-winter/index|04-winter]]　／　**決定状態:** `canon`（下記「役割」は `draft`）
+
+> [!warning] 役割変更（2026-08-15）
+> **旧: 破綻の場所。新: 準備段階の場所。** 破綻本体は
+> `locations/ferris-wheel-queue`（遊園地・観覧車待機列）へ移動した。
+> ここは柊が児童用下着を試着し、これから行う再演に向けて覚悟を固める場面として使う。
+> 炬燵は破綻の道具ではなく、**視覚的には隠れているが体感的には露出している**という
+> 倒錯を演出する小道具として、劇中の配置は未定のまま残っている（[[rules/decision-states]]）。
+> 下記スロット仕様（空間・小道具など）はこの新しい役割のもとでも概ね流用できる。
 
 ---
 

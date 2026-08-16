@@ -22,3 +22,6 @@ venv_img/
 
 # LoRA 学習データ（scripts/build_lora_dataset.py で再生成可能）
 datasets/
+
+# 非公開の執筆パイプライン（独立した private リポジトリとして管理）
+brain/

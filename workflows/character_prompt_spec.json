@@ -111,7 +111,7 @@
       "season": "winter",
       "outfit": "daily",
       "slots": {
-        "subject": "19yo japanese university student, aspiring idol, petite soft rounded build, 155cm",
+        "subject": "19yo japanese university student, aspiring idol, petite build with understated non-voluptuous figure, adult proportions, 155cm",
         "hair": "medium bob, pure black with a blue cast, delicate",
         "eyes": "large round moist eyes, palest grey irises of the four, doll-like",
         "top": "thick charcoal grey wool knit sweater, voluminous grey scarf, ivory knit beanie",
@@ -129,8 +129,8 @@
       },
       "stage1_ref": null,
       "stage2_ref": null,
-      "stage2_constraint": "REQUIRED. Hiiragi is 19 but deliberately designed to read younger (childlike face, soft rounded build, regression to childhood as her theme). Under a photorealistic style that design can produce output reading as a minor. Stage 2 for this character must hold unambiguously adult facial structure and proportions, and any output that does not must be discarded rather than adjusted. Her youthfulness is carried by styling and behaviour, never by making the body or face look like a child's.",
-      "identity_compact": "19yo japanese woman, black bob, very large pale grey eyes, thin brows"
+      "stage2_constraint": "REQUIRED. Hiiragi is 19. Her understated, non-voluptuous figure is a narrative device, not an attempt to look underage: in-story she lies about being unable to clean herself up in order to get an adult woman to undress her, and that lie only has any surface plausibility if her figure is unexaggerated (no D-cup, no flared hips) - it is the realistic floor for the lie to work at all, not a childlike body. Stage 2 for this character must hold unambiguously adult facial structure and proportions at all times, and any output that does not must be discarded rather than adjusted. Her youthfulness is carried by styling and behaviour (round doll-like eyes, soft rounded build, timid affect), never by making the body or face read as a minor.",
+      "identity_compact": "19yo adult japanese woman, black bob, very large pale grey eyes, thin brows, understated adult figure"
     }
   },
   "expression_slot_order": [

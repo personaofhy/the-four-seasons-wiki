@@ -15,11 +15,13 @@ decision_default: canon
 | [[locations/rooftop-pool\|屋上のプール]] | [[chapters/02-summer/index\|02-summer]] | ✅ canon |
 | [[locations/summer-classroom\|補習授業中の教室・カーテン裏]] | [[chapters/02-summer/index\|02-summer]] | ✅ canon |
 | [[locations/campsite-mud\|社内キャンプ場・紅葉の泥]] | [[chapters/03-autumn/index\|03-autumn]] | ✅ canon |
-| [[locations/private-room\|静まり返った自室・炬燵]] | [[chapters/04-winter/index\|04-winter]] | ✅ canon |
+| [[locations/private-room\|静まり返った自室・炬燵]]（準備段階） | [[chapters/04-winter/index\|04-winter]] | ✅ canon |
+| [[locations/ferris-wheel-queue\|遊園地・観覧車の待機列]]（破綻） | [[chapters/04-winter/index\|04-winter]] | 🔓 open |
 | [[locations/school-corridor\|学校・トイレ前の廊下]] | [[chapters/05-re-spring/index\|05-re-spring]] | ✅ canon |
 
-> [!note] 第2章だけ舞台が2つある
-> 発端（屋上のプール）と破綻（補習授業中の教室）が別の場所であり、**その移動そのものが筋**であるため分割している。
+> [!note] 第2章と第4章は舞台が2つある
+> 第2章は発端（屋上のプール）と破綻（補習授業中の教室）が別の場所であり、**その移動そのものが筋**であるため分割している。
+> 第4章は準備（自室）と破綻（遊園地）が別の場所。破綻は群衆の前で、柊が自ら踏み出す形で起こる。
 
 ---
 

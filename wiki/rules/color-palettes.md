@@ -27,6 +27,32 @@ title: 🎨 テーマカラー・パレット規定
 
 ---
 
+## 🏷 章識別色（1色）
+
+上の2層とは**別物**。章パレット（12〜16色）が情景描写のための色域であるのに対し、
+こちらは**「この記述はどの章のものか」を一目で示すためのUI用の1色**。
+ダッシュボード・図表・索引で使う。作品内の色設計には影響しない。
+
+各章の `index.md` frontmatter に `theme_color` として持つ。
+
+| 章 | 色 | 名前 | 導出元 |
+| :--- | :--- | :--- | :--- |
+| 🌸 第1章 春 | <span style="display:inline-block;width:12px;height:12px;background:#E5A1C8;border-radius:3px;vertical-align:middle;"></span> `#E5A1C8` | くすんだ桜 | 春の章パレット（定義済み16色）より |
+| ☀️ 第2章 夏 | <span style="display:inline-block;width:12px;height:12px;background:#FCD57E;border-radius:3px;vertical-align:middle;"></span> `#FCD57E` | 陽に灼けた黄 | 向日葵 `color_sub[0]`（黄色シャツ） |
+| 🍂 第3章 秋 | <span style="display:inline-block;width:12px;height:12px;background:#812E2A;border-radius:3px;vertical-align:middle;"></span> `#812E2A` | 錆びた赤 | 楓 `color_accent[0]` |
+| ❄️ 第4章 冬 | <span style="display:inline-block;width:12px;height:12px;background:#8E99A4;border-radius:3px;vertical-align:middle;"></span> `#8E99A4` | 凍てついた青灰 | 柊 `color_main[1]` |
+| ✨ 第5章 再び春 | <span style="display:inline-block;width:12px;height:12px;background:#72713E;border-radius:3px;vertical-align:middle;"></span> `#72713E` | 芽吹きの薄緑 | 桃香 `color_main[0]`（再登場章のため） |
+
+> [!note] 導出案
+> 5色とも既存のパレットから引いてある。新しく作った色は一つもない。
+> 第5章だけ第1章と別の色にしたのは、同じ桃香の章でも「原点」と「再生」を
+> 区別する必要があるため。第1章は章パレット由来の桜色、第5章は桃香本人の主色を当てた。
+>
+> **変えたい場合は各章 `index.md` の `theme_color` を書き換えるだけでよい。**
+> ダッシュボードはそこを読んでいる。
+
+---
+
 ## 🧍 キャラパレットのスロット（6枠＋任意2枠）
 
 色数を絞るだけでは4人を比較できない。**同じ枠を同じ順で持つ**ことで初めて横並びが成立する。

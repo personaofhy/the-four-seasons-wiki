@@ -70,6 +70,14 @@ decision_states:
 発端＝屋上プールでの南京錠の悪戯、破綻＝補習授業中の満席の教室。
 舞台が2箇所に分かれたため、場所ノートも `rooftop-pool` と `summer-classroom` に分割し、旧 `empty-classroom` は廃止した。
 
+### 第4章（冬・橘柊）— **私室から遊園地・観覧車待機列へ全面改訂**
+
+旧設定「自室・炬燵の中での自発的決壊、目撃者なし」は誤りと判明。**作者判断により、
+破綻の舞台を遊園地の観覧車待機列（群衆の前）へ全面改訂。** 柊は視線を強制されるのではなく、
+**自分から**群衆の前へ踏み出す（[[rules/triad-structure]] の「主観決壊の章」という位置づけも
+誤りだったため合わせて修正）。私室・炬燵は破綻の場ではなく準備段階の場として存続。
+新規に `locations/ferris-wheel-queue`（`open`）を作成した。
+
 ---
 
 ## 🔥 現在 `open` の項目
@@ -81,3 +89,7 @@ decision_states:
 | 挿色（3名） | 各 `outfits/daily` | 下着色がキャラパレット外の暫定値 |
 | `agency_shoes`（楓） | `kaede/outfits/daily` | 靴の「意味」が未記載 |
 | 表情・場所の画像 | 全 `expressions` / `locations` | 29枚すべて未生成 |
+| 「とある少女」の正体 | `characters/hiiragi`, `chapters/04-winter` | 柊の行動原理の核。関係・経緯とも完全に未詳 |
+| クライマックスの悪意の仕組み | `chapters/04-winter` | 柊を「ピンチ」に追い込む罠の具体が未定 |
+| 柊の「異常行動」 | `chapters/04-winter` | アイドル志望設定と関連するとされるが内容未定 |
+| `locations/ferris-wheel-queue` | 新規 | 遊園地・観覧車待機列。場所スペック全体が未定義 |
