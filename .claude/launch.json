@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "quartz-wiki",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["quartz", "build", "--directory", "wiki", "--serve"],
+      "port": 8080
+    }
+  ]
+}

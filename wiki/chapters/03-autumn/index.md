@@ -61,4 +61,8 @@ decision_default: canon
 
 * [[characters/kaede/index|遠山 楓]]
 * [[characters/takagi/index|高木 圭]] — 楓の後輩。視点人物
+* [[chapters/03-autumn/insert|📎 末尾インサート②：秘書「やすみ」による客観処理]]
+* [[chapters/03-autumn/plot-topology|📐 プロットトポロジー分析]]
+* [[chapters/03-autumn/relationship-diagram|🔗 人間関係・心理力学トポロジー]]
+* [[rules/momoka-warp-engine|経糸（桃香）感情同期ルール]]
 * [[rules/triad-structure|トライアド構造と各章の役割]]

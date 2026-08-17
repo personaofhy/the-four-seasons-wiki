@@ -81,4 +81,7 @@ decision_default: canon
 * [[characters/himawari/outfits/daily|👗 衣装・破綻時の変化]]
 * [[characters/himawari/expressions|😐 表情6段階]]
 * [[locations/rooftop-pool|📍 屋上のプール]]／[[locations/summer-classroom|📍 補習授業中の教室]]
+* [[chapters/02-summer/insert|📎 末尾インサート①：実際の失禁が初めて描かれる]]
+* [[chapters/02-summer/plot-topology|📐 プロットトポロジー分析]]
+* [[chapters/02-summer/relationship-diagram|🔗 人間関係・心理力学トポロジー]]
 * [[rules/momoka-warp-engine|経糸（桃香）感情同期ルール]]

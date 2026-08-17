@@ -7,12 +7,18 @@ decision_default: canon
 decision_states:
   prompt: draft  # spec から生成した初版・未検証
   image: open    # 未生成
+  role: superseded  # 2026-08-17 不採用。locations/storage-room を参照
 tags: [location, chapter/05-re-spring]
 ---
 
 # 📍 学校・トイレ前の廊下
 
-**登場章:** [[chapters/05-re-spring/index|05-re-spring]]　／　**決定状態:** `canon`
+**登場章:** [[chapters/05-re-spring/index|05-re-spring]]　／　**決定状態:** `canon`（`superseded`）
+
+> [!danger] 不採用（2026-08-17）
+> 第六章のクライマックスは**開けた廊下ではなく、体育倉庫のような閉じたスペース**に
+> 変更された（[[cpt-1a3f]]）。新しい場所ノートは [[locations/storage-room]]。
+> 以下は過去の設計として残すが、執筆には使わない。
 
 ---
 
