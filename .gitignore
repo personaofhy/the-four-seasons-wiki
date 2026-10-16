@@ -25,3 +25,30 @@ datasets/
 
 # 非公開の執筆パイプライン（独立した private リポジトリとして管理）
 brain/
+
+# ラボ（身体表現の実験など）はローカル専用。公開リポジトリに載せない
+lab/
+momoka_study/
+
+# キャラクター制作の作業場（福笑いラボ・全身の形態設計）。身体の描写を含むため公開しない。
+# それぞれ独立した private リポジトリとして管理
+design/
+character-workshop/
+
+# 2026-10-16 整理：公開リポジトリに載せないもの（中身は非公開の場所か、ローカルだけで使う）
+# 外向けのサイトの作業場（非公開で管理する）
+teaser-site/
+special-site/
+retro-site/
+story-bible-review-prototype/
+# ComfyUI の手順、ブラウザの一時プロファイル
+workflows/
+.scratch/
+.trash/
+# wiki の場面画像・体の参考・音声・衣装の作業図（ローカルの閲覧用。公開しない）
+wiki/assets/characters/*/scenes/
+wiki/assets/characters/*/body/
+wiki/assets/characters/*/voice/
+wiki/assets/characters/*/outfit/
+wiki/assets/four_heroines_manga*.jpg
+wiki/assets/hiiragi_storyboard_part*.jpg
