@@ -2,10 +2,72 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "quartz-wiki",
+      "name": "office",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["quartz", "build", "--directory", "wiki", "--serve"],
-      "port": 8080
+      "runtimeArgs": [
+        "tsx",
+        "studio/office/serve.ts"
+      ],
+      "port": 4321
+    },
+    {
+      "name": "teaser-site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "studio/sites/teaser-site/serve.mjs"
+      ],
+      "port": 5173,
+      "autoPort": true
+    },
+    {
+      "name": "special-site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "studio/sites/special-site/serve.mjs"
+      ],
+      "port": 5174,
+      "autoPort": true
+    },
+    {
+      "name": "retro-site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "studio/sites/retro-site/serve.mjs"
+      ],
+      "port": 5178,
+      "autoPort": true
+    },
+    {
+      "name": "cloth-lab",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "studio/lab/cloth/serve.mjs"
+      ],
+      "port": 5175
+    },
+    {
+      "name": "wet-cloth",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "studio/lab/wet-cloth/serve.mjs"
+      ],
+      "port": 5176
+    },
+    {
+      "name": "skin-lab",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "studio/lab/skin/serve.mjs"
+      ],
+      "port": 5177
+    },
+    {
+      "name": "sound-lab",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "studio/lab/sound/serve.mjs"
+      ],
+      "port": 5179
     }
   ]
 }
