@@ -80,3 +80,8 @@ decision_default: draft
 * [[chapters/05-re-spring/5b-back-relationship-diagram|🔗 人間関係・心理力学トポロジー]]
 * [[rules/momoka-warp-engine|経糸（桃香）感情同期ルール]]
 * [[rules/triad-structure|トライアド構造と各章の役割]]
+
+
+## 作者指定：読者との距離・終着点（2026-10-11）
+
+読者は桃香の理屈を理解できるが、壊れてしまった彼女に残酷さを感じる。この読後感を終着点の基準とする。必要な心理情報と最後の像は、引き続き設計する。

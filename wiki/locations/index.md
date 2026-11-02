@@ -7,11 +7,11 @@ decision_default: canon
 
 各章の舞台を、キャラクターから独立した単位で管理する。**複数のキャラ・複数のシーンから参照される唯一の要素**であり、ここが揃うとwikiに横のリンクが通る。
 
-プロンプトの正は `workflows/location_prompt_spec.json`。各ノートの記述はそこからの写し。
+プロンプトの正は `studio/references/workflows/location_prompt_spec.json`。各ノートの記述はそこからの写し。
 
 | 場所 | 章 | 決定状態 |
 | :--- | :--- | :--- |
-| [[locations/meeting-room\|政治家たちの密室・会議室]] | [[chapters/01-spring/index\|01-spring]] | ✅ canon |
+| [[locations/meeting-room\|政治家の家・応接間]] | [[chapters/01-spring/index\|01-spring]] | ✅ canon |
 | [[locations/rooftop-pool\|屋上のプール]] | [[chapters/02-summer/index\|02-summer]] | ✅ canon |
 | [[locations/summer-classroom\|補習授業中の教室・カーテン裏]] | [[chapters/02-summer/index\|02-summer]] | ✅ canon |
 | [[locations/campsite-mud\|社内キャンプ場・紅葉の泥]] | [[chapters/03-autumn/index\|03-autumn]] | ✅ canon |

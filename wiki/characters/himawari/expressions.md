@@ -32,7 +32,7 @@ tags: [expressions, character/natsume-himawari, season/夏]
 | ![[himawari_face_neutral.jpg]] | 太陽のように明るく無防備な笑顔。人気者としての日常の佇まい。 |
 
 ```text
-18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, bright cheerful open smile, relaxed thin arched eyebrows, warm blush on cheeks, energetic gaze, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
+19yo japanese university student, alumna of the high school, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, bright cheerful open smile, relaxed thin arched eyebrows, warm blush on cheeks, energetic gaze, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
 ```
 
 ## 2. 笑顔・安堵（Smile）
@@ -48,7 +48,7 @@ tags: [expressions, character/natsume-himawari, season/夏]
 | ![[himawari_face_smile.jpg]] | 周囲を安心させる無邪気な満面の笑み。 |
 
 ```text
-18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, wide beaming smile with teeth showing, eyes crinkled in genuine delight, joyful and radiant expression, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
+19yo japanese university student, alumna of the high school, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, wide beaming smile with teeth showing, eyes crinkled in genuine delight, joyful and radiant expression, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
 ```
 
 ## 3. 警戒・違和感（Suspicion）
@@ -64,7 +64,7 @@ tags: [expressions, character/natsume-himawari, season/夏]
 | ![[himawari_face_suspicion.jpg]] | 眉が少し下がり、大きな瞳が不安そうに周囲を探る表情。 |
 
 ```text
-18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, eyes slightly widened with confusion and mild suspicion, brow slightly furrowed, mouth slightly parted in hesitation, uneasy gaze, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
+19yo japanese university student, alumna of the high school, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, eyes slightly widened with confusion and mild suspicion, brow slightly furrowed, mouth slightly parted in hesitation, uneasy gaze, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
 ```
 
 ## 4. 抑圧・冷や汗（Anxiety）
@@ -80,7 +80,7 @@ tags: [expressions, character/natsume-himawari, season/夏]
 | ![[himawari_expr_anxiety_base.jpg]] | 冷や汗を浮かべ、必死に平静を装おうと耐える顔。 |
 
 ```text
-18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, strained anxious expression, beads of cold sweat on forehead, tight lips, panicked eyes trying to look calm, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
+19yo japanese university student, alumna of the high school, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, strained anxious expression, beads of cold sweat on forehead, tight lips, panicked eyes trying to look calm, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
 ```
 
 ## 5. 狼狽・大赤面（Panic）
@@ -96,7 +96,7 @@ tags: [expressions, character/natsume-himawari, season/夏]
 | ![[himawari_expr_blush_base.jpg]] | 顔全体と耳まで真っ赤に染まり、涙目で羞恥に身をよじる顔。 |
 
 ```text
-18yo japanese japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, deep intense blush covering cheeks and ears, eyes teary and wide with intense embarrassment, open mouth gasp, helpless distress, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
+19yo japanese university student, alumna of the high school, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, deep intense blush covering cheeks and ears, eyes teary and wide with intense embarrassment, open mouth gasp, helpless distress, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
 ```
 
 ## 6. 虚脱・完全適応（Acceptance）
@@ -112,5 +112,5 @@ tags: [expressions, character/natsume-himawari, season/夏]
 | ![[himawari_expr_collapse_base.jpg]] | 焦点の定まらない瞳と力のない微笑み。完全な開帳と安堵。 |
 
 ```text
-18yo japanese high school girl, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, vacant unfocused eyes, soft resigned smile, relaxed jaw, exhausted relieved expression, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
+19yo japanese university student, alumna of the high school, cheerful and popular, tall curvy athletic build, 170cm, long soft dark brown to black wavy hair with a bluish cast, bangs down, unstyled, large round eyes, wide double eyelids, big dark irises, expressive, vacant unfocused eyes, soft resigned smile, relaxed jaw, exhausted relieved expression, bust-up portrait, head and shoulders, facing viewer, plain neutral background, even soft lighting, cool summer palette, low contrast, pale bluish skin
 ```

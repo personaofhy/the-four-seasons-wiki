@@ -6,7 +6,7 @@ outfit_name: 普段着・冬服
 # --- 4人横断の対比軸（必須・空欄禁止）---
 agency_shoes: "マジックテープ留めのスニーカー — 自己決定の拒絶"
 breakdown_nature: 自発
-underwear_progression: "クリーム色コットンショーツ ➔ 自ら選んだ柄物子供用パンツ"
+underwear_progression: "白い毛糸の下着 ➔ 自ら選んだ柄物子供用パンツ"
 tags: [outfit, character/tachibana-hiiragi, season/winter]
 decision_default: canon
 ---
@@ -23,7 +23,7 @@ decision_default: canon
 
 |                                                              全体イメージ設定シート                                                               |                                             配色パレット                                             | 画像生成タグ（AI Prompts）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | :------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![橘柊 全体衣装設定](obsidian://open?vault=the-four-seasons-wiki&file=wiki%2Fassets%2Fcharacters%2Fhiiragi%2Foutfit%2Fhiiragi_outfit_full.jpg) | `主色` #4D4E53 ダークグレー（マフラー・ニット）<br>`副色` #8E99A4 スノーグレー（冬タイツ）<br>`挿色` #E7D8C9 クリーム（子供用ショーツ・スニーカー） | `19yo japanese university student, aspiring idol, petite soft rounded build, 155cm, medium bob, pure black with a blue cast, delicate, large round moist eyes, palest grey irises of the four, doll-like, thick charcoal grey wool knit sweater, voluminous grey scarf, ivory knit beanie, grey knit skirt, knee length, soft curved silhouette, dark grey winter tights, off-white canvas sneakers with velcro straps, cool winter palette, highest contrast of the four, pale skin against black hair` |
+| ![橘柊 全体衣装設定](obsidian://open?vault=the-four-seasons-wiki&file=wiki%2Fassets%2Fcharacters%2Fhiiragi%2Foutfit%2Fhiiragi_outfit_full.jpg) | `主色` #4D4E53 ダークグレー（マフラー・ニット）<br>`副色` #8E99A4 スノーグレー（冬タイツ）<br>`挿色` #E7D8C9 クリーム（スニーカー）／#FFFFFF 白（毛糸の下着） | `19yo japanese university student, aspiring idol, petite soft rounded build, 155cm, medium bob, pure black with a blue cast, delicate, large round moist eyes, palest grey irises of the four, doll-like, thick charcoal grey wool knit sweater, voluminous grey scarf, ivory knit beanie, grey knit skirt, knee length, soft curved silhouette, dark grey winter tights, off-white canvas sneakers with velcro straps, cool winter palette, highest contrast of the four, pale skin against black hair` |
 
 ---
 
@@ -33,7 +33,7 @@ decision_default: canon
 | :--------------- | :----------------------------------------------------------------------: | :--------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **👕 トップス**      |  ![[hiiragi_outfit_top.jpg]]   | **厚手グレーマフラー & ニットトップス**      | **素材:** 厚手ウールニット<br>**配色:** チャコール〜ダークグレー<br>**スタイル:** 首元を暖かく包み込むボリュームマフラー＋アイボリーのニット帽（顔を隠しがち）                                                       |
 | **👖 ボトムス**      | ![[hiiragi_outfit_bottom.jpg]] | **ニットスカート & スニーカー**          | **丈感:** 膝丈〜やや短め<br>**タイツ:** ダークグレーの冬物タイツ<br>**シルエット:** 柔らかい曲線的シルエット（メリハリのないぬいぐるみ感）                                                                 |
-| **👙 インナー / 下着** |  ![[hiiragi_outfit_inner.jpg]]   | **サラシ（ノーブラ） ＋ 幼児向けコットンショーツ** | **上:** **ブラジャーは着けない。**胸を平坦に潰すための**サラシ**を着用（大人の身体を消す擬態）<br>**下:** 幼児向けのクリーム色コットンショーツ（終盤は馬鹿馬鹿しい柄の子供用パンツ）<br>**意味:** 4人中唯一「上下セットを持たない」。**自発的な子供への退行** |
+| **👙 インナー / 下着** |  ![[hiiragi_outfit_inner.jpg]]   | **サラシ（ノーブラ） ＋ 白い毛糸の下着** | **上:** **ブラジャーは着けない。**胸を平坦に潰すための**サラシ**を着用（大人の身体を消す擬態）<br>**下:** 白い毛糸の下着（毛糸のパンツ）（終盤は馬鹿馬鹿しい柄の子供用パンツ）<br>**意味:** 4人中唯一「上下セットを持たない」。**自発的な子供への退行** |
 | **🧦 脚 / 靴**     |   ![[hiiragi_outfit_shoes.jpg]]   | **マジックテープスニーカー & 冬物タイツ**     | **脚:** ダークグレーの冬物タイツ<br>**靴:** オフホワイトのキャンバススニーカー（**マジックテープ留めの子供向け仕様**）<br>**意味:** **「自分で紐を結ばなくていい靴」**＝自己決定の拒絶                                       |
 
 ---
@@ -44,6 +44,6 @@ decision_default: canon
 > * **トリガー:** 寒さと孤立の極限での自室・炬燵内での屈服
 > * **破綻の性質:** **【自発】** — 4人中唯一、他者に奪われるのではなく自らの意思で降りて子供を演じる
 > * **下着の変遷:**  
->   `1. クリーム色コットンショーツ` ➔ `2. 自ら選んだ柄物子供用パンツ`
+>   `1. 白い毛糸の下着` ➔ `2. 自ら選んだ柄物子供用パンツ`
 > * **視覚変化:** 炬燵布団の端から覗く白い素足首、脱ぎ捨てられたタイツとスカートの横での屈服
 > * **構造的意味:** **【退行と擬態】** — アイドルを目指す大人の身体を消し、保護される子供への完全擬態

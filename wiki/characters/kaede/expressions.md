@@ -17,7 +17,7 @@ tags: [expressions, character/toyama-kaede, season/秋]
 > **段階の進み方:** 段階1〜4を長く保ち、段階5が**極端に短い**。落差の大きさが楓の設計であり、5を一瞬で通過して6に落ちる。
 
 共通の6段階定義は [[characters/index#😐 表情：全キャラ共通の6段階定義|キャラクター一覧]] を参照。
-プロンプトは `workflows/character_prompt_spec.json` から生成した**写し**。食い違った場合はspecが正。
+プロンプトは `studio/references/workflows/character_prompt_spec.json` から生成した**写し**。食い違った場合はspecが正。
 
 ---
 
@@ -122,7 +122,7 @@ tags: [expressions, character/toyama-kaede, season/秋]
 ## 🔁 再生成
 
 ```bash
-python3 -c "import json;s=json.load(open('workflows/character_prompt_spec.json'));c=s['characters']['toyama-kaede'];[print(k,':',', '.join([c['slots']['subject'],c['slots']['hair'],c['slots']['eyes'],v,s['expression_framing'],c['slots']['tone']]),'\n') for k,v in c['expression_slots'].items()]"
+python3 -c "import json;s=json.load(open('studio/references/workflows/character_prompt_spec.json'));c=s['characters']['toyama-kaede'];[print(k,':',', '.join([c['slots']['subject'],c['slots']['hair'],c['slots']['eyes'],v,s['expression_framing'],c['slots']['tone']]),'\n') for k,v in c['expression_slots'].items()]"
 ```
 
 **ネガティブプロンプト（共通）:** `worst quality, low quality, bad anatomy, bad hands, missing limbs, extra limbs, cropped, text, watermark, signature, jpeg artifacts, blurry`

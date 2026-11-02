@@ -130,6 +130,7 @@ python3 scripts/generate_character_image.py \
 
 ### 📂 関連ファイル・リファレンス
 * **MCPワークフロー規定:** [[rules/comfyui-mcp-workflows|ComfyUI MCP用 キャラクター生成ワークフロー規定]]
+* **Klein/SDXLの役割分担:** [[rules/klein-sdxl-role-division|「意味」と「質感」を分けて描く]] — 本ノートが「誰を描くか」なのに対し、あちらは「何が起きている状態を描くか」
 * **自動生成スクリプト:** [`generate_character_image.py`](file:///Users/ivix/Desktop/the-four-seasons-wiki/scripts/generate_character_image.py)
 * **原画ファイル:** [`momoka_expr1_base.jpg`](file:///Users/ivix/Desktop/the-four-seasons-wiki/content/assets/characters/momoka/expr/momoka_expr_anxiety_base.jpg)
 * **最終成果物 (16色):** [`momoka_emotion_blush_strict_16colors.png`](file:///Users/ivix/Desktop/the-four-seasons-wiki/content/assets/characters/momoka/expr/momoka_expr_blush_16c.png)

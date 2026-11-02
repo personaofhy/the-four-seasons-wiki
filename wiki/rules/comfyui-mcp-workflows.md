@@ -14,9 +14,9 @@ title: 🔌 ComfyUI MCP用 キャラクター生成ワークフロー規定
 
 | 場所 | 役割 |
 | :--- | :--- |
-| `workflows/*.json` | **正本**（リポジトリ管理・編集はここ） |
-| `workflows/character_prompt_spec.json` | **プロンプトの正本**（下記・実行用ワークフローではない） |
-| `~/.gemini/antigravity-cli/mcp/comfyui-mcp-server/workflows/` | MCPサーバーが読む実行用ディレクトリ |
+| `studio/references/workflows/*.json` | **正本**（リポジトリ管理・編集はここ） |
+| `studio/references/workflows/character_prompt_spec.json` | **プロンプトの正本**（下記・実行用ワークフローではない） |
+| `~/.gemini/antigravity-cli/mcp/comfyui-mcp-server/studio/references/workflows/` | MCPサーバーが読む実行用ディレクトリ |
 
 ```bash
 bash scripts/sync_workflows.sh
@@ -30,7 +30,7 @@ bash scripts/sync_workflows.sh
 
 ## 🔤 プロンプトのスロット順（固定）
 
-`PARAM_PROMPT` に渡す文字列は、**必ず `workflows/character_prompt_spec.json` から組み立てる**。手書き禁止。
+`PARAM_PROMPT` に渡す文字列は、**必ず `studio/references/workflows/character_prompt_spec.json` から組み立てる**。手書き禁止。
 
 | # | スロット | 内容 |
 | :-: | :--- | :--- |
@@ -43,7 +43,7 @@ bash scripts/sync_workflows.sh
 | 7 | `tone` | 季節パレット・コントラスト・肌・光 |
 
 ```bash
-python3 -c "import json;s=json.load(open('workflows/character_prompt_spec.json'));print(', '.join(s['characters']['toyama-kaede']['slots'][k] for k in s['slot_order']))"
+python3 -c "import json;s=json.load(open('studio/references/workflows/character_prompt_spec.json'));print(', '.join(s['characters']['toyama-kaede']['slots'][k] for k in s['slot_order']))"
 ```
 
 > [!warning] 禁止トークン
@@ -268,7 +268,7 @@ python3 scripts/fetch_output.py kaede_body_tpose_00001_.png \
 ---
 
 ### 📂 関連ファイル
-* ワークフロー正本: `workflows/char_ipadapter.json` / `workflows/char_ipadapter_controlnet.json`
+* ワークフロー正本: `studio/references/workflows/char_ipadapter.json` / `studio/references/workflows/char_ipadapter_controlnet.json`
 * 同期スクリプト: `scripts/sync_workflows.sh`
 * アップロードスクリプト: `scripts/upload_ref.py`
 * [[rules/comfyui-image-generation-reflection|画像生成 黄金ルール（反省ノート）]]
@@ -277,7 +277,7 @@ python3 scripts/fetch_output.py kaede_body_tpose_00001_.png \
 
 ## 🧬 同一性を保つ手法の比較（実機調査 2026-08-11）
 
-IP-Adapterは**同一性と表情を同時には満たせない**（`workflows/character_prompt_spec.json` の `ip_adapter_tradeoff` に実測値）。代替手段を ComfyUI 実機で調査した結果。
+IP-Adapterは**同一性と表情を同時には満たせない**（`studio/references/workflows/character_prompt_spec.json` の `ip_adapter_tradeoff` に実測値）。代替手段を ComfyUI 実機で調査した結果。
 
 | 手法 | 原理 | トレードオフ | 実機の状態 |
 | :--- | :--- | :--- | :--- |
