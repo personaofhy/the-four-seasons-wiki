@@ -22,6 +22,7 @@ title: The Four Seasons Wiki
   * [[rules/hostile-dyad|敵意の二者関係（Hostile Dyad）]]
   * [[rules/color-palettes|テーマカラー・パレット規定]]
   * [[rules/urination-physics|尿の物理・解剖・繊維（破綻描写の物理的接地）]]
+  * [[rules/glass-press-physics|ガラスに押し付けた体の物理（第2章カーテン裏・draft）]]
   * [[rules/comfyui-image-generation-reflection|ComfyUI画像生成・キャラ同一性反省ノート]]
 
 * 👤 **[[characters/index|登場人物・キャラクター一覧]]**
