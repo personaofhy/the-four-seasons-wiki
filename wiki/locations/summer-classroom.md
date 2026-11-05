@@ -1,5 +1,5 @@
 ---
-title: "補習授業中の視聴覚室・カーテン裏"
+title: "集中講義中の視聴覚室・カーテン裏"
 type: location
 location_id: summer-classroom
 chapter: 02-summer
@@ -10,14 +10,14 @@ decision_states:
 tags: [location, chapter/02-summer]
 ---
 
-# 📍 補習授業中の視聴覚室・カーテン裏
+# 📍 集中講義中の視聴覚室・カーテン裏
 
-**登場章:** [[chapters/02-summer/index|02-summer]]　／　**決定状態:** `canon`
+**登場章:** [[chapters/02-summer/index|02-summer]]　／　**学内の位置:** [[locations/himawari-university|向日葵の大学]]　／　**決定状態:** `canon`
 
 > [!abstract] この場所の役割
-> **破綻の舞台。**カメラを**屋外（校庭側）に置く**のが最重要。教室側からの画ではなく、**カーテン裏の身体が窓ガラス越しに見えている**構図が第2章の核。
+> **破綻の舞台。**カメラを**屋外（中庭側）に置く**のが最重要。教室側からの画ではなく、**カーテン裏の身体が窓ガラス越しに見えている**構図が第2章の核。
 >
-> **旧校舎1階の、緩やかに傾斜した視聴覚室。** 遮光のため床が半地下気味に沈み、窓が高い位置にある。着替えに使う言い訳が立つ部屋であり（プールでの撮影は教師に内緒）、同時に**段の上の全員が彼女を見下ろす客席**になる。
+> **旧校舎1階の、6列60席の階段状の視聴覚室。** 窓は西向きで中庭に面する。遮光のため床が半地下気味に沈み、窓が高い位置にある。着替えに使う言い訳が立つ部屋であり（プールでの撮影は教員に内緒）、同時に**段の上の全員が彼女を見下ろす客席**になる。
 
 ---
 
@@ -36,7 +36,7 @@ tags: [location, chapter/02-summer]
 | 彼女の立ち位置 | **前後の中ほど** | 最後方は床が高く、外から手が届かなくなる |
 
 > [!important] 三つの要求が一つの寸法から出ている
-> ① 校庭側からは**唯香が背伸びで手が届く** ② 教室側からは**素手では届かない**
+> ① 中庭側からは**唯香が背伸びで手が届く** ② 教室側からは**素手では届かない**
 > ③ その部屋で**唯一届く物が箒になる**——これらは別々の演出上の願いだったが、
 > 上の寸法を満たすと**同時に成立する**。
 >
@@ -51,17 +51,46 @@ tags: [location, chapter/02-summer]
 
 ---
 
+## 🏛️ 部屋のつくり（2026-11-05 作者決定）
+
+旧校舎は**平成施工で古びた印象はない**。
+
+| 項目 | 内容 | 状態 |
+| :--- | :--- | :--- |
+| 席 | 6列×10席の60席。固定の長机＋跳ね上げ椅子 | `canon` |
+| 床 | 濃色の木質フロア、半艶。液体は吸わず段を伝う | `canon` |
+| 壁と天井 | 温色の有孔木パネル、白い吸音天井 | `canon` |
+| 窓 | 大判のFIXガラス5枚＋黒い細枠。西向き。窓台は濃色の人工大理石の桟 | `canon` |
+| 窓の下 | 機器を置かない。壁だけ | `canon` |
+| カーテン | 新しめの厚い濃色。**止まっている時は足元が隠れ、揺れた時だけ裸足が見える長さ** | `canon` |
+| 前の壁 | 電動スクリーン＋上下黒板。教卓に操作パネル | `canon` |
+| 棚 | 後ろの壁の扉付き棚。扉を開けないと中は見えない。善意②で荷物が移される場所 | `canon` |
+| 空調 | 天井エアコン＋天井扇風機。暑いのは入室直後でまだ効いていないため | `canon` |
+| 奥津の席 | 3列目の窓側の端 | `canon` |
+| 光 | 普段の部屋に光は入らないのが視聴覚室として自然。決壊の時は、向日葵のいた所のカーテンが引かれて光が入る | `canon` |
+| 時刻 | 8月20日ごろの17:30、黄金の夕陽（太陽の高さ約18°） | `canon` |
+| カーテンの普段の範囲 | 動かせるので固定しない | `draft` |
+| 寸法 | 段は奥行100cm・蹴上げ20cm。部屋は幅10m×奥行10.8m。前の平場 -120、4列目 -60、後ろの通路 ±0、天井 +280 | `draft` |
+| カーテンの裾 | +78cm（外の地面から）。桟より7cm下 | `draft` |
+| 窓の高さ | +85〜+265cm。上の30cmは排煙の小窓 | `draft` |
+| 前の扉 | 廊下 ±0 の扉の内側に踊り場と7段 | `canon` |
+
+> [!note] 夕陽が落ちる範囲
+> カーテンをどけた所では、4列目の高さの床に窓から456〜988cmまで光が落ちる。**17:30の光は廊下側の壁を登らない。**机と床を照らす。
+
+---
+
 ## 🧩 スロット別仕様
 
 | スロット | 内容 |
 | :--- | :--- |
-| **空間** | occupied high school audio-visual lecture room during summer supplementary lessons, gently tiered floor stepping down toward the front, floor set slightly below the outside ground level, high window band along one side, heavy blackout curtains half drawn, high ceiling |
-| **表面・素材** | large window glass, heavy worn curtain fabric, narrow window ledge, scuffed wooden tiers, chalk dust |
-| **光** | hard summer daylight pouring through the high window band, the curtain glowing translucent from behind, silhouettes readable through the fabric |
-| **空気・音・匂い** | hot humid air, ceiling fan, the drone of a lesson, schoolyard noise from outside |
-| **小道具** | a half-drawn curtain, the window glass, the narrow ledge, rows of occupied tiered desks, a broom, a spilled cup of coffee |
-| **カメラ** | from outside the window looking in, eye level, medium - the schoolyard vantage point |
-| **トーン** | summer chapter palette, low contrast, harsh backlight |
+| **空間** | modern university audio-visual lecture room in a well-kept Heisei-era building, 60 fixed seats in six rows stepping down toward the front, floor set slightly below the outside ground level, high west-facing window band along one side, thick dark curtains drawn across most of it, projector screen and sliding blackboards at the front |
+| **表面・素材** | large fixed window glass in slim black frames, thick new dark curtain fabric hanging past a narrow dark engineered-stone ledge, dark semi-gloss wooden tiers, warm perforated wood wall panels above dark wood wainscot, white acoustic ceiling |
+| **光** | golden low western sun at 5:30 pm stopped by the curtains, the room kept dim as an audio-visual room should be, a hard blade of gold where the curtain is pulled aside |
+| **空気・音・匂い** | hot humid air, air conditioning only just switched on, ceiling fans turning, the drone of a lecture, voices from the courtyard outside |
+| **小道具** | a curtain pulled aside, the window glass, the narrow ledge, rows of occupied fixed desks with folding seats, a broom, a spilled cup of coffee |
+| **カメラ** | from outside the window looking in, eye level, medium - the campus courtyard vantage point |
+| **トーン** | summer chapter palette, warm gold against dark wood, harsh backlight |
 
 ---
 
@@ -76,7 +105,7 @@ tags: [location, chapter/02-summer]
 ## 🎨 プロンプト
 
 ```text
-occupied high school audio-visual lecture room during summer supplementary lessons, gently tiered floor stepping down toward the front, floor set slightly below the outside ground level, high window band along one side, heavy blackout curtains half drawn, high ceiling, large window glass, heavy worn curtain fabric, narrow window ledge, scuffed wooden tiers, chalk dust, hard summer daylight pouring through the high window band, the curtain glowing translucent from behind, silhouettes readable through the fabric, hot humid air, ceiling fan, the drone of a lesson, schoolyard noise from outside, a broom, a spilled cup of coffee, rows of occupied tiered desks, from outside the window looking in, eye level, medium - the schoolyard vantage point, summer chapter palette, low contrast, harsh backlight
+modern university audio-visual lecture room in a well-kept Heisei-era building, 60 fixed seats in six rows stepping down toward the front, floor set slightly below the outside ground level, high west-facing window band along one side, thick dark curtains drawn across most of it, projector screen and sliding blackboards at the front, large fixed window glass in slim black frames, thick new dark curtain fabric hanging past a narrow dark engineered-stone ledge, dark semi-gloss wooden tiers, warm perforated wood wall panels above dark wood wainscot, white acoustic ceiling, golden low western sun at 5:30 pm stopped by the curtains, the room kept dim as an audio-visual room should be, a hard blade of gold where the curtain is pulled aside, hot humid air, air conditioning only just switched on, ceiling fans turning, the drone of a lecture, voices from the courtyard outside, a curtain pulled aside, the window glass, the narrow ledge, rows of occupied fixed desks with folding seats, a broom, a spilled cup of coffee, from outside the window looking in, eye level, medium - the campus courtyard vantage point, summer chapter palette, warm gold against dark wood, harsh backlight
 ```
 
 **ネガティブ:** `people, person, human, figure, worst quality, low quality, text, watermark, signature, jpeg artifacts, blurry`

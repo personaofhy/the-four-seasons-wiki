@@ -12,17 +12,18 @@ decision_default: canon
 | 場所 | 章 | 決定状態 |
 | :--- | :--- | :--- |
 | [[locations/meeting-room\|政治家の家・応接間]] | [[chapters/01-spring/index\|01-spring]] | ✅ canon |
+| [[locations/himawari-university\|向日葵の大学（校地全体）]] | [[chapters/02-summer/index\|02-summer]] | ✅ canon（寸法は draft） |
 | [[locations/rooftop-pool\|屋上のプール]] | [[chapters/02-summer/index\|02-summer]] | ✅ canon |
-| [[locations/summer-classroom\|補習授業中の教室・カーテン裏]] | [[chapters/02-summer/index\|02-summer]] | ✅ canon |
+| [[locations/summer-classroom\|集中講義中の視聴覚室・カーテン裏]] | [[chapters/02-summer/index\|02-summer]] | ✅ canon |
 | [[locations/campsite-mud\|社内キャンプ場・紅葉の泥]] | [[chapters/03-autumn/index\|03-autumn]] | ✅ canon |
-| [[locations/private-room\|静まり返った自室・炬燵]]（準備段階） | [[chapters/04-winter/index\|04-winter]] | ✅ canon |
-| [[locations/ferris-wheel-queue\|遊園地・観覧車の待機列]]（破綻） | [[chapters/04-winter/index\|04-winter]] | 🔓 open |
+| [[locations/ski-slope\|地元のスキー場のナイター]] | [[chapters/04-winter/index\|04-winter]] | 📝 draft |
+| ~~[[locations/private-room\|静まり返った自室・炬燵]]~~（旧案） | [[chapters/04-winter/index\|04-winter]] | ⛔ superseded |
+| ~~[[locations/ferris-wheel-queue\|遊園地・観覧車の待機列]]~~（旧案） | [[chapters/04-winter/index\|04-winter]] | ⛔ superseded |
 | ~~[[locations/school-corridor\|学校・トイレ前の廊下]]~~（不採用） | [[chapters/05-re-spring/index\|05-re-spring]] | ⛔ superseded |
 | [[locations/storage-room\|閉じたスペース（体育倉庫、仮）]] | [[chapters/05-re-spring/index\|05-re-spring]]（第六章） | 🔓 open |
 
-> [!note] 第2章と第4章は舞台が2つある
-> 第2章は発端（屋上のプール）と破綻（補習授業中の教室）が別の場所であり、**その移動そのものが筋**であるため分割している。
-> 第4章は準備（自室）と破綻（遊園地）が別の場所。破綻は群衆の前で、柊が自ら踏み出す形で起こる。
+> [!note] 第2章は舞台が2つある
+> 第2章は発端（屋上のプール）と破綻（集中講義中の教室）が別の場所であり、**その移動そのものが筋**であるため分割している。
 
 ---
 
