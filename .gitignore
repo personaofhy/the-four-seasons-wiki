@@ -55,3 +55,9 @@ wiki/assets/hiiragi_storyboard_part*.jpg
 
 # 2026-10-16：スタジオ（事務所・楽屋・撮影所・ラボ・外向け・資料）。非公開の別リポジトリ（studio/ が根）
 studio/
+
+# 2026-11-12：モデル比較（model-test/）。スクリプト・一般プロンプトだけ公開し、
+# 生成画像・評価結果・NSFW 検証用プロンプトはローカル専用
+model-test/outputs/
+model-test/results/
+model-test/prompts/nsfw.txt
